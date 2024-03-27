@@ -9,7 +9,7 @@ public class Shoot : MonoBehaviour
 
     [SerializeField] private float _force;
 
-    [SerializeField] private double _timerReloadGun = 1;
+    [SerializeField] private float _timerReloadGun = 1;
 
     [SerializeField] private Text _reloadTimerText;
 
@@ -17,10 +17,10 @@ public class Shoot : MonoBehaviour
 
     private void Update()
     {
-        SpawnBullet();
+        BulletSpawnProces();
     }
 
-    private void SpawnBullet()
+    private void BulletSpawnProces()
     {
         if (_timerReloadGun <= 0)
         {
@@ -41,17 +41,13 @@ public class Shoot : MonoBehaviour
                     projectileRB.AddForce(ray.direction * _force);
                 }
 
-                _timerReloadGun = 1d;
+                _timerReloadGun = 1f;
             }
         }
         else
         {
             _timerReloadGun -= Time.deltaTime;
-        }
-
-        if (_timerReloadGun < 0)
-        {
-            _timerReloadGun = 0;
+            _timerReloadGun = Mathf.Max(_timerReloadGun, 0f);
         }
 
         _reloadTimerText.text = _timerReloadGun.ToString();

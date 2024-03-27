@@ -1,21 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
 
 public class Balls : MonoBehaviour
 {
     [SerializeField] private LayerMask _ball;
     [SerializeField] private ParticleSystem _destroyParticle;
+    [SerializeField] private Transform _newParent;
 
-    public float _speedBall = 2f;
+    private Rigidbody _body;
+    private Counter _counter;
 
-    public Counter _count;
-    public Rigidbody _body;
 
     private void Start()
     {
         _body = GetComponent<Rigidbody>();
-        _count = FindObjectOfType<Counter>();
+        _counter = GetComponentInParent<Counter>();
 
         _body.drag = Random.Range(0f, 3f);
     }
@@ -24,11 +26,11 @@ public class Balls : MonoBehaviour
     {
         if (_ball == (_ball | (1 << collision.gameObject.layer)))
         {
-            Instantiate(_destroyParticle, _body.transform.position, Quaternion.identity);
-
+            _destroyParticle.transform.SetParent(_newParent);
             Destroy(gameObject);
-
-            _count._counter++;
+            _destroyParticle.Play();
+            Destroy(_destroyParticle.gameObject, 1f);
+            _counter._counter++;
         }
     }
 
@@ -36,9 +38,11 @@ public class Balls : MonoBehaviour
     {
         if(other.CompareTag("GameOver"))
         {
+            _destroyParticle.transform.SetParent(_newParent);
             Destroy(gameObject);
-
-            _count._health--;
+            _destroyParticle.Play();
+            Destroy(_destroyParticle.gameObject, 1f);
+            _counter._health--;
         }
     }
 

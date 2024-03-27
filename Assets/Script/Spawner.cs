@@ -19,11 +19,6 @@ public class Spawner : MonoBehaviour
 
     private int _complication = 10;
 
-    private void Start()
-    {
-        _counter = FindObjectOfType<Counter>();
-    }
-
     private void Update()
     {
         var spawnValue = Random.Range(0, _allSpawnPosition.Length);
@@ -44,20 +39,6 @@ public class Spawner : MonoBehaviour
         else
         {
             _delaySpawn -= Time.deltaTime;
-        }
-
-        if(_counter._counter == _complication)
-        {
-            if(_delay > 0.5f)
-            {
-                _delay -= 0.2f;
-                _complication += Random.Range(5, 10);
-
-            }
-            else
-            {
-                _delay = 0.5f;
-            }
         }
     }
 }
