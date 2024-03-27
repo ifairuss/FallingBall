@@ -362,7 +362,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Script/Ball.cs"
 "Assets/Script/Counter.cs"
-"Assets/Script/LifeTime.cs"
+"Assets/Script/DelayedDestroy.cs"
 "Assets/Script/SceneChanger.cs"
 "Assets/Script/Shoot.cs"
 "Assets/Script/Spawner.cs"
