@@ -1442,8 +1442,8 @@ MonoBehaviour:
   _countTextScore: {fileID: 1269339495}
   _countTextScoreGameOver: {fileID: 1105542423}
   _countTextHealth: {fileID: 895138642}
-  _counter: 0
-  _health: 10
+  CounterScore: 0
+  CounterHealth: 10
 --- !u!1 &963129027
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,8 +12,8 @@ public class Counter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _countTextScoreGameOver;
     [SerializeField] private TextMeshProUGUI _countTextHealth;
 
-    public int _counter;
-    public int _health;
+    public int CounterScore;
+    public int CounterHealth;
 
     private void Start()
     {
@@ -29,14 +29,14 @@ public class Counter : MonoBehaviour
 
     private void TextDisplay()
     {
-        _countTextScore.text = _counter.ToString();
-        _countTextHealth.text = _health.ToString();
+        _countTextScore.text = CounterScore.ToString();
+        _countTextHealth.text = CounterHealth.ToString();
         _countTextScoreGameOver.text = _countTextScore.text;
     }
 
     private void GameOver()
     {
-        if (_health <= 0)
+        if (CounterHealth <= 0)
         {
             _gameOverPanel.SetActive(true);
             Time.timeScale = 0f;

@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using Unity.VisualScripting;
+using UnityEditor;
+using UnityEditor.iOS.Xcode;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class Spawner : MonoBehaviour
 {
@@ -12,12 +16,16 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _ball;
     [SerializeField] private Text _timerSpawnBall;
 
+    private Counter _counter;
+    private GameObject Instance;
+
     [SerializeField] private float _delaySpawn;
     [SerializeField] private float _delay = 4f;
 
-    private Counter _counter;
-
-    private int _complication = 10;
+    private void Start()
+    {
+        _counter = FindObjectOfType<Counter>();
+    }
 
     private void Update()
     {
@@ -31,7 +39,8 @@ public class Spawner : MonoBehaviour
             _ball = _allBall[ballValue];
             _spawnPosition = _allSpawnPosition[spawnValue];
 
-            Instantiate(_ball, _spawnPosition.transform.position, Quaternion.identity);
+            Instance = Instantiate(_ball, _spawnPosition.transform.position, Quaternion.identity);
+            Instance.GetComponent<Ball>().Init(_counter);
 
             _delaySpawn = _delay;
 
