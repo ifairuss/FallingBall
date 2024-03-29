@@ -3,17 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockadeLabsSDK.Editor", "BlockadeLabsSDK.Editor.csproj", "{E6567C30-0CD3-3DED-7AEE-420BF302F987}"
 EndProject
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockadeLabsSDK.Runtime", "BlockadeLabsSDK.Runtime.csproj", "{46B069C5-7734-ECCA-6D37-A4D6A0A32954}"
-EndProject
-=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockadeLabsSDK.Runtime", "BlockadeLabsSDK.Runtime.csproj", "{46B069C5-7734-ECCA-6D37-A4D6A0A32954}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}"
 EndProject
->>>>>>> Feature/Code-Fix
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,24 +17,14 @@ Global
 		{E6567C30-0CD3-3DED-7AEE-420BF302F987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6567C30-0CD3-3DED-7AEE-420BF302F987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6567C30-0CD3-3DED-7AEE-420BF302F987}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> Feature/Code-Fix
 		{46B069C5-7734-ECCA-6D37-A4D6A0A32954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46B069C5-7734-ECCA-6D37-A4D6A0A32954}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46B069C5-7734-ECCA-6D37-A4D6A0A32954}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46B069C5-7734-ECCA-6D37-A4D6A0A32954}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Feature/Code-Fix
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
