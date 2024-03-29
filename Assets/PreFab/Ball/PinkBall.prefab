@@ -5044,7 +5044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9bebd70b2879a40a7092736f624a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ball:
+  CollisionMask:
     serializedVersion: 2
     m_Bits: 8
   _destroyParticle: {fileID: 2001950610239785586}

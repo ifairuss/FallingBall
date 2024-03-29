@@ -60,12 +60,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Spawner.cs" />
-    <Compile Include="Assets\Script\Counter.cs" />
-    <Compile Include="Assets\Script\Ball.cs" />
-    <Compile Include="Assets\Script\DelayedDestroy.cs" />
+    <Compile Include="Assets\Script\EventSystem\Counters\DelayedDestroy.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\Shot.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\ObjectSpawner.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\SkyBoxMaterialRotation.cs" />
     <Compile Include="Assets\Script\SceneChanger.cs" />
-    <Compile Include="Assets\Script\Shoot.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\Ball.cs" />
+    <Compile Include="Assets\Script\EventSystem\Counters\Counter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
