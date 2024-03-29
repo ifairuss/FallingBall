@@ -1,0 +1,36 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+
+public class ObjectSpawner : MonoBehaviour
+{
+    [SerializeField] private GameObject[] _allSpawnPosition;
+    [SerializeField] private GameObject[] _allBall;
+    [SerializeField] private GameObject _spawnPosition;
+    [SerializeField] private GameObject _ball;
+    [SerializeField] private Text _timerSpawnBall;
+
+    [SerializeField] private float _delaySpawn;
+    [SerializeField] private float _delay = 4f;
+
+    private void Update()
+    {
+        var spawnValue = Random.Range(0, _allSpawnPosition.Length);
+        var ballValue = Random.Range(0, _allBall.Length);
+
+        _timerSpawnBall.text = _delaySpawn.ToString();
+
+        if (_delaySpawn <= 0f)
+        {
+            _ball = _allBall[ballValue];
+            _spawnPosition = _allSpawnPosition[spawnValue];
+
+            Instantiate(_ball, _spawnPosition.transform.position, Quaternion.identity);
+
+            _delaySpawn = _delay;
+        }
+        else
+        {
+            _delaySpawn -= 1f * Time.deltaTime;
+        }
+    }
+}

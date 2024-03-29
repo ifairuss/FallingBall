@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{48C4C6AB-4EA6-FBF5-69BA-A5EBB3101C16}</ProjectGuid>
+    <ProjectGuid>{46B069C5-7734-ECCA-6D37-A4D6A0A32954}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>BlockadeLabsSDK.Runtime</AssemblyName>
