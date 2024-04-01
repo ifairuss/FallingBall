@@ -3,19 +3,27 @@ using UnityEngine.UI;
 
 public class Shot : MonoBehaviour
 {
+    [Header("GameObject")]
     [SerializeField] private GameObject _bullet;
 
+    [Header("Characteristics")]
     [SerializeField] private float _force;
 
-    [SerializeField] private float _timerReloadGun = 1;
+    [Header("Timers")]
+    [SerializeField] private float _timerReloadGun;
+    [SerializeField] private float _timeReload = 1.2f;
 
+    [Header("Text")]
     [SerializeField] private Text _reloadTimerText;
 
-
+    [Header("Timer")]
+    [SerializeField] private float _cooldownTimer = 90f;
+    [SerializeField] private float _timerTime = 90f;
 
     private void Update()
     {
         BulletSpawnProces();
+        Simplification();
     }
 
     private void BulletSpawnProces()
@@ -39,7 +47,7 @@ public class Shot : MonoBehaviour
                     bulletRB.AddForce(ray.direction * _force);
                 }
 
-                _timerReloadGun = 1f;
+                _timerReloadGun = _timeReload;
             }
         }
         else
@@ -51,4 +59,24 @@ public class Shot : MonoBehaviour
         _reloadTimerText.text = _timerReloadGun.ToString();
     }
 
- }
+    private void Simplification()
+    {
+        if (_timeReload > 0.6f)
+        {
+            if (_timerTime <= 0)
+            {
+                _timeReload -= 0.3f;
+                _timerTime = _cooldownTimer;
+            }
+            else
+            {
+                _timerTime -= 1f * Time.deltaTime;
+            }
+        }
+        else
+        {
+            _timeReload = 0.4f;
+        }
+    }
+
+}

@@ -1,23 +1,28 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class ObjectSpawner : MonoBehaviour
 {
+    [Header("GameObject")]
     [SerializeField] private GameObject[] _allSpawnPosition;
     [SerializeField] private GameObject[] _allBall;
     [SerializeField] private GameObject _spawnPosition;
     [SerializeField] private GameObject _ball;
-    [SerializeField] private Text _timerSpawnBall;
 
+    [Header("SettingSpawn")]
     [SerializeField] private float _delaySpawn;
-    [SerializeField] private float _delay = 4f;
+    public float Delay = 3.5f;
+
+    [Header("Timer")]
+    [SerializeField] private float _cooldownTimer = 15f;
+    [SerializeField] private float _timerTime = 15f;
+
 
     private void Update()
     {
         var spawnValue = Random.Range(0, _allSpawnPosition.Length);
         var ballValue = Random.Range(0, _allBall.Length);
 
-        _timerSpawnBall.text = _delaySpawn.ToString();
+        ComplicationOfSpawner();
 
         if (_delaySpawn <= 0f)
         {
@@ -26,11 +31,31 @@ public class ObjectSpawner : MonoBehaviour
 
             Instantiate(_ball, _spawnPosition.transform.position, Quaternion.identity);
 
-            _delaySpawn = _delay;
+            _delaySpawn = Delay;
         }
         else
         {
             _delaySpawn -= 1f * Time.deltaTime;
+        }
+    }
+
+    private void ComplicationOfSpawner()
+    {
+        if (Delay > 1f)
+        {
+            if (_timerTime <= 0)
+            {
+                Delay -= 0.5f;
+                _timerTime = _cooldownTimer;
+            }
+            else
+            {
+                _timerTime -= 1f * Time.deltaTime;
+            }
+        }
+        else
+        {
+            Delay = Mathf.Max(Delay, 1f);
         }
     }
 }

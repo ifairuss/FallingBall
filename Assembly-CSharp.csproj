@@ -60,11 +60,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\ButtonManagerMainGame.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\DelayedDestroy.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Shot.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\ObjectSpawner.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\SkyBoxMaterialRotation.cs" />
-    <Compile Include="Assets\Script\SceneChanger.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Ball.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\Counter.cs" />
   </ItemGroup>
@@ -1014,6 +1014,10 @@
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">

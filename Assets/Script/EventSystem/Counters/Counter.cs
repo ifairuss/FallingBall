@@ -1,17 +1,17 @@
-
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Counter : MonoBehaviour
 {
+    [Header("GameObject")]
     [SerializeField] private GameObject _gameOverPanel;
-    [SerializeField] private TextMeshProUGUI _countTextScore;
-    [SerializeField] private TextMeshProUGUI _countTextScoreGameOver;
-    [SerializeField] private TextMeshProUGUI _countTextHealth;
 
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI _countTextScore;
+    [SerializeField] private TextMeshProUGUI _countTextHealth;
+    [SerializeField] private TextMeshProUGUI _countTextScoreGameOver;
+
+    [Header("Indicators")]
     public int CounterScore;
     public int CounterHealth;
 

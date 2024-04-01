@@ -335,6 +335,7 @@
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/BlockadeLabsSDK.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/BlockadeLabsSDK.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -360,13 +361,13 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Script/ButtonManagerMainGame.cs"
 "Assets/Script/EventSystem/Action/Ball.cs"
 "Assets/Script/EventSystem/Action/ObjectSpawner.cs"
 "Assets/Script/EventSystem/Action/Shot.cs"
 "Assets/Script/EventSystem/Action/SkyBoxMaterialRotation.cs"
 "Assets/Script/EventSystem/Counters/Counter.cs"
 "Assets/Script/EventSystem/Counters/DelayedDestroy.cs"
-"Assets/Script/SceneChanger.cs"
 -langversion:9.0
 
 /deterministic
