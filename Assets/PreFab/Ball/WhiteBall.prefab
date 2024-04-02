@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8130683250355671143}
   - component: {fileID: 6272857556480009256}
   - component: {fileID: 3710363150102285696}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BallDestroyWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

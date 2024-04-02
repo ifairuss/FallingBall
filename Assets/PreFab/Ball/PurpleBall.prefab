@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7944400822529730826}
   - component: {fileID: 5480997980124194061}
   - component: {fileID: 8985537272268886255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BallDestroyPurple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
