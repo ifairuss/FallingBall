@@ -17,8 +17,8 @@ public class Shot : MonoBehaviour
     [SerializeField] private Text _reloadTimerText;
 
     [Header("Timer")]
-    [SerializeField] private float _cooldownTimer = 90f;
-    [SerializeField] private float _timerTime = 90f;
+    [SerializeField] private float _cooldownTimer = 60f;
+    [SerializeField] private float _timerTime = 60f;
 
     private void Update()
     {
