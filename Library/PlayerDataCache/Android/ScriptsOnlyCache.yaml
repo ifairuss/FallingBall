@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - ButtonManagerMainGame
+    - ButtonManagerMenu
     - Counter
     - DelayedDestroy
     - ObjectSpawner
@@ -110,6 +111,36 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: ShopON
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: YouTube
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: ShopSwitchCoins
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: ShopSwitchAdvertising
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: ShopOFF
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: LeaderBord
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: MainGame
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: SettingOFF
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: Exit
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: SettingON
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: MainGame
   - assembly: Assembly-CSharp
@@ -167,51 +198,51 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 17538}
+      Script: {instanceID: 17542}
     - Class: 114
-      Script: {instanceID: 17770}
+      Script: {instanceID: 17774}
     - Class: 114
-      Script: {instanceID: 17976}
+      Script: {instanceID: 17980}
     - Class: 114
-      Script: {instanceID: 18210}
+      Script: {instanceID: 18214}
     - Class: 114
-      Script: {instanceID: 18282}
+      Script: {instanceID: 18286}
     - Class: 114
-      Script: {instanceID: 18722}
+      Script: {instanceID: 18726}
     - Class: 114
-      Script: {instanceID: 18730}
+      Script: {instanceID: 18734}
     - Class: 114
-      Script: {instanceID: 19066}
+      Script: {instanceID: 19070}
     - Class: 114
-      Script: {instanceID: 19844}
+      Script: {instanceID: 19850}
     - Class: 114
-      Script: {instanceID: 19992}
+      Script: {instanceID: 19998}
     - Class: 114
-      Script: {instanceID: 20248}
+      Script: {instanceID: 20254}
     - Class: 114
-      Script: {instanceID: 20284}
+      Script: {instanceID: 20290}
     - Class: 114
-      Script: {instanceID: 20298}
+      Script: {instanceID: 20304}
     - Class: 114
-      Script: {instanceID: 20540}
+      Script: {instanceID: 20546}
     - Class: 114
-      Script: {instanceID: 20848}
+      Script: {instanceID: 20854}
     - Class: 114
-      Script: {instanceID: 20876}
+      Script: {instanceID: 20882}
     - Class: 114
-      Script: {instanceID: 21006}
+      Script: {instanceID: 21012}
     - Class: 114
-      Script: {instanceID: 21236}
+      Script: {instanceID: 21244}
     - Class: 114
-      Script: {instanceID: 21330}
+      Script: {instanceID: 21338}
     - Class: 114
-      Script: {instanceID: 22374}
+      Script: {instanceID: 22382}
     - Class: 114
-      Script: {instanceID: 22704}
+      Script: {instanceID: 22712}
     - Class: 114
-      Script: {instanceID: 22854}
+      Script: {instanceID: 22862}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,11 +278,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 72
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -262,17 +301,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17322}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 17770}
+      Script: {instanceID: 17326}
     - Class: 114
-      Script: {instanceID: 19304}
+      Script: {instanceID: 17542}
     - Class: 114
-      Script: {instanceID: 19560}
+      Script: {instanceID: 17774}
     - Class: 114
-      Script: {instanceID: 20284}
+      Script: {instanceID: 17980}
     - Class: 114
-      Script: {instanceID: 21330}
+      Script: {instanceID: 18286}
+    - Class: 114
+      Script: {instanceID: 18734}
+    - Class: 114
+      Script: {instanceID: 19126}
+    - Class: 114
+      Script: {instanceID: 19310}
+    - Class: 114
+      Script: {instanceID: 19566}
+    - Class: 114
+      Script: {instanceID: 19850}
+    - Class: 114
+      Script: {instanceID: 19998}
+    - Class: 114
+      Script: {instanceID: 20254}
+    - Class: 114
+      Script: {instanceID: 20290}
+    - Class: 114
+      Script: {instanceID: 20304}
+    - Class: 114
+      Script: {instanceID: 20854}
+    - Class: 114
+      Script: {instanceID: 21012}
+    - Class: 114
+      Script: {instanceID: 21338}
+    - Class: 114
+      Script: {instanceID: 22382}
+    - Class: 114
+      Script: {instanceID: 22712}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -280,6 +347,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -660,6 +735,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessEffectSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 7e197929bdee5e36b56640a9ea4807d7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ButtonManagerMenu
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
@@ -1252,4 +1333,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: C:/Users/limaz/Desktop/Games.apk
+  playerPath: C:/Users/limaz/Desktop/FallingBall.apk

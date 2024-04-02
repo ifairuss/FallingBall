@@ -334,21 +334,7 @@
         326,
         327,
         328,
-        329,
-        330,
-        331,
-        332,
-        333,
-        334,
-        335,
-        336,
-        337,
-        338,
-        339,
-        340,
-        341,
-        342,
-        343
+        329
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -8101,30 +8087,6 @@
       "DebugActionIndex": 302
     },
     {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml",
-      "DisplayName": "Copying app_icon.xml",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-anydpi-v26/app_icon.xml"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml"
-      ],
-      "DebugActionIndex": 303
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml",
-      "DisplayName": "Copying app_icon_round.xml",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-anydpi-v26/app_icon_round.xml"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
-      ],
-      "DebugActionIndex": 304
-    },
-    {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
       "DisplayName": "Copying app_icon.png",
       "ActionType": "CopyFiles",
@@ -8134,31 +8096,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png"
       ],
-      "DebugActionIndex": 305
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.mdpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 306
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.mdpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 303
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png",
@@ -8170,7 +8108,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png"
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 304
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png",
@@ -8182,7 +8120,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png"
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 305
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png",
@@ -8194,7 +8132,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 306
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png",
@@ -8206,7 +8144,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 307
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png",
@@ -8218,7 +8156,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png"
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png",
@@ -8230,7 +8168,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png",
@@ -8242,7 +8180,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 310
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png",
@@ -8254,7 +8192,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 311
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png",
@@ -8266,7 +8204,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 316
+      "DebugActionIndex": 312
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png",
@@ -8278,7 +8216,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 313
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png",
@@ -8290,127 +8228,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png"
       ],
-      "DebugActionIndex": 318
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.ldpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 319
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.hdpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 320
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xhdpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 321
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xxhdpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 322
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png",
-      "DisplayName": "Copying ic_launcher_background.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xxxhdpi.adaptive_icon-0.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png"
-      ],
-      "DebugActionIndex": 323
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.ldpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 324
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.hdpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 325
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xhdpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 326
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xxhdpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 327
-    },
-    {
-      "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
-      "DisplayName": "Copying ic_launcher_foreground.png",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Temp/StagingArea/res.xxxhdpi.adaptive_icon-1.png"
-      ],
-      "Outputs": [
-        "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
-      ],
-      "DebugActionIndex": 328
+      "DebugActionIndex": 314
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so",
@@ -8422,7 +8240,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 329
+      "DebugActionIndex": 315
     },
     {
       "Annotation": "SourceBuildPlayerFiles",
@@ -8430,11 +8248,11 @@
       "Inputs": [],
       "Outputs": [],
       "ToBuildDependencies": [
-        329,
-        331
+        315,
+        317
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 330
+      "DebugActionIndex": 316
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so",
@@ -8446,7 +8264,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so"
       ],
-      "DebugActionIndex": 331
+      "DebugActionIndex": 317
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmonobdwgc-2.0.so",
@@ -8458,7 +8276,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmonobdwgc-2.0.so"
       ],
-      "DebugActionIndex": 332
+      "DebugActionIndex": 318
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libMonoPosixHelper.so",
@@ -8470,7 +8288,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libMonoPosixHelper.so"
       ],
-      "DebugActionIndex": 333
+      "DebugActionIndex": 319
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmono-native.so",
@@ -8482,20 +8300,20 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmono-native.so"
       ],
-      "DebugActionIndex": 334
+      "DebugActionIndex": 320
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info",
       "DisplayName": "Writing LauncherManifestDiag.txt_zvqu.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 213066,
-      "PayloadLength": 19634,
+      "PayloadLength": 19635,
       "PayloadDebugContentSnippet": "{\"AndroidPlayerBuildProgram.Ac",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info"
       ],
-      "DebugActionIndex": 335
+      "DebugActionIndex": 321
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/LauncherManifestDiag.txt (+3 others)",
@@ -8709,12 +8527,12 @@
         284,
         286,
         288,
-        335
+        321
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 336
+      "DebugActionIndex": 322
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so",
@@ -8726,7 +8544,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 337
+      "DebugActionIndex": 323
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmonobdwgc-2.0.so",
@@ -8738,7 +8556,7 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmonobdwgc-2.0.so"
       ],
-      "DebugActionIndex": 338
+      "DebugActionIndex": 324
     },
     {
       "Annotation": "CopyFiles C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so",
@@ -8750,20 +8568,20 @@
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so"
       ],
-      "DebugActionIndex": 339
+      "DebugActionIndex": 325
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_hem5.info",
       "DisplayName": "Writing unity_app_guid_hem5.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 232792,
+      "PayloadOffset": 232793,
       "PayloadLength": 13928,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/unity_app_guid_hem5.info"
       ],
-      "DebugActionIndex": 340
+      "DebugActionIndex": 326
     },
     {
       "Annotation": "GuidGenerator C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -8884,25 +8702,25 @@
       ],
       "ToBuildDependencies": [
         5,
-        340
+        326
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 341
+      "DebugActionIndex": 327
     },
     {
       "Annotation": "WriteText C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint",
       "DisplayName": "Writing com.android.games.engine.build_fingerprint",
       "ActionType": "WriteFile",
-      "PayloadOffset": 246917,
+      "PayloadOffset": 246918,
       "PayloadLength": 66,
       "PayloadDebugContentSnippet": "2022.3.14f1;Mono;Release;Strip",
       "Inputs": [],
       "Outputs": [
         "C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint"
       ],
-      "DebugActionIndex": 342
+      "DebugActionIndex": 328
     },
     {
       "Annotation": "Player",
@@ -9128,30 +8946,16 @@
         313,
         314,
         315,
-        316,
         317,
         318,
         319,
         320,
-        321,
         322,
-        323,
-        324,
-        325,
-        326,
         327,
-        328,
-        329,
-        331,
-        332,
-        333,
-        334,
-        336,
-        341,
-        342
+        328
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 343
+      "DebugActionIndex": 329
     }
   ],
   "FileSignatures": [
@@ -9462,8 +9266,8 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "SourceBuildPlayerFiles": 330,
-          "Player": 343
+          "SourceBuildPlayerFiles": 316,
+          "Player": 329
         }
 ,  "DefaultNodes": [
     0
