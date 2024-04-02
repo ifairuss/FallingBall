@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\EventSystem\Action\ObjectSpawner.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\SkyBoxMaterialRotation.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Ball.cs" />
+    <Compile Include="Assets\Script\ButtonManagerMenu.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\Counter.cs" />
   </ItemGroup>
   <ItemGroup>
