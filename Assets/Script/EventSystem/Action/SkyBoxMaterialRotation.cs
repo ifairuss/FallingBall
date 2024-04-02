@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class SkyBoxMaterialRotation : MonoBehaviour
 {
-    [SerializeField] private Material _skyBoxMaterial;
+    [SerializeField] private Material _skyBoxMaterialRotates;
 
-    [SerializeField] private float _skyBoxMaterialRotation;
+    [SerializeField] private float _materialRotation;
 
     private void Update()
     {
@@ -13,15 +13,15 @@ public class SkyBoxMaterialRotation : MonoBehaviour
 
     private void SkeBoxRotation()
     {
-        _skyBoxMaterial.SetFloat("_Rotation", _skyBoxMaterialRotation);
+        _skyBoxMaterialRotates.SetFloat("_Rotation", _materialRotation);
 
-        if(_skyBoxMaterialRotation >= 0 && _skyBoxMaterialRotation <= 360 ) 
+        if(_materialRotation >= 0 && _materialRotation <= 360 ) 
         {
-            _skyBoxMaterialRotation += 1f * Time.deltaTime;
+            _materialRotation += 1f * Time.deltaTime;
         }
         else
         {
-            _skyBoxMaterialRotation = 0f;
+            _materialRotation = 0f;
         }
     }
 }
