@@ -18,7 +18,7 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 32
-        applicationId 'com.DefaultCompany.Lesson'
+        applicationId 'com.IFAgame.FallingBall'
         ndk {
             abiFilters 'armeabi-v7a'
         }

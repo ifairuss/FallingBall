@@ -1,12 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Ball
     - ButtonManagerMainGame
     - ButtonManagerMenu
     - Counter
     - DelayedDestroy
+    - FallingBallScript
     - ObjectSpawner
+    - PointSpawner
     - Shot
     - SkyBoxMaterialRotation
     Unity.Postprocessing.Runtime.dll:
@@ -198,45 +199,47 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16728}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 17546}
+      Script: {instanceID: 17544}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 17776}
     - Class: 114
-      Script: {instanceID: 17984}
+      Script: {instanceID: 17982}
     - Class: 114
-      Script: {instanceID: 18218}
+      Script: {instanceID: 18216}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18288}
     - Class: 114
-      Script: {instanceID: 18730}
+      Script: {instanceID: 18728}
     - Class: 114
-      Script: {instanceID: 18738}
+      Script: {instanceID: 18736}
     - Class: 114
-      Script: {instanceID: 19074}
+      Script: {instanceID: 19072}
     - Class: 114
-      Script: {instanceID: 19854}
+      Script: {instanceID: 19852}
     - Class: 114
-      Script: {instanceID: 20002}
+      Script: {instanceID: 20000}
     - Class: 114
-      Script: {instanceID: 20258}
+      Script: {instanceID: 20256}
     - Class: 114
-      Script: {instanceID: 20294}
+      Script: {instanceID: 20292}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 20306}
     - Class: 114
-      Script: {instanceID: 20550}
+      Script: {instanceID: 20548}
     - Class: 114
-      Script: {instanceID: 20858}
+      Script: {instanceID: 20856}
     - Class: 114
-      Script: {instanceID: 20886}
+      Script: {instanceID: 20884}
     - Class: 114
-      Script: {instanceID: 21016}
+      Script: {instanceID: 21014}
     - Class: 114
-      Script: {instanceID: 21248}
+      Script: {instanceID: 21246}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21340}
+    - Class: 114
+      Script: {instanceID: 22310}
     - Class: 114
       Script: {instanceID: 22386}
     - Class: 114
@@ -292,50 +295,56 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 72
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16728}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 17330}
+      Script: {instanceID: 17326}
     - Class: 114
-      Script: {instanceID: 17546}
+      Script: {instanceID: 17544}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 17776}
     - Class: 114
-      Script: {instanceID: 17984}
+      Script: {instanceID: 17982}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18288}
     - Class: 114
-      Script: {instanceID: 18738}
+      Script: {instanceID: 18736}
     - Class: 114
-      Script: {instanceID: 19130}
+      Script: {instanceID: 19128}
     - Class: 114
-      Script: {instanceID: 19314}
+      Script: {instanceID: 19312}
     - Class: 114
-      Script: {instanceID: 19570}
+      Script: {instanceID: 19568}
     - Class: 114
-      Script: {instanceID: 19854}
+      Script: {instanceID: 19852}
     - Class: 114
-      Script: {instanceID: 20002}
+      Script: {instanceID: 20000}
     - Class: 114
-      Script: {instanceID: 20258}
+      Script: {instanceID: 20256}
     - Class: 114
-      Script: {instanceID: 20294}
+      Script: {instanceID: 20292}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 20306}
     - Class: 114
-      Script: {instanceID: 20858}
+      Script: {instanceID: 20856}
     - Class: 114
-      Script: {instanceID: 21016}
+      Script: {instanceID: 21014}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21340}
     - Class: 114
       Script: {instanceID: 22386}
     - Class: 114
@@ -347,6 +356,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -459,6 +472,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 0a35e13dff3a94cb076cb40268668a5f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FallingObject
   - hash:
       serializedVersion: 2
       Hash: ff086b2fc4609f8b094e7c0435c6db0a
@@ -677,7 +696,7 @@ ScriptsOnlyBuild:
     className: TextMeshPro
   - hash:
       serializedVersion: 2
-      Hash: 3f9c53c72387d62fa50f8f9dc3feb2da
+      Hash: 7c57ea8cef4ef2f31dd676dc497b04f7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ObjectSpawner
@@ -1019,10 +1038,10 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: a89c1a26293ebf240a1d5220f9a44710
+      Hash: 416fa2960d833f33f5731384a5f626be
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: Ball
+    className: FallingBallScript
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1049,7 +1068,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: cc60ebecec04ca327261e23f3fb0240a
+      Hash: 31515f7f36212cd91b373a9308b071a8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Counter
@@ -1215,6 +1234,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMoveMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointSpawner
   - hash:
       serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
