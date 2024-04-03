@@ -153,6 +153,7 @@ MonoBehaviour:
   _destroyParticle: {fileID: 3722878639169158883}
   _newParent: {fileID: 0}
   _value: 3
+  _isCoin: 0
 --- !u!1 &5974738128055783260
 GameObject:
   m_ObjectHideFlags: 0
