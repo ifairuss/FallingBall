@@ -3,10 +3,8 @@
 public class ObjectSpawner : MonoBehaviour
 {
     [Header("GameObject")]
-    [SerializeField] private GameObject[] _allSpawnPosition;
-    [SerializeField] private GameObject[] _allBall;
+    [SerializeField] private GameObject[] _allVariableSpawn;
     [SerializeField] private GameObject _spawnPosition;
-    [SerializeField] private GameObject _ball;
 
     [Header("SettingSpawn")]
     [SerializeField] private float _delaySpawn;
@@ -19,17 +17,15 @@ public class ObjectSpawner : MonoBehaviour
 
     private void Update()
     {
-        var spawnValue = Random.Range(0, _allSpawnPosition.Length);
-        var ballValue = Random.Range(0, _allBall.Length);
+        var spawnValue = Random.Range(0, _allVariableSpawn.Length);
 
         ComplicationOfSpawner();
 
         if (_delaySpawn <= 0f)
         {
-            _ball = _allBall[ballValue];
-            _spawnPosition = _allSpawnPosition[spawnValue];
+            _spawnPosition = _allVariableSpawn[spawnValue];
 
-            Instantiate(_ball, _spawnPosition.transform.position, Quaternion.identity);
+            Instantiate(_spawnPosition, _spawnPosition.transform.position, Quaternion.identity);
 
             _delaySpawn = Delay;
         }
@@ -41,7 +37,7 @@ public class ObjectSpawner : MonoBehaviour
 
     private void ComplicationOfSpawner()
     {
-        if (Delay > 1f)
+        if (Delay > 0.8f)
         {
             if (_timerTime <= 0)
             {
@@ -55,7 +51,7 @@ public class ObjectSpawner : MonoBehaviour
         }
         else
         {
-            Delay = Mathf.Max(Delay, 1f);
+            Delay = Mathf.Max(Delay, 0.8f);
         }
     }
 }

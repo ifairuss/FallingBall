@@ -15,7 +15,6 @@ public class ButtonManagerMenu : MonoBehaviour
     [SerializeField] private Image _buttonCoins;
     [SerializeField] private Image _buttonAdvertising;
 
-
     private void Start()
     {
         Time.timeScale = 1f;

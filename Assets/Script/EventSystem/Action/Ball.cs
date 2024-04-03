@@ -52,7 +52,7 @@ public class Ball : MonoBehaviour
 
     private void ComplicationOfBallSpeed()
     {
-        if (_value > 1)
+        if (_value > 14)
         {
            switch (_spawner.Delay)
            {
@@ -71,11 +71,14 @@ public class Ball : MonoBehaviour
                 case 1f:
                     _value = 12;
                     break;
-           }
+                case 0.8f:
+                    _value = 14;
+                    break;
+            }
         }
         else
         {
-            _value = 1;
+            _value = 14;
         }
     }
 }

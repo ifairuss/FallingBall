@@ -61,7 +61,7 @@ public class Shot : MonoBehaviour
 
     private void Simplification()
     {
-        if (_timeReload > 0.4f)
+        if (_timeReload > 0.5f)
         {
             if (_timerTime <= 0)
             {
@@ -75,7 +75,7 @@ public class Shot : MonoBehaviour
         }
         else
         {
-            _timeReload = 0.4f;
+            _timeReload = 0.5f;
         }
     }
 
