@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class FallingObject : MonoBehaviour
+public class FallingObjectScript : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] private LayerMask CollisionMask;
@@ -11,6 +9,7 @@ public class FallingObject : MonoBehaviour
 
     [Header("Characteristics")]
     [SerializeField] private int _value = 3;
+    [SerializeField] private bool _isCoin = false;
 
 
     private Rigidbody _body;
@@ -36,7 +35,15 @@ public class FallingObject : MonoBehaviour
             Destroy(gameObject);
             _destroyParticle.Play();
             Destroy(_destroyParticle.gameObject, 1f);
-            _counter.CounterScore++;
+            if (_isCoin == true)
+            {
+                _counter.CoutnerMoney++;
+            }
+            else
+            {
+                _counter.CounterScore++;
+            }
+
         }
     }
 
@@ -48,7 +55,14 @@ public class FallingObject : MonoBehaviour
             Destroy(gameObject);
             _destroyParticle.Play();
             Destroy(_destroyParticle.gameObject, 1f);
-            _counter.CounterHealth--;
+            if (_isCoin == true)
+            {
+                _counter.CoutnerMoney--;
+            }
+            else
+            {
+                _counter.CounterHealth--;
+            }
         }
     }
 
@@ -56,8 +70,8 @@ public class FallingObject : MonoBehaviour
     {
         if (_value > 14)
         {
-            switch (_spawner.Delay)
-            {
+           switch (_spawner.Delay)
+           {
                 case 3f:
                     _value = 4;
                     break;

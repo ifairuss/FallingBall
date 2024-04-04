@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 398590800}
-  m_IndirectSpecularColor: {r: 0.054795697, g: 0.13468039, b: 0.04706785, a: 1}
+  m_IndirectSpecularColor: {r: 0.06638508, g: 0.15105787, b: 0.05826278, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2000,6 +2000,7 @@ GameObject:
   - component: {fileID: 942703317}
   - component: {fileID: 942703316}
   - component: {fileID: 942703318}
+  - component: {fileID: 942703319}
   m_Layer: 0
   m_Name: ComponentManager
   m_TagString: Untagged
@@ -2053,14 +2054,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ebda99cf3b78843a558dae2e2b7a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameOverPanel: {fileID: 963129027}
   _countTextScore: {fileID: 1269339495}
   _countTextHealth: {fileID: 895138642}
-  _countTextScoreGameOver: {fileID: 1105542423}
   _countTextMoney: {fileID: 681710082}
   CounterScore: 0
-  CounterHealth: 2
   CoutnerMoney: 0
+  CounterHealth: 2
+--- !u!114 &942703319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942703315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb0477b6f2b69d4da56a11f41a78bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverPanel: {fileID: 963129027}
+  _countTextScoreGameOver: {fileID: 1105542423}
+  _countTextMoneyGameOver: {fileID: 1245598380}
 --- !u!1 &963129027
 GameObject:
   m_ObjectHideFlags: 0
