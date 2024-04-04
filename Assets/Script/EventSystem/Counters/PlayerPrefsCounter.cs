@@ -14,6 +14,11 @@ public class PlayerPrefsCounter : MonoBehaviour
         PlayerPrefsSave();
     }
 
+    private void Update()
+    {
+        DisplayText();
+    }
+
     public void PlayerPrefsSave()
     {
         int scoreSave = PlayerPrefs.GetInt("MainGameScore");
@@ -26,6 +31,7 @@ public class PlayerPrefsCounter : MonoBehaviour
             _bestScore = scoreSave;
 
             PlayerPrefs.SetInt("BestScoreSave", _bestScore);
+            PlayerPrefs.SetInt("MainGameScore", 0);
         }
 
         if (moneySave != 0)
@@ -33,8 +39,12 @@ public class PlayerPrefsCounter : MonoBehaviour
             _moneyEarned += moneySave;
 
             PlayerPrefs.SetInt("MoneyEarnedSave", _moneyEarned);
+            PlayerPrefs.SetInt("MainGameMoney", 0);
         }
+    }
 
+    private void DisplayText()
+    {
         _bestScoreDisplayText.text = _bestScore.ToString();
         _moneyEarnedDisplayText.text = _moneyEarned.ToString();
     }

@@ -5,8 +5,10 @@ ScriptsOnlyBuild:
     - ButtonManagerMenu
     - Counter
     - DelayedDestroy
-    - FallingBallScript
+    - FallingObjectScript
+    - GameOver
     - ObjectSpawner
+    - PlayerPrefsCounter
     - PointSpawner
     - Shot
     - SkyBoxMaterialRotation
@@ -55,7 +57,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Text
   serializedClasses:
     Unity.Postprocessing.Runtime:
@@ -97,6 +102,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -109,6 +115,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
@@ -117,6 +124,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: YouTube
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMenu
+    methodName: ShopSwitchSkins
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchCoins
@@ -199,7 +209,7 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16724}
+      Script: {instanceID: 16726}
     - Class: 114
       Script: {instanceID: 17544}
     - Class: 114
@@ -239,13 +249,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21340}
     - Class: 114
-      Script: {instanceID: 22310}
+      Script: {instanceID: 22384}
     - Class: 114
-      Script: {instanceID: 22386}
+      Script: {instanceID: 22714}
     - Class: 114
-      Script: {instanceID: 22716}
+      Script: {instanceID: 22864}
     - Class: 114
-      Script: {instanceID: 22866}
+      Script: {instanceID: 23204}
+    - Class: 114
+      Script: {instanceID: 23208}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -310,9 +322,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16724}
+      Script: {instanceID: 16726}
     - Class: 114
-      Script: {instanceID: 17326}
+      Script: {instanceID: 17328}
     - Class: 114
       Script: {instanceID: 17544}
     - Class: 114
@@ -326,11 +338,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19128}
     - Class: 114
+      Script: {instanceID: 19298}
+    - Class: 114
       Script: {instanceID: 19312}
     - Class: 114
       Script: {instanceID: 19568}
     - Class: 114
       Script: {instanceID: 19852}
+    - Class: 114
+      Script: {instanceID: 19966}
     - Class: 114
       Script: {instanceID: 20000}
     - Class: 114
@@ -346,9 +362,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21340}
     - Class: 114
-      Script: {instanceID: 22386}
+      Script: {instanceID: 22384}
     - Class: 114
-      Script: {instanceID: 22716}
+      Script: {instanceID: 22404}
+    - Class: 114
+      Script: {instanceID: 22714}
+    - Class: 114
+      Script: {instanceID: 23200}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -356,10 +376,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -472,12 +488,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RawImage
-  - hash:
-      serializedVersion: 2
-      Hash: 0a35e13dff3a94cb076cb40268668a5f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FallingObject
   - hash:
       serializedVersion: 2
       Hash: ff086b2fc4609f8b094e7c0435c6db0a
@@ -756,7 +766,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: 7e197929bdee5e36b56640a9ea4807d7
+      Hash: 0a3f66a47285174801996a5fe963344e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMenu
@@ -1038,10 +1048,10 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 416fa2960d833f33f5731384a5f626be
+      Hash: 722daf18ebd8daa01470e9c8f4dc3551
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: FallingBallScript
+    className: FallingObjectScript
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1068,7 +1078,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 31515f7f36212cd91b373a9308b071a8
+      Hash: f636a2432eb29dcab8772f347a3a2357
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Counter
@@ -1236,12 +1246,6 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PointSpawner
-  - hash:
-      serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1354,6 +1358,30 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c2dc6788bf052d2328f19b24fcf9a53e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerPrefsCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 9fa908c5bb3fda934b5c1c8b6b37bb87
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameOver
+  - hash:
+      serializedVersion: 2
+      Hash: 78e1172f2909a399150d170cbf8ed986
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DeleteSave
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

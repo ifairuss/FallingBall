@@ -386,7 +386,7 @@ Payload for "WriteText C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/A
 
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <color name="staticSplashScreenBackgroundColor">#FFFFFF</color>
+  <color name="staticSplashScreenBackgroundColor">#E2F5E2</color>
 </resources>    
 
 Payload for "WriteText C:/Users/limaz/Documents/GitHub/FallingBall/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/values/strings.xml"

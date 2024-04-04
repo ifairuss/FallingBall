@@ -12,8 +12,10 @@ public class ButtonManagerMainGame : MonoBehaviour
         _pausePanel.SetActive(false);
     }
 
-    public void Menu()
+    public void Menu(Counter counter)
     {
+        PlayerPrefs.SetInt("MainGameScore", counter.CounterScore);
+        PlayerPrefs.SetInt("MainGameMoney", counter.CoutnerMoney);
         SceneManager.LoadScene("Menu");
     }
 

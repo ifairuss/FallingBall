@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="staticSplashScreenBackgroundColor">#FFFFFF</color>
+    <color name="staticSplashScreenBackgroundColor">#E2F5E2</color>
     <item name="unitySurfaceView" type="id"/>
     <string name="FreeformWindowOrientation_landscape"/>
     <string name="FreeformWindowOrientation_portrait"/>

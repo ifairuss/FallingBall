@@ -9,11 +9,13 @@ public class ButtonManagerMenu : MonoBehaviour
     [SerializeField] private GameObject _settingPanel;
 
     [Header("PanelShop")]
-    [SerializeField] private GameObject _shopPanelCoins;
+    [SerializeField] private GameObject _shopBonus;
     [SerializeField] private GameObject _shopAdvertising;
+    [SerializeField] private GameObject _shopSkins;
 
-    [SerializeField] private Image _buttonCoins;
+    [SerializeField] private Image _buttonBonus;
     [SerializeField] private Image _buttonAdvertising;
+    [SerializeField] private Image _buttonSkins;
 
     private void Start()
     {
@@ -65,8 +67,10 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void ShopSwitchAdvertising()
     {
-        _shopPanelCoins.SetActive(false);
-        _buttonCoins.color = new Color(0, 0, 0, 0.35f);
+        _shopBonus.SetActive(false);
+        _shopSkins.SetActive(false);
+        _buttonBonus.color = new Color(0, 0, 0, 0.35f);
+        _buttonSkins.color = new Color(0, 0, 0, 0.35f);
         _buttonAdvertising.color = new Color(0, 0, 0, 0.6f);
         _shopAdvertising.SetActive(true);
     }
@@ -74,8 +78,20 @@ public class ButtonManagerMenu : MonoBehaviour
     public void ShopSwitchCoins()
     {
         _shopAdvertising.SetActive(false);
-        _buttonCoins.color = new Color(0, 0, 0, 0.6f);
+        _shopSkins.SetActive(false);
+        _buttonBonus.color = new Color(0, 0, 0, 0.6f);
         _buttonAdvertising.color = new Color(0, 0, 0, 0.35f);
-        _shopPanelCoins.SetActive(true);
+        _buttonSkins.color = new Color(0, 0, 0, 0.35f);
+        _shopBonus.SetActive(true);
+    }
+
+    public void ShopSwitchSkins()
+    {
+        _shopAdvertising.SetActive(false);
+        _shopBonus.SetActive(false);
+        _buttonSkins.color = new Color(0, 0, 0, 0.6f);
+        _buttonAdvertising.color = new Color(0, 0, 0, 0.35f);
+        _buttonBonus.color = new Color(0, 0, 0, 0.35f);
+        _shopSkins.SetActive(true);
     }
 }
