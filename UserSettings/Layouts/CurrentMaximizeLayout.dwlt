@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 56556
+  controlID: 68778
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - C:\Users\limaz\Documents\GitHub\FallingBall\Library\PlayModeViewStates\4dc8dc9155c2efd4b8c3ca3ba18334f2
+  - C:\Users\limaz\Documents\GitHub\FallingBall\Library\PlayModeViewStates\29a501e0be8da034e93ded4fe40630be
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 56557
+  controlID: 68779
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 56558
+  controlID: 68780
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,8 +195,8 @@ MonoBehaviour:
     y: 0
     width: 584
     height: 657
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -599,9 +599,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 838.17395, y: 643.1871, z: 106.851265}
+    m_Target: {x: 474.48422, y: 1023.59564, z: 163.75635}
     speed: 2
-    m_Value: {x: 838.17395, y: 643.1871, z: 106.851265}
+    m_Value: {x: 474.48422, y: 1023.59564, z: 163.75635}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -649,15 +649,15 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.113744766, y: -0.011921791, z: 0.0013649269, w: 0.9934384}
     speed: 2
-    m_Value: {x: -0.11374476, y: 0.01192179, z: -0.0013649268, w: -0.99343836}
+    m_Value: {x: 0.11374467, y: -0.011921781, z: 0.0013649258, w: 0.9934376}
   m_Size:
-    m_Target: 1096.723
+    m_Target: 763.2157
     speed: 2
-    m_Value: 1148.4011
+    m_Value: 763.2157
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 0.9453
     m_SpeedNormalized: 0.47
@@ -1632,8 +1632,8 @@ MonoBehaviour:
     y: 657
     width: 1030
     height: 282
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -1697,7 +1697,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 56599
+  controlID: 68839
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1717,8 +1717,8 @@ MonoBehaviour:
     y: 0
     width: 392
     height: 376
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -1761,9 +1761,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1e0c0100
-      m_LastClickedID: 68638
-      m_ExpandedIDs: 4a8bfaff96f8faffee04fbff7e9ffbff0277fdffbc77fdff4e78fdff1279fdffb879fdff7a7afdff387bfdff00a2feffeef7ffffe25e00001c5f0000505f0000685f00006e5f0000aaee0000c8ee000048ef0000eeef00007e0e0100
+      m_SelectedIDs: 58200300
+      m_LastClickedID: 204888
+      m_ExpandedIDs: f2eff5ff6222f6ff54baf6ff56baf6ff5426f7ffb6a5f7ffcc24f8ff0435f8ff1c49f8ffa657f8fffe77f8fffea5f8fff0e6fdff68ebfdff0e37feff9e76feff9877feff3a7dfeff1626ffff90a4ffff70f4ffff00fbffff54640000e064000098e0000020e20000aae3000076e5000006f5000056f50000aaf50000f8f50000f4100100203a01007a3d0100243f0100a4410100a8970100701c0300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1858,7 +1858,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1866,16 +1866,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 48
   m_LastFolders:
-  - Assets/Script
+  - Assets/Scenes
   m_LastFoldersGridSize: 48
   m_LastProjectPath: C:\Users\limaz\Documents\GitHub\FallingBall
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a4600000
-    m_LastClickedID: 24740
-    m_ExpandedIDs: 0000000096600000986000009a6000009c6000009e600000a0600000a2600000a4600000a660000000ca9a3b
+    m_SelectedIDs: 7e630000
+    m_LastClickedID: 25470
+    m_ExpandedIDs: 000000005c6300005e63000060630000626300006463000066630000686300006a6300006c63000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1903,7 +1903,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000096600000986000009a6000009c6000009e600000a0600000a2600000a4600000a660000000ca9a3b
+    m_ExpandedIDs: 000000005c6300005e63000060630000626300006463000066630000686300006a6300006c63000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1928,10 +1928,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1e0c0100
-    m_LastClickedInstanceID: 68638
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 1ea50000ccb80100ce5a0000f45a0000d461000044610000d26e0000f26200002c6300007e87030080650000c2780000e863000092670000a8af00007cd30100b6cc01003264000020d5010010d501005ae3010090f901004c8c00005c870000768700006e5e0000aa6d0000be6d0000e65d0000625d000000000000
+    m_SelectedInstanceIDs: 58200300
+    m_LastClickedInstanceID: 204888
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 1ea50000ccb80100ce5a0000f45a0000d461000044610000d26e0000f26200002c6300007e87030080650000c2780000e863000092670000a8af00007cd30100b6cc01003264000020d5010010d501005ae3010090f901004c8c00005c870000768700006e5e0000aa6d0000be6d0000e65d0000625d000000000000821c0300
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

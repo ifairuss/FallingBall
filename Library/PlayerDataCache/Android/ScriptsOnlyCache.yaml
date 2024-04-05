@@ -141,7 +141,7 @@ ScriptsOnlyBuild:
     methodName: LeaderBord
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
-    methodName: MainGame
+    methodName: Play
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: SettingOFF
@@ -153,7 +153,7 @@ ScriptsOnlyBuild:
     methodName: SettingON
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
-    methodName: MainGame
+    methodName: BonusHealth
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: ResumeGame
@@ -162,7 +162,7 @@ ScriptsOnlyBuild:
     methodName: PauseOFF
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
-    methodName: MainGame
+    methodName: ResetGame
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: Menu
@@ -209,55 +209,55 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18216}
+      Script: {instanceID: 18220}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18728}
+      Script: {instanceID: 18732}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19072}
+      Script: {instanceID: 19076}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20548}
+      Script: {instanceID: 20552}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 20884}
+      Script: {instanceID: 20888}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 21250}
     - Class: 114
-      Script: {instanceID: 21340}
+      Script: {instanceID: 21268}
     - Class: 114
-      Script: {instanceID: 22384}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22714}
+      Script: {instanceID: 22318}
     - Class: 114
-      Script: {instanceID: 22864}
+      Script: {instanceID: 22394}
     - Class: 114
-      Script: {instanceID: 23204}
+      Script: {instanceID: 22726}
     - Class: 114
-      Script: {instanceID: 23208}
+      Script: {instanceID: 22876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,53 +322,53 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17328}
+      Script: {instanceID: 17332}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19128}
+      Script: {instanceID: 19132}
     - Class: 114
-      Script: {instanceID: 19298}
+      Script: {instanceID: 19302}
     - Class: 114
-      Script: {instanceID: 19312}
+      Script: {instanceID: 19316}
     - Class: 114
-      Script: {instanceID: 19568}
+      Script: {instanceID: 19572}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 19966}
+      Script: {instanceID: 19970}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21340}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22384}
+      Script: {instanceID: 22394}
     - Class: 114
-      Script: {instanceID: 22404}
+      Script: {instanceID: 22414}
     - Class: 114
-      Script: {instanceID: 22714}
+      Script: {instanceID: 22478}
     - Class: 114
-      Script: {instanceID: 23200}
+      Script: {instanceID: 22726}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -766,7 +766,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: 0a3f66a47285174801996a5fe963344e
+      Hash: e8daa3db612a492d0b8352200e8a1ab4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMenu
@@ -1078,10 +1078,16 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f636a2432eb29dcab8772f347a3a2357
+      Hash: 187607287f5497b81c9f9f493b0fcde7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Counter
+  - hash:
+      serializedVersion: 2
+      Hash: 9fa908c5bb3fda934b5c1c8b6b37bb87
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -1228,6 +1234,12 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 78e1172f2909a399150d170cbf8ed986
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DeleteSave
+  - hash:
+      serializedVersion: 2
       Hash: 5ebc58ec194dd44630b25fcc270ad4af
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1244,6 +1256,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMoveMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointSpawner
   - hash:
       serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
@@ -1268,6 +1286,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: c2dc6788bf052d2328f19b24fcf9a53e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerPrefsCounter
   - hash:
       serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
@@ -1358,30 +1382,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: c2dc6788bf052d2328f19b24fcf9a53e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerPrefsCounter
-  - hash:
-      serializedVersion: 2
-      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PointSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: 9fa908c5bb3fda934b5c1c8b6b37bb87
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameOver
-  - hash:
-      serializedVersion: 2
-      Hash: 78e1172f2909a399150d170cbf8ed986
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DeleteSave
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

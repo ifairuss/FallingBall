@@ -9,7 +9,7 @@ public class PointSpawner : MonoBehaviour
 
     private GameObject _ball;
 
-    private void Start()
+    private void Awake()
     {
         var ballValue = Random.Range(0, _allBall.Length);
 

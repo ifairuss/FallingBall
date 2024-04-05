@@ -7,6 +7,8 @@ public class ButtonManagerMenu : MonoBehaviour
     [Header("Panel")]
     [SerializeField] private GameObject _shopPanel;
     [SerializeField] private GameObject _settingPanel;
+    [SerializeField] private GameObject _buttonPanel;
+    [SerializeField] private GameObject _indicatorsPanel;
 
     [Header("PanelShop")]
     [SerializeField] private GameObject _shopBonus;
@@ -22,10 +24,13 @@ public class ButtonManagerMenu : MonoBehaviour
         Time.timeScale = 1f;
         _settingPanel.SetActive(false);
         _shopPanel.SetActive(false);
+        _indicatorsPanel.SetActive(true);
+        _buttonPanel.SetActive(true);
     }
 
-    public void MainGame()
+    public void Play()
     {
+        PlayerPrefs.SetInt("MainGameSaveMoney", 0);
         SceneManager.LoadScene("MainGame");
     }
 
@@ -47,21 +52,29 @@ public class ButtonManagerMenu : MonoBehaviour
     public void SettingON()
     {
         _settingPanel.SetActive(true);
+        _buttonPanel.SetActive(false);
+        _indicatorsPanel.SetActive(false);
     }
 
     public void SettingOFF()
     {
         _settingPanel.SetActive(false);
+        _buttonPanel.SetActive(true);
+        _indicatorsPanel.SetActive(true);
     }
 
     public void ShopON()
     {
         _shopPanel.SetActive(true);
+        _buttonPanel.SetActive(false);
+        _indicatorsPanel.SetActive(false);
     }
 
     public void ShopOFF()
     {
         ShopSwitchCoins();
+        _buttonPanel.SetActive(true);
+        _indicatorsPanel.SetActive(true);
         _shopPanel.SetActive(false);
     }
 

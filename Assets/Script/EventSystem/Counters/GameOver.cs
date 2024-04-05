@@ -8,12 +8,8 @@ public class GameOver : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _countTextScoreGameOver;
     [SerializeField] private TextMeshProUGUI _countTextMoneyGameOver;
 
-    private Counter _counter;
-
     private void Start()
     {
-        _counter = GetComponent<Counter>();
-
         Time.timeScale = 1f;
 
         _gameOverPanel.SetActive(false);
@@ -21,21 +17,21 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        GameOverPanel(_counter);
+        GameOverPanel();
     }
 
-    private void GameOverPanel(Counter counter)
+    private void GameOverPanel()
     {
-        if (counter.CounterHealth <= 0)
+        if (Counter.CounterHealth <= 0)
         {
-            PlayerPrefs.SetInt("MainGameScore", counter.CounterScore);
-            PlayerPrefs.SetInt("MainGameMoney", counter.CoutnerMoney);
+            PlayerPrefs.SetInt("MainGameScore", Counter.CounterScore);
+            PlayerPrefs.SetInt("MainGameMoney", Counter.CounterMoney);
             _gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
         }
 
-        _countTextScoreGameOver.text = _counter.CounterScore.ToString();
-        _countTextMoneyGameOver.text = _counter.CoutnerMoney.ToString();
+        _countTextScoreGameOver.text = Counter.CounterScore.ToString();
+        _countTextMoneyGameOver.text = Counter.CounterMoney.ToString();
     }
 
 }

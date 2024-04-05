@@ -8,23 +8,19 @@ public class FallingObjectScript : MonoBehaviour
     [SerializeField] private Transform _newParent;
 
     [Header("Characteristics")]
-    [SerializeField] private int _value = 3;
+    [SerializeField] private int _value = 2;
     [SerializeField] private bool _isCoin = false;
 
-
     private Rigidbody _body;
-    private Counter _counter;
     private ObjectSpawner _spawner;
 
     private void Start()
     {
         _body = GetComponent<Rigidbody>();
-        _counter = FindObjectOfType<Counter>();
         _spawner = FindObjectOfType<ObjectSpawner>();
 
-        ComplicationOfBallSpeed();
-
-        _body.mass = _value;
+        _value = ComplicationOfBallSpeed();
+        _body.drag = _value;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -37,11 +33,11 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(_destroyParticle.gameObject, 1f);
             if (_isCoin == true)
             {
-                _counter.CoutnerMoney++;
+                Counter.CounterMoney++;
             }
             else
             {
-                _counter.CounterScore++;
+                Counter.CounterScore++;
             }
 
         }
@@ -57,44 +53,27 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(_destroyParticle.gameObject, 1f);
             if (_isCoin == true)
             {
-                _counter.CoutnerMoney--;
+                Counter.CounterMoney--;
             }
             else
             {
-                _counter.CounterHealth--;
+                Counter.CounterHealth--;
             }
         }
     }
 
-    private void ComplicationOfBallSpeed()
+    private int ComplicationOfBallSpeed()
     {
-        if (_value > 14)
+        if (_value > 1)
         {
-           switch (_spawner.Delay)
-           {
-                case 3f:
-                    _value = 4;
-                    break;
-                case 2.5f:
-                    _value = 6;
-                    break;
-                case 2f:
-                    _value = 8;
-                    break;
-                case 1.5f:
-                    _value = 10;
-                    break;
-                case 1f:
-                    _value = 12;
-                    break;
-                case 0.8f:
-                    _value = 14;
-                    break;
-            }
+            if (_spawner.Delay <= 2.5f) { _value = 2;}
+            if (_spawner.Delay <= 1.5f) { _value = 1; }
         }
         else
         {
-            _value = 14;
+            _value = 1;
         }
+
+        return _value;
     }
 }

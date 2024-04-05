@@ -12,22 +12,49 @@ public class ButtonManagerMainGame : MonoBehaviour
         _pausePanel.SetActive(false);
     }
 
-    public void Menu(Counter counter)
-    {
-        PlayerPrefs.SetInt("MainGameScore", counter.CounterScore);
-        PlayerPrefs.SetInt("MainGameMoney", counter.CoutnerMoney);
+    public void Menu()
+    {      
+        int _saveSceneManey = PlayerPrefs.GetInt("MainGameSaveMoney");
+        int _sceneMoney = Counter.CounterMoney;
+
+        if (_saveSceneManey != 0)
+        {           
+            if(_sceneMoney != 0)
+            {
+                _saveSceneManey += _sceneMoney;
+            }
+
+            PlayerPrefs.SetInt("MainGameMoney", _saveSceneManey);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("MainGameMoney", Counter.CounterMoney);
+        }
+
+        PlayerPrefs.SetInt("MainGameScore", Counter.CounterScore);
+
         SceneManager.LoadScene("Menu");
     }
 
-    public void MainGame()
+    public void ResetGame()
     {
+        int _sceneMoney = PlayerPrefs.GetInt("MainGameMoney");
+        int _saveSceneManey = PlayerPrefs.GetInt("MainGameSaveMoney");
+
+
+        if(_sceneMoney != 0)
+        {
+            _saveSceneManey += _sceneMoney;
+        }
+
+        PlayerPrefs.SetInt("MainGameMoney", 0);
+        PlayerPrefs.SetInt("MainGameSaveMoney", _saveSceneManey);
+
         SceneManager.LoadScene("MainGame");
     }
 
-    public void ResumeGame()
-    {
-        Debug.Log("Перепрошую вашу рекламу не вдалося загрузити..");
-    }
+    public void ResumeGame() => Debug.Log("Перепрошую вашу рекламу не вдалося загрузити..");
+    public void BonusHealth() => Counter.CounterHealth++;
 
     public void PauseON()
     {

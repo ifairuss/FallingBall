@@ -116,7 +116,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2383179283066561361}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 2
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -153,6 +153,7 @@ MonoBehaviour:
   _destroyParticle: {fileID: 7980065650612209217}
   _newParent: {fileID: 0}
   _value: 3
+  _isCoin: 0
 --- !u!1 &4312908418070912159
 GameObject:
   m_ObjectHideFlags: 0
