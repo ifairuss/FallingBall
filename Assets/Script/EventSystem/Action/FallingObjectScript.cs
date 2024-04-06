@@ -10,6 +10,7 @@ public class FallingObjectScript : MonoBehaviour
     [Header("Characteristics")]
     [SerializeField] private int _value = 2;
     [SerializeField] private bool _isCoin = false;
+    [SerializeField] private bool _isHearth = false;
 
     public static bool FallingObjectIsActive = false;
 
@@ -44,6 +45,10 @@ public class FallingObjectScript : MonoBehaviour
             if (_isCoin == true)
             {
                 Counter.CounterMoney++;
+            }
+            else if (_isHearth == true)
+            {
+                Counter.CounterHealth++;
             }
             else
             {

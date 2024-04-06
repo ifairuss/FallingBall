@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameOver
   - Coin
+  - Haerth
   layers:
   - Default
   - TransparentFX
