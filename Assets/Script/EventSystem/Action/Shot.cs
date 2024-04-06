@@ -20,6 +20,8 @@ public class Shot : MonoBehaviour
     [SerializeField] private float _cooldownTimer = 25f;
     [SerializeField] private float _timerTime = 25f;
 
+    public static bool ShootIsActive = true;
+
     private void Update()
     {
         BulletSpawnProces();
@@ -28,32 +30,35 @@ public class Shot : MonoBehaviour
 
     private void BulletSpawnProces()
     {
-        if (_timerReloadGun <= 0)
+        if(ShootIsActive == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (_timerReloadGun <= 0)
             {
-                var mousePos = Input.mousePosition;
-
-                var ray = Camera.main.ScreenPointToRay(mousePos);
-
-                var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-
-                var bulletInstantiate = Instantiate(_bullet, worldPos, Quaternion.identity);
-
-                var bulletRB = bulletInstantiate.GetComponent<Rigidbody>();
-
-                if (bulletRB != null)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    bulletRB.AddForce(ray.direction * _force);
-                }
+                    var mousePos = Input.mousePosition;
 
-                _timerReloadGun = _timeReload;
+                    var ray = Camera.main.ScreenPointToRay(mousePos);
+
+                    var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+                    var bulletInstantiate = Instantiate(_bullet, worldPos, Quaternion.identity);
+
+                    var bulletRB = bulletInstantiate.GetComponent<Rigidbody>();
+
+                    if (bulletRB != null)
+                    {
+                        bulletRB.AddForce(ray.direction * _force);
+                    }
+
+                    _timerReloadGun = _timeReload;
+                }
             }
-        }
-        else
-        {
-            _timerReloadGun -= Time.deltaTime;
-            _timerReloadGun = Mathf.Max(_timerReloadGun, 0f);
+            else
+            {
+                _timerReloadGun -= Time.deltaTime;
+                _timerReloadGun = Mathf.Max(_timerReloadGun, 0f);
+            }
         }
 
         _reloadTimerText.text = _timerReloadGun.ToString();

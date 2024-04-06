@@ -6,7 +6,8 @@ public class ButtonManagerMainGame : MonoBehaviour
     [Header("Panel")]
     [SerializeField] private GameObject _pausePanel;
 
-    public GameObject _bonusCoinsPanel;
+    [Header("Button")]
+    public static bool _isDoublingCoinsButton = false;
 
     private void Start()
     {
@@ -30,12 +31,10 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void ResumeGame() => Debug.Log("Перепрошую вашу рекламу не вдалося загрузити..");
     public void BonusHealth() => Counter.CounterHealth++;
-    public void BonusCoins()
+    public void DoublingCoins()
     {
         Counter.CounterMoney = Counter.CounterMoney * 2;
-        _bonusCoinsPanel.SetActive(false);
-
-
+        _isDoublingCoinsButton = true;
     }
 
     #region "Pause-Panel"

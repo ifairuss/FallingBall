@@ -14,23 +14,28 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private float _cooldownTimer = 15f;
     [SerializeField] private float _timerTime = 15f;
 
+    public static bool SpawnerIsActive = true;
+
     private void Update()
     {
         var spawnValue = Random.Range(0, _allVariableSpawn.Length);
 
         ComplicationOfSpawner();
 
-        if (_delaySpawn <= 0f)
+        if(SpawnerIsActive == true)
         {
-            _spawnPosition = _allVariableSpawn[spawnValue];
+            if (_delaySpawn <= 0f)
+            {
+                _spawnPosition = _allVariableSpawn[spawnValue];
 
-            Instantiate(_spawnPosition, _spawnPosition.transform.position, Quaternion.identity);
+                Instantiate(_spawnPosition, _spawnPosition.transform.position, Quaternion.identity);
 
-            _delaySpawn = Delay;
-        }
-        else
-        {
-            _delaySpawn -= 1f * Time.deltaTime;
+                _delaySpawn = Delay;
+            }
+            else
+            {
+                _delaySpawn -= 1f * Time.deltaTime;
+            }
         }
     }
 

@@ -11,6 +11,8 @@ public class FallingObjectScript : MonoBehaviour
     [SerializeField] private int _value = 2;
     [SerializeField] private bool _isCoin = false;
 
+    public static bool FallingObjectIsActive = false;
+
     private Rigidbody _body;
     private ObjectSpawner _spawner;
 
@@ -21,6 +23,14 @@ public class FallingObjectScript : MonoBehaviour
 
         _value = ComplicationOfBallSpeed();
         _body.drag = _value;
+    }
+
+    private void Update()
+    {
+        if (FallingObjectIsActive == true)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
