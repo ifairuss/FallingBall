@@ -8,7 +8,7 @@ public class ButtonManagerMenu : MonoBehaviour
     [SerializeField] private GameObject _shopPanel;
     [SerializeField] private GameObject _settingPanel;
     [SerializeField] private GameObject _buttonPanel;
-    [SerializeField] private GameObject _indicatorsPanel;
+    [SerializeField] private GameObject _countersPanel;
 
     [Header("PanelShop")]
     [SerializeField] private GameObject _shopBonus;
@@ -22,9 +22,11 @@ public class ButtonManagerMenu : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1f;
+
+
         _settingPanel.SetActive(false);
         _shopPanel.SetActive(false);
-        _indicatorsPanel.SetActive(true);
+        _countersPanel.SetActive(true);
         _buttonPanel.SetActive(true);
     }
 
@@ -34,47 +36,43 @@ public class ButtonManagerMenu : MonoBehaviour
         SceneManager.LoadScene("MainGame");
     }
 
-    public void Exit()
-    {
-        Application.Quit();
-    }
-
-    public void YouTube()
-    {
-        Application.OpenURL("https://www.youtube.com/@ifairuss2");
-    }
+    public void Exit() => Application.Quit();
+    public void YouTube() => Application.OpenURL("https://www.youtube.com/@ifairuss2");
 
     public void LeaderBord()
     {
         Debug.Log("To be continued..");
     }
 
+    #region "Panel-Setting"
     public void SettingON()
     {
         _settingPanel.SetActive(true);
         _buttonPanel.SetActive(false);
-        _indicatorsPanel.SetActive(false);
+        _countersPanel.SetActive(false);
     }
 
     public void SettingOFF()
     {
         _settingPanel.SetActive(false);
         _buttonPanel.SetActive(true);
-        _indicatorsPanel.SetActive(true);
+        _countersPanel.SetActive(true);
     }
+    #endregion
 
+    #region "Panel-Shop"
     public void ShopON()
     {
         _shopPanel.SetActive(true);
         _buttonPanel.SetActive(false);
-        _indicatorsPanel.SetActive(false);
+        _countersPanel.SetActive(false);
     }
 
     public void ShopOFF()
     {
         ShopSwitchCoins();
         _buttonPanel.SetActive(true);
-        _indicatorsPanel.SetActive(true);
+        _countersPanel.SetActive(true);
         _shopPanel.SetActive(false);
     }
 
@@ -107,4 +105,5 @@ public class ButtonManagerMenu : MonoBehaviour
         _buttonBonus.color = new Color(0, 0, 0, 0.35f);
         _shopSkins.SetActive(true);
     }
+    #endregion
 }

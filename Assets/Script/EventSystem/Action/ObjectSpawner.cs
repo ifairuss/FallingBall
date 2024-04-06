@@ -14,7 +14,6 @@ public class ObjectSpawner : MonoBehaviour
     [SerializeField] private float _cooldownTimer = 15f;
     [SerializeField] private float _timerTime = 15f;
 
-
     private void Update()
     {
         var spawnValue = Random.Range(0, _allVariableSpawn.Length);

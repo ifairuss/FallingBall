@@ -17,8 +17,8 @@ public class Counter : MonoBehaviour
 
     private void Awake()
     {
-        PlayerPrefs.GetInt("MainGameScore", 0);
-        PlayerPrefs.GetInt("MainGameMoney", 0);
+        PlayerPrefs.GetInt("ScoreSave", 0);
+        PlayerPrefs.GetInt("MoneySave", 0);
 
         CounterScore = 0;
         CounterMoney = 0;

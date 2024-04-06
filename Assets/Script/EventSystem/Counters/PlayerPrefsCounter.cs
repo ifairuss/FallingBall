@@ -10,7 +10,7 @@ public class PlayerPrefsCounter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _moneyEarnedDisplayText;
 
     private void Awake()
-    {     
+    {
         PlayerPrefsSave();
     }
 
@@ -21,8 +21,8 @@ public class PlayerPrefsCounter : MonoBehaviour
 
     public void PlayerPrefsSave()
     {
-        int scoreSave = PlayerPrefs.GetInt("MainGameScore");
-        int moneySave = PlayerPrefs.GetInt("MainGameMoney");
+        int scoreSave = PlayerPrefs.GetInt("ScoreSave");
+        int moneySave = PlayerPrefs.GetInt("MoneySave");
         _bestScore = PlayerPrefs.GetInt("BestScoreSave");
         _moneyEarned = PlayerPrefs.GetInt("MoneyEarnedSave");
 
@@ -31,7 +31,7 @@ public class PlayerPrefsCounter : MonoBehaviour
             _bestScore = scoreSave;
 
             PlayerPrefs.SetInt("BestScoreSave", _bestScore);
-            PlayerPrefs.SetInt("MainGameScore", 0);
+            PlayerPrefs.SetInt("ScoreSave", 0);
         }
 
         if (moneySave != 0)
@@ -39,7 +39,7 @@ public class PlayerPrefsCounter : MonoBehaviour
             _moneyEarned += moneySave;
 
             PlayerPrefs.SetInt("MoneyEarnedSave", _moneyEarned);
-            PlayerPrefs.SetInt("MainGameMoney", 0);
+            PlayerPrefs.SetInt("MoneySave", 0);
         }
     }
 
