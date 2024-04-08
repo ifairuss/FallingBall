@@ -367,6 +367,7 @@
 "Assets/Script/EventSystem/Action/FallingObjectScript.cs"
 "Assets/Script/EventSystem/Action/ObjectSpawner.cs"
 "Assets/Script/EventSystem/Action/PointSpawner.cs"
+"Assets/Script/EventSystem/Action/SelectColor.cs"
 "Assets/Script/EventSystem/Action/Shot.cs"
 "Assets/Script/EventSystem/Action/SkyBoxMaterialRotation.cs"
 "Assets/Script/EventSystem/Counters/Counter.cs"

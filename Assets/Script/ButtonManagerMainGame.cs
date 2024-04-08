@@ -9,9 +9,12 @@ public class ButtonManagerMainGame : MonoBehaviour
     [Header("Button")]
     public static bool _isDoublingCoinsButton = false;
 
+    private bool _limitedResume = false;
+
     private void Start()
     {
         Time.timeScale = 1f;
+        _limitedResume = false;
         _pausePanel.SetActive(false);
     }
 
@@ -29,7 +32,16 @@ public class ButtonManagerMainGame : MonoBehaviour
         SceneManager.LoadScene("MainGame");
     }
 
-    public void ResumeGame() => Debug.Log("Перепрошую вашу рекламу не вдалося загрузити..");
+    public void ResumeGame()
+    {
+        if (_limitedResume == false)
+        {
+            Counter.CounterHealth = 1;
+            _limitedResume = true;
+            Time.timeScale = 1f;
+        }
+    }
+
     public void BonusHealth() => Counter.CounterHealth++;
     public void DoublingCoins()
     {

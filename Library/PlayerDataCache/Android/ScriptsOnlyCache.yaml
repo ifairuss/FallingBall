@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - ObjectSpawner
     - PlayerPrefsCounter
     - PointSpawner
+    - SelectColor
     - Shot
     - SkyBoxMaterialRotation
     Unity.Postprocessing.Runtime.dll:
@@ -123,9 +124,6 @@ ScriptsOnlyBuild:
     methodName: ShopON
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
-    methodName: YouTube
-  - assembly: Assembly-CSharp
-    fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchSkins
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
@@ -147,9 +145,6 @@ ScriptsOnlyBuild:
     methodName: SettingOFF
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
-    methodName: Exit
-  - assembly: Assembly-CSharp
-    fullTypeName: ButtonManagerMenu
     methodName: SettingON
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
@@ -163,6 +158,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: ResetGame
+  - assembly: Assembly-CSharp
+    fullTypeName: ButtonManagerMainGame
+    methodName: DoublingCoins
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: Menu
@@ -253,11 +251,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22318}
     - Class: 114
-      Script: {instanceID: 22394}
+      Script: {instanceID: 22386}
     - Class: 114
-      Script: {instanceID: 22726}
+      Script: {instanceID: 22396}
     - Class: 114
-      Script: {instanceID: 22876}
+      Script: {instanceID: 22728}
+    - Class: 114
+      Script: {instanceID: 22878}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -362,13 +362,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22394}
+      Script: {instanceID: 22396}
     - Class: 114
-      Script: {instanceID: 22414}
+      Script: {instanceID: 22416}
     - Class: 114
-      Script: {instanceID: 22478}
+      Script: {instanceID: 22480}
     - Class: 114
-      Script: {instanceID: 22726}
+      Script: {instanceID: 22728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -766,7 +766,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: e8daa3db612a492d0b8352200e8a1ab4
+      Hash: 5d18840078e7d8465ae44285f81eaeb0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMenu
@@ -970,7 +970,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: bc96303a67ff1497f9d580607c2ca1b0
+      Hash: 36988ffa2eab6a6a52d3d98d92699d64
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SkyBoxMaterialRotation
@@ -1048,7 +1048,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 722daf18ebd8daa01470e9c8f4dc3551
+      Hash: a3a212702276e6400a41b66a4a8c30bc
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FallingObjectScript
@@ -1084,7 +1084,7 @@ ScriptsOnlyBuild:
     className: Counter
   - hash:
       serializedVersion: 2
-      Hash: 9fa908c5bb3fda934b5c1c8b6b37bb87
+      Hash: f5c2c91d5aef008a7ff300c704455951
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameOver
@@ -1258,10 +1258,16 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 2b913c6e4356d5bafe82ac6c4f5b0f4c
+      Hash: 37a63cd0230ad0d0cb3fe7aa91c53c6f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PointSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: e1e9e67b7424cd7e597974fed7e1f6fa
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SelectColor
   - hash:
       serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1

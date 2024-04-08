@@ -4,7 +4,8 @@ public class SkyBoxMaterialRotation : MonoBehaviour
 {
     [SerializeField] private Material _skyBoxMaterialRotates;
 
-    [SerializeField] private float _materialRotation;
+    [SerializeField] private float _startRotation;
+    [SerializeField] private float _rotationSpeed = 1f;
 
     private void Update()
     {
@@ -13,15 +14,15 @@ public class SkyBoxMaterialRotation : MonoBehaviour
 
     private void SkeBoxRotation()
     {
-        _skyBoxMaterialRotates.SetFloat("_Rotation", _materialRotation);
+        _skyBoxMaterialRotates.SetFloat("_Rotation", _startRotation);
 
-        if(_materialRotation >= 0 && _materialRotation <= 360 ) 
+        if(_startRotation >= 0 && _startRotation <= 360 ) 
         {
-            _materialRotation += 1f * Time.deltaTime;
+            _startRotation += _rotationSpeed * Time.deltaTime;
         }
         else
         {
-            _materialRotation = 0f;
+            _startRotation = 0f;
         }
     }
 }

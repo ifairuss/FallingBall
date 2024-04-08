@@ -185,7 +185,7 @@ MonoBehaviour:
   _destroyParticle: {fileID: 1478329363791873412}
   _newParent: {fileID: 0}
   _value: 3
-  _isCoin: 1
+  _typeObject: 2
 --- !u!1 &7220210450463776299
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +228,7 @@ ParticleSystem:
   m_GameObject: {fileID: 7220210450463776299}
   serializedVersion: 8
   lengthInSec: 1
-  simulationSpeed: 1
+  simulationSpeed: 0.8
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -355,7 +355,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -412,20 +412,20 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.0134682655, g: 1, b: 0, a: 1}
-        key1: {r: 1, g: 0.97381866, b: 0, a: 1}
-        key2: {r: 0.827451, g: 0.2423301, b: 0.098039225, a: 0}
-        key3: {r: 1, g: 0, b: 0.9212122, a: 0}
-        key4: {r: 0.44088602, g: 0, b: 1, a: 0}
-        key5: {r: 0.05013609, g: 0, b: 1, a: 0}
+        key0: {r: 1, g: 0.937677, b: 0, a: 1}
+        key1: {r: 0.99311906, g: 1, b: 0.6933962, a: 1}
+        key2: {r: 1, g: 0.7232333, b: 0, a: 0}
+        key3: {r: 1, g: 0.7232333, b: 0, a: 0}
+        key4: {r: 1, g: 0.7232333, b: 0, a: 0}
+        key5: {r: 1, g: 0.7232333, b: 0, a: 0}
         key6: {r: 0, g: 1, b: 0.9415333, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 8096
-        ctime2: 19468
-        ctime3: 31033
-        ctime4: 42598
-        ctime5: 53006
+        ctime1: 33346
+        ctime2: 65150
+        ctime3: 65150
+        ctime4: 65150
+        ctime5: 65150
         ctime6: 65535
         ctime7: 0
         atime0: 0
@@ -438,7 +438,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_ColorSpace: 0
-        m_NumColorKeys: 7
+        m_NumColorKeys: 3
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -797,7 +797,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 4
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1165,7 +1165,7 @@ ParticleSystem:
       time: 0
       countCurve:
         serializedVersion: 2
-        minMaxState: 3
+        minMaxState: 0
         scalar: 100
         minScalar: 50
         maxCurve:
@@ -1239,14 +1239,23 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.74112695
-          value: 0.030769227
+          time: 0.6462783
+          value: 0.55384815
           inSlope: -3.8709414
           outSlope: -3.8709414
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.36846346
+        - serializedVersion: 3
+          time: 0.7116795
+          value: 0
+          inSlope: -2.1897411
+          outSlope: -2.1897411
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
         - serializedVersion: 3
           time: 1
           value: 0
@@ -1293,18 +1302,18 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
+          time: 0.54022217
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -1346,18 +1355,18 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
+          time: 0.63916016
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -1562,7 +1571,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 0.34509805}
+        key1: {r: 1, g: 1, b: 1, a: 0.29411766}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1578,7 +1587,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
+        atime1: 59560
         atime2: 0
         atime3: 0
         atime4: 0
@@ -2669,8 +2678,8 @@ ParticleSystem:
     enabled: 1
     x:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
+      minMaxState: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2722,8 +2731,8 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
+      minMaxState: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -2775,8 +2784,8 @@ ParticleSystem:
         m_RotationOrder: 4
     z:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
+      minMaxState: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5052,7 +5061,7 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
-  m_MeshDistribution: 0
+  m_MeshDistribution: 1
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -5074,7 +5083,7 @@ ParticleSystemRenderer:
   m_VertexStreams: 00010304
   m_UseCustomTrailVertexStreams: 0
   m_TrailVertexStreams: 00010304
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}

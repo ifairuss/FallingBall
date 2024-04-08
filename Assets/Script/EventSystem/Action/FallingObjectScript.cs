@@ -1,5 +1,13 @@
 ﻿using UnityEngine;
 
+
+enum TypeObject
+{
+    None,
+    Ball,
+    Coin
+}
+
 public class FallingObjectScript : MonoBehaviour
 {
     [Header("Components")]
@@ -9,8 +17,9 @@ public class FallingObjectScript : MonoBehaviour
 
     [Header("Characteristics")]
     [SerializeField] private int _value = 2;
-    [SerializeField] private bool _isCoin = false;
-    [SerializeField] private bool _isHearth = false;
+
+    [Header("VariableObject")]
+    [SerializeField] private TypeObject _typeObject = 0;
 
     public static bool FallingObjectIsActive = false;
 
@@ -42,15 +51,11 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(gameObject);
             _destroyParticle.Play();
             Destroy(_destroyParticle.gameObject, 1f);
-            if (_isCoin == true)
+            if (_typeObject == TypeObject.Coin)
             {
                 Counter.CounterMoney++;
             }
-            else if (_isHearth == true)
-            {
-                Counter.CounterHealth++;
-            }
-            else
+            if (_typeObject == TypeObject.Ball)
             {
                 Counter.CounterScore++;
             }
@@ -66,11 +71,11 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(gameObject);
             _destroyParticle.Play();
             Destroy(_destroyParticle.gameObject, 1f);
-            if (_isCoin == true)
+            if (_typeObject == TypeObject.Coin)
             {
                 Counter.CounterMoney--;
             }
-            else
+            if (_typeObject == TypeObject.Ball)
             {
                 Counter.CounterHealth--;
             }

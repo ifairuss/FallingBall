@@ -36,7 +36,6 @@ public class ButtonManagerMenu : MonoBehaviour
         SceneManager.LoadScene("MainGame");
     }
 
-    public void Exit() => Application.Quit();
     public void YouTube() => Application.OpenURL("https://www.youtube.com/@ifairuss2");
 
     public void LeaderBord()

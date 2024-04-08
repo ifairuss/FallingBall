@@ -50,6 +50,14 @@ public class GameOver : MonoBehaviour
                 Time.timeScale = 0f;
             }
         }
+        else
+        {
+            _gameOverPanel.SetActive(false);
+            ButtonManagerMainGame._isDoublingCoinsButton = false;
+            FallingObjectScript.FallingObjectIsActive = false;
+            ObjectSpawner.SpawnerIsActive = true;
+            Shot.ShootIsActive = true;
+        }
 
         _countTextScoreGameOver.text = Counter.CounterScore.ToString();
         _countTextMoneyGameOver.text = Counter.CounterMoney.ToString();
