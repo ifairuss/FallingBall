@@ -102,6 +102,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c43babd265faa3c4a9d9361fc9bd1ef9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4953857619995051314}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c43babd265faa3c4a9d9361fc9bd1ef9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5105521792653326366}
   m_SourcePrefab: {fileID: 100100000, guid: c43babd265faa3c4a9d9361fc9bd1ef9, type: 3}
 --- !u!1 &6131684376020263346 stripped
 GameObject:
@@ -116,8 +119,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6131684376020263346}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -130,7 +133,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 122
@@ -156,3 +159,22 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.040622253
   m_Center: {x: -0.0001514721, y: 0.011927813, z: -4.3991437e-17}
+--- !u!114 &5105521792653326366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131684376020263346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9bebd70b2879a40a7092736f624a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionMask:
+    serializedVersion: 2
+    m_Bits: 8
+  _destroyParticle: {fileID: 0}
+  _newParent: {fileID: 0}
+  _speedFalling: 2
+  _typeObject: 2

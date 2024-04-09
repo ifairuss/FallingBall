@@ -8,6 +8,7 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     [Header("Button")]
     public static bool _isDoublingCoinsButton = false;
+    public bool _isAddHeart = false;
 
     private bool _limitedResume = false;
 
@@ -15,6 +16,7 @@ public class ButtonManagerMainGame : MonoBehaviour
     {
         Time.timeScale = 1f;
         _limitedResume = false;
+        _isAddHeart = false;
         _pausePanel.SetActive(false);
     }
 
@@ -42,7 +44,15 @@ public class ButtonManagerMainGame : MonoBehaviour
         }
     }
 
-    public void BonusHealth() => Counter.CounterHealth++;
+    public void BonusHealth()
+    {
+        if(_isAddHeart == false)
+        {
+            Counter.CounterHealth++;
+            _isAddHeart = true;
+        }
+    }
+
     public void DoublingCoins()
     {
         Counter.CounterMoney = Counter.CounterMoney * 2;

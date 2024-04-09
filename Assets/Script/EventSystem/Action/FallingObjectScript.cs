@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.ConstrainedExecution;
+using UnityEngine;
 
 
 enum TypeObject
@@ -16,7 +17,7 @@ public class FallingObjectScript : MonoBehaviour
     [SerializeField] private Transform _newParent;
 
     [Header("Characteristics")]
-    [SerializeField] private int _value = 2;
+    [SerializeField] private float _speedFalling = 2;
 
     [Header("VariableObject")]
     [SerializeField] private TypeObject _typeObject = 0;
@@ -30,9 +31,6 @@ public class FallingObjectScript : MonoBehaviour
     {
         _body = GetComponent<Rigidbody>();
         _spawner = FindObjectOfType<ObjectSpawner>();
-
-        _value = ComplicationOfBallSpeed();
-        _body.drag = _value;
     }
 
     private void Update()
@@ -41,6 +39,15 @@ public class FallingObjectScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        MoveFallingObject();
+    }
+
+    private void MoveFallingObject()
+    {
+        _speedFalling = ComplicationOfBallSpeed();
+
+        _body.velocity = Vector3.down * _speedFalling;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -82,18 +89,18 @@ public class FallingObjectScript : MonoBehaviour
         }
     }
 
-    private int ComplicationOfBallSpeed()
+    private float ComplicationOfBallSpeed()
     {
-        if (_value > 1)
+        if (_speedFalling < 5)
         {
-            if (_spawner.Delay <= 2.5f) { _value = 2;}
-            if (_spawner.Delay <= 1.5f) { _value = 1; }
+            if (_spawner.Delay <= 2.5f) { _speedFalling = 4f;}
+            if (_spawner.Delay <= 1.5f) { _speedFalling = 5f; }
         }
         else
         {
-            _value = 1;
+            _speedFalling = 5;
         }
 
-        return _value;
+        return _speedFalling;
     }
 }

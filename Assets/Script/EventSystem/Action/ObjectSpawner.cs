@@ -41,7 +41,7 @@ public class ObjectSpawner : MonoBehaviour
 
     private void ComplicationOfSpawner()
     {
-        if (Delay > 0.8f)
+        if (Delay > 1.2f)
         {
             if (_timerTime <= 0)
             {
@@ -55,7 +55,7 @@ public class ObjectSpawner : MonoBehaviour
         }
         else
         {
-            Delay = Mathf.Max(Delay, 0.8f);
+            Delay = Mathf.Max(Delay, 1.2f);
         }
     }
 }
