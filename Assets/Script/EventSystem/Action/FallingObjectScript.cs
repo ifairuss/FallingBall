@@ -6,7 +6,8 @@ enum TypeObject
 {
     None,
     Ball,
-    Coin
+    Coin,
+    Heart
 }
 
 public class FallingObjectScript : MonoBehaviour
@@ -66,6 +67,18 @@ public class FallingObjectScript : MonoBehaviour
             {
                 Counter.CounterScore++;
             }
+            if (_typeObject == TypeObject.Heart)
+            {
+                if(Counter.CounterHealth < 2)
+                {
+                    Counter.CounterHealth++;
+                }
+                else
+                {
+                    Counter.CounterScore++;
+                    Counter.CounterHealth = Mathf.Max(Counter.CounterHealth, 2);
+                }
+            }
 
         }
     }
@@ -85,6 +98,10 @@ public class FallingObjectScript : MonoBehaviour
             if (_typeObject == TypeObject.Ball)
             {
                 Counter.CounterHealth--;
+            }
+            if (_typeObject == TypeObject.Heart)
+            {
+                Counter.CounterScore--;
             }
         }
     }

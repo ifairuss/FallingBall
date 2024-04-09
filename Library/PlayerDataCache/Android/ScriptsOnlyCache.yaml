@@ -1,10 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BonusShop
     - ButtonManagerMainGame
     - ButtonManagerMenu
     - Counter
     - DelayedDestroy
+    - DeleteSave
     - FallingObjectScript
     - GameOver
     - ObjectSpawner
@@ -132,6 +134,9 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchAdvertising
   - assembly: Assembly-CSharp
+    fullTypeName: BonusShop
+    methodName: ClickButtonBuy
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopOFF
   - assembly: Assembly-CSharp
@@ -146,6 +151,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: SettingON
+  - assembly: Assembly-CSharp
+    fullTypeName: DeleteSave
+    methodName: DeleteAllSave
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: BonusHealth
@@ -207,57 +215,57 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18216}
+      Script: {instanceID: 18220}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18728}
+      Script: {instanceID: 18732}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19072}
+      Script: {instanceID: 19076}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20548}
+      Script: {instanceID: 20552}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 20884}
+      Script: {instanceID: 20888}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 21250}
     - Class: 114
-      Script: {instanceID: 21264}
+      Script: {instanceID: 21268}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22314}
+      Script: {instanceID: 22318}
     - Class: 114
-      Script: {instanceID: 22382}
+      Script: {instanceID: 22386}
     - Class: 114
-      Script: {instanceID: 22392}
+      Script: {instanceID: 22396}
     - Class: 114
-      Script: {instanceID: 22724}
+      Script: {instanceID: 22728}
     - Class: 114
-      Script: {instanceID: 22874}
+      Script: {instanceID: 22878}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,53 +330,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17328}
+      Script: {instanceID: 17332}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19128}
+      Script: {instanceID: 19132}
     - Class: 114
-      Script: {instanceID: 19298}
+      Script: {instanceID: 19302}
     - Class: 114
-      Script: {instanceID: 19312}
+      Script: {instanceID: 19316}
     - Class: 114
-      Script: {instanceID: 19568}
+      Script: {instanceID: 19572}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 19966}
+      Script: {instanceID: 19970}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22392}
+      Script: {instanceID: 22108}
     - Class: 114
-      Script: {instanceID: 22412}
+      Script: {instanceID: 22396}
     - Class: 114
-      Script: {instanceID: 22476}
+      Script: {instanceID: 22416}
     - Class: 114
-      Script: {instanceID: 22724}
+      Script: {instanceID: 22480}
+    - Class: 114
+      Script: {instanceID: 22728}
+    - Class: 114
+      Script: {instanceID: 25630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1294,7 +1306,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: c2dc6788bf052d2328f19b24fcf9a53e
+      Hash: d6ae14528b9c987652c3ecc89d525bbc
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerPrefsCounter
@@ -1388,6 +1400,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e4233c0b6f5764e761efb8cda1de964f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BonusShop
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
