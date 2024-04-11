@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -19,6 +21,9 @@ public class ButtonManagerMenu : MonoBehaviour
     [SerializeField] private Image _buttonAdvertising;
     [SerializeField] private Image _buttonSkins;
 
+    [Header("GameComponent")]
+    [SerializeField] private Animator _animatorInterface;
+
     private void Start()
     {
         Time.timeScale = 1f;
@@ -31,6 +36,13 @@ public class ButtonManagerMenu : MonoBehaviour
     }
 
     public void Play()
+    {
+        _animatorInterface.SetTrigger("InterfaceOff");
+
+        Invoke("StartGame", 1);
+    }
+
+    private void StartGame()
     {
         PlayerPrefs.SetInt("MainGameSaveMoney", 0);
         SceneManager.LoadScene("MainGame");
@@ -46,33 +58,74 @@ public class ButtonManagerMenu : MonoBehaviour
     #region "Panel-Setting"
     public void SettingON()
     {
+        _animatorInterface.SetTrigger("InterfaceOff");
+
+        Invoke("SettingOpenPanel", 1f);
+    }
+
+    private void SettingOpenPanel()
+    {
         _settingPanel.SetActive(true);
         _buttonPanel.SetActive(false);
         _countersPanel.SetActive(false);
+
+        _animatorInterface.SetTrigger("SettingOn");
     }
 
-    public void SettingOFF()
+    private void SettingClosePanel()
     {
         _settingPanel.SetActive(false);
         _buttonPanel.SetActive(true);
         _countersPanel.SetActive(true);
+
+        _animatorInterface.SetTrigger("InterfaceOn");
+        _animatorInterface.SetTrigger("Defaulth");
+    }
+
+    public void SettingOFF()
+    {
+        _animatorInterface.SetTrigger("SettingOff");
+        _animatorInterface.SetTrigger("Defaulth");
+
+        Invoke("SettingClosePanel", 1f);
     }
     #endregion
 
     #region "Panel-Shop"
     public void ShopON()
     {
-        _shopPanel.SetActive(true);
-        _buttonPanel.SetActive(false);
-        _countersPanel.SetActive(false);
+        _animatorInterface.SetTrigger("InterfaceOff");
+
+        Invoke("ShopOnOpenPanel", 1f);
     }
 
     public void ShopOFF()
     {
+        _animatorInterface.SetTrigger("ShopOff");
+        _animatorInterface.SetTrigger("Defaulth");
+
+        Invoke("ShopOffClosePanel", 1f);
+    } 
+
+    private void ShopOnOpenPanel()
+    {
+        _shopPanel.SetActive(true);
+        _buttonPanel.SetActive(false);
+        _countersPanel.SetActive(false);
+
+        _animatorInterface.SetTrigger("ShopOn");
+    }
+
+    private void ShopOffClosePanel()
+    {
         ShopSwitchCoins();
+
         _buttonPanel.SetActive(true);
         _countersPanel.SetActive(true);
         _shopPanel.SetActive(false);
+
+        _animatorInterface.SetTrigger("InterfaceOn");
+        _animatorInterface.SetTrigger("Defaulth");
     }
 
     public void ShopSwitchAdvertising()

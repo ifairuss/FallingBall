@@ -10,6 +10,9 @@ public class ButtonManagerMainGame : MonoBehaviour
     public static bool _isDoublingCoinsButton = false;
     public bool _isAddHeart = false;
 
+    [Header("GameComponent")]
+    [SerializeField] private Animator _interfaceAnomator;
+
     private bool _limitedResume = false;
 
     private void Start()
@@ -62,14 +65,18 @@ public class ButtonManagerMainGame : MonoBehaviour
     #region "Pause-Panel"
     public void PauseON()
     {
-        Time.timeScale = 0f;
-        _pausePanel.SetActive(true);
+        _interfaceAnomator.SetTrigger("InterfaceOff");
+
+        Invoke("PausePanelOpen", 1);
     }
 
     public void PauseOFF()
     {
-        Time.timeScale = 1f;
-        _pausePanel.SetActive(false);
+        TimeScaleOne();
+
+        _interfaceAnomator.SetTrigger("PauseOff");
+        
+        Invoke("PausePanelClose", 1);
     }
     #endregion
 
@@ -97,5 +104,30 @@ public class ButtonManagerMainGame : MonoBehaviour
         PlayerPrefs.SetInt("MoneyEarnedSave", _menuMoney);
     }
 
+    private void PausePanelClose()
+    {
+        _pausePanel.SetActive(false);
+
+        _interfaceAnomator.SetTrigger("InterfaceOn");
+    }
+
+    private void PausePanelOpen()
+    {
+        _pausePanel.SetActive(true);
+        _interfaceAnomator.SetTrigger("PauseOn");
+
+        Invoke("TimeScaleZero", 1.5f);
+
+    }
+
+    private void TimeScaleOne()
+    {
+        Time.timeScale = 1f;
+    }
+
+    private void TimeScaleZero()
+    {
+        Time.timeScale = 0f;
+    }
 
 }

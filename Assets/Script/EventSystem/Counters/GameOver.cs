@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _countTextScoreGameOver;
     [SerializeField] private TextMeshProUGUI _countTextMoneyGameOver;
     [SerializeField] private Image _doublingCoinsImage;
+    [SerializeField] private Animator _interfaceAnimator;
 
     [Header("Timer")]
     [SerializeField] private float _timerBonusCoin = 1f;

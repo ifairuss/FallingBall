@@ -4,7 +4,7 @@ public class SkyBoxMaterialRotation : MonoBehaviour
 {
     [SerializeField] private Material _skyBoxMaterialRotates;
 
-    [SerializeField] private float _startRotation;
+    [SerializeField] private static float _startRotation;
     [SerializeField] private float _rotationSpeed = 1f;
 
     private void Update()
