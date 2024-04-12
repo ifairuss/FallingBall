@@ -34,6 +34,7 @@ public class SkinManagerBuy : MonoBehaviour
             if (PlayerPrefsCounter.MoneyEarned >= _price)
             {
                 PlayerPrefsCounter.MoneyEarned -= _price;
+                PlayerPrefs.SetInt("MoneyEarnedSave", PlayerPrefsCounter.MoneyEarned);
                 _buttonBuy.SetActive(false);
                 PlayerPrefs.SetInt($"{_nameSkinBuy}", 1);
             }
