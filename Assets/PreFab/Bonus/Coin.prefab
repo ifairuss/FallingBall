@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7703751670320544397}
   - component: {fileID: 1049546487427248666}
   - component: {fileID: 1575334232715519303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &1575334232715519303

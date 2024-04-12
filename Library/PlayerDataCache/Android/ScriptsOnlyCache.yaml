@@ -14,6 +14,8 @@ ScriptsOnlyBuild:
     - PointSpawner
     - SelectColor
     - Shot
+    - SkinManager
+    - SkinManagerBuy
     - SkyBoxMaterialRotation
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
@@ -127,11 +129,17 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonManagerMenu
     methodName: ShopON
   - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinSelect
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchSkins
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchCoins
+  - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinSelect
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchAdvertising
@@ -142,8 +150,14 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonManagerMenu
     methodName: ShopOFF
   - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinBuy
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: LeaderBord
+  - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinBuy
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: Play
@@ -151,11 +165,17 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonManagerMenu
     methodName: SettingOFF
   - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinSelect
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: SettingON
   - assembly: Assembly-CSharp
     fullTypeName: DeleteSave
     methodName: DeleteAllSave
+  - assembly: Assembly-CSharp
+    fullTypeName: SkinManagerBuy
+    methodName: SkinBuy
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: BonusHealth
@@ -223,57 +243,59 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18216}
+      Script: {instanceID: 18220}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18728}
+      Script: {instanceID: 18732}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19072}
+      Script: {instanceID: 19076}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20548}
+      Script: {instanceID: 20552}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 20884}
+      Script: {instanceID: 20888}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 21250}
     - Class: 114
-      Script: {instanceID: 21264}
+      Script: {instanceID: 21268}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22314}
+      Script: {instanceID: 22318}
     - Class: 114
-      Script: {instanceID: 22384}
+      Script: {instanceID: 22388}
     - Class: 114
-      Script: {instanceID: 22394}
+      Script: {instanceID: 22398}
     - Class: 114
-      Script: {instanceID: 22726}
+      Script: {instanceID: 22730}
     - Class: 114
-      Script: {instanceID: 22876}
+      Script: {instanceID: 22880}
+    - Class: 114
+      Script: {instanceID: 53240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -338,57 +360,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16730}
     - Class: 114
-      Script: {instanceID: 17328}
+      Script: {instanceID: 17332}
     - Class: 114
-      Script: {instanceID: 17544}
+      Script: {instanceID: 17548}
     - Class: 114
-      Script: {instanceID: 17776}
+      Script: {instanceID: 17780}
     - Class: 114
-      Script: {instanceID: 17982}
+      Script: {instanceID: 17986}
     - Class: 114
-      Script: {instanceID: 18288}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 18736}
+      Script: {instanceID: 18740}
     - Class: 114
-      Script: {instanceID: 19128}
+      Script: {instanceID: 19132}
     - Class: 114
-      Script: {instanceID: 19298}
+      Script: {instanceID: 19302}
     - Class: 114
-      Script: {instanceID: 19312}
+      Script: {instanceID: 19316}
     - Class: 114
-      Script: {instanceID: 19568}
+      Script: {instanceID: 19572}
     - Class: 114
-      Script: {instanceID: 19852}
+      Script: {instanceID: 19856}
     - Class: 114
-      Script: {instanceID: 19966}
+      Script: {instanceID: 19970}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20256}
+      Script: {instanceID: 20260}
     - Class: 114
-      Script: {instanceID: 20292}
+      Script: {instanceID: 20296}
     - Class: 114
-      Script: {instanceID: 20306}
+      Script: {instanceID: 20310}
     - Class: 114
-      Script: {instanceID: 20856}
+      Script: {instanceID: 20860}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21018}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21346}
     - Class: 114
-      Script: {instanceID: 22104}
+      Script: {instanceID: 22108}
     - Class: 114
-      Script: {instanceID: 22356}
+      Script: {instanceID: 22360}
     - Class: 114
-      Script: {instanceID: 22394}
+      Script: {instanceID: 22398}
     - Class: 114
-      Script: {instanceID: 22414}
+      Script: {instanceID: 22418}
     - Class: 114
-      Script: {instanceID: 22478}
+      Script: {instanceID: 22482}
     - Class: 114
-      Script: {instanceID: 22726}
+      Script: {instanceID: 22730}
+    - Class: 114
+      Script: {instanceID: 58128}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1414,6 +1438,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 938b2c352cca2e0d91b8b1629094af5f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SkinManager
+  - hash:
+      serializedVersion: 2
+      Hash: 81e8b8aac952d758fe5cd0dcf4e37ac1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SkinManagerBuy
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

@@ -316,6 +316,8 @@
 "Assets/Script/EventSystem/Action/PointSpawner.cs"
 "Assets/Script/EventSystem/Action/SelectColor.cs"
 "Assets/Script/EventSystem/Action/Shot.cs"
+"Assets/Script/EventSystem/Action/Skins/SkinManager.cs"
+"Assets/Script/EventSystem/Action/Skins/SkinManagerBuy.cs"
 "Assets/Script/EventSystem/Action/SkyBoxMaterialRotation.cs"
 "Assets/Script/EventSystem/Counters/Counter.cs"
 "Assets/Script/EventSystem/Counters/DelayedDestroy.cs"

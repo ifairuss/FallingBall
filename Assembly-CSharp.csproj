@@ -63,8 +63,10 @@
     <Compile Include="Assets\Script\EventSystem\Action\PointSpawner.cs" />
     <Compile Include="Assets\Script\ButtonManagerMainGame.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\DelayedDestroy.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\Skins\SkinManagerBuy.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Shot.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\GameOver.cs" />
+    <Compile Include="Assets\Script\EventSystem\Action\Skins\SkinManager.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\FallingObjectScript.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\ObjectSpawner.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\SkyBoxMaterialRotation.cs" />

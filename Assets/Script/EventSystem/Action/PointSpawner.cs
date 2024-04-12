@@ -24,7 +24,7 @@ public class PointSpawner : MonoBehaviour
 
         _ball = _allObject[ballValue];
 
-        Instantiate(_ball, this.transform.position, Quaternion.identity);
+        Instantiate(_ball, this.transform.position, Quaternion.Euler(-15, 0, 0));
     }
 
     public void ActiveBonus()
