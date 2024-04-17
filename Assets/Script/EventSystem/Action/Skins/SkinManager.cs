@@ -20,6 +20,18 @@ public class SkinManager : MonoBehaviour
             case 2:
                 _gameObject.mesh = _meshSkins[2];
                 break;
+            case 3:
+                _gameObject.mesh = _meshSkins[3];
+                break;
+            case 4:
+                _gameObject.mesh = _meshSkins[4];
+                break;
+            case 5:
+                _gameObject.mesh = _meshSkins[5];
+                break;
+            case 6:
+                _gameObject.mesh = _meshSkins[6];
+                break;
 
             default:
                 skinSelected = 0;
