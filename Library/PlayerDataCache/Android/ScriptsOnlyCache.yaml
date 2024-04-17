@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - DeleteSave
     - FallingObjectScript
     - GameOver
+    - MusicManager
     - ObjectSpawner
     - PlayerPrefsCounter
     - PointSpawner
@@ -49,8 +50,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -130,6 +133,9 @@ ScriptsOnlyBuild:
     fullTypeName: SkinManagerBuy
     methodName: SkinSelect
   - assembly: Assembly-CSharp
+    fullTypeName: BonusShop
+    methodName: ClickButtonBuy
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: ShopSwitchSkins
   - assembly: Assembly-CSharp
@@ -162,6 +168,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: SettingOFF
+  - assembly: Assembly-CSharp
+    fullTypeName: BonusShop
+    methodName: ClickButtonBuy
   - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinSelect
@@ -228,6 +237,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -273,27 +286,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20856}
     - Class: 114
-      Script: {instanceID: 20884}
+      Script: {instanceID: 21012}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21244}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 21262}
     - Class: 114
-      Script: {instanceID: 21264}
+      Script: {instanceID: 21340}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 22380}
     - Class: 114
-      Script: {instanceID: 22316}
+      Script: {instanceID: 22390}
     - Class: 114
-      Script: {instanceID: 22386}
+      Script: {instanceID: 22722}
     - Class: 114
-      Script: {instanceID: 22396}
+      Script: {instanceID: 22770}
     - Class: 114
-      Script: {instanceID: 22728}
+      Script: {instanceID: 22874}
     - Class: 114
-      Script: {instanceID: 22776}
+      Script: {instanceID: 23200}
     - Class: 114
-      Script: {instanceID: 22880}
+      Script: {instanceID: 23204}
+    - Class: 114
+      Script: {instanceID: 25430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,6 +362,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -394,23 +413,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20856}
     - Class: 114
-      Script: {instanceID: 21014}
+      Script: {instanceID: 21012}
     - Class: 114
-      Script: {instanceID: 21342}
+      Script: {instanceID: 21340}
     - Class: 114
-      Script: {instanceID: 21356}
+      Script: {instanceID: 21354}
     - Class: 114
-      Script: {instanceID: 22106}
+      Script: {instanceID: 22104}
     - Class: 114
-      Script: {instanceID: 22358}
+      Script: {instanceID: 22390}
     - Class: 114
-      Script: {instanceID: 22396}
+      Script: {instanceID: 22410}
     - Class: 114
-      Script: {instanceID: 22416}
+      Script: {instanceID: 22474}
     - Class: 114
-      Script: {instanceID: 22480}
+      Script: {instanceID: 22722}
     - Class: 114
-      Script: {instanceID: 22728}
+      Script: {instanceID: 23196}
+    - Class: 114
+      Script: {instanceID: 25430}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -808,7 +829,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: ff2ebb1897e8cde27bb4403a72e356f1
+      Hash: 0f998a8eca2394c11729812c65ca2427
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMenu
@@ -1090,12 +1111,6 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 838f9ca7a1b6ff2d2e1213bbdc5a8748
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FallingObjectScript
-  - hash:
-      serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1150,7 +1165,7 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 81e8b8aac952d758fe5cd0dcf4e37ac1
+      Hash: 06667ba29737a6b8e019b0fccef11064
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SkinManagerBuy
@@ -1306,18 +1321,6 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: bc1bbcf19f99cf043af53ea9cabdecab
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PointSpawner
-  - hash:
-      serializedVersion: 2
-      Hash: e4233c0b6f5764e761efb8cda1de964f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BonusShop
-  - hash:
-      serializedVersion: 2
       Hash: e1e9e67b7424cd7e597974fed7e1f6fa
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1408,7 +1411,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 276e2ed3ce8f633d5701778881594d96
+      Hash: f47214a6363f12757b4944632e8b0dbd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMainGame
@@ -1448,6 +1451,36 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 550cba32c6c509bf04e7454b8dbe717a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BonusShop
+  - hash:
+      serializedVersion: 2
+      Hash: bc1bbcf19f99cf043af53ea9cabdecab
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PointSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 280249242b76aea62b3ecc525b41f1d1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FallingObjectScript
+  - hash:
+      serializedVersion: 2
+      Hash: 4610e4e9bc8fc9b47126a791319483a8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MusicManager
+  - hash:
+      serializedVersion: 2
+      Hash: 02cbc2e21432eaaaca91fcb8ba7a5fe3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SFXManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

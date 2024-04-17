@@ -1,4 +1,5 @@
-﻿using System.Runtime.ConstrainedExecution;
+﻿using System.Net.NetworkInformation;
+using System.Runtime.ConstrainedExecution;
 using UnityEngine;
 
 
@@ -10,7 +11,7 @@ enum TypeObject
     Heart
 }
 
-public class FallingObjectScript : MonoBehaviour
+public class FallingObjectScript : SFXManager
 {
     [Header("Components")]
     [SerializeField] private LayerMask CollisionMask;
@@ -18,7 +19,8 @@ public class FallingObjectScript : MonoBehaviour
     [SerializeField] private Transform _newParent;
 
     [Header("Characteristics")]
-    [SerializeField] private float _speedFalling = 2;
+    public float monitoringSpeed;
+    private static float _speedFalling = 2;
 
     [Header("VariableObject")]
     [SerializeField] private TypeObject _typeObject = 0;
@@ -26,16 +28,16 @@ public class FallingObjectScript : MonoBehaviour
     public static bool FallingObjectIsActive = false;
 
     private Rigidbody _body;
-    private ObjectSpawner _spawner;
 
     private void Start()
     {
         _body = GetComponent<Rigidbody>();
-        _spawner = FindObjectOfType<ObjectSpawner>();
     }
 
     private void Update()
     {
+        monitoringSpeed = _speedFalling;
+
         if (FallingObjectIsActive == true)
         {
             Destroy(gameObject);
@@ -61,15 +63,18 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(_destroyParticle.gameObject, 1f);
             if (_typeObject == TypeObject.Coin)
             {
+                PlaySFX(_allClips[0], destroy: true, pinch: 1.3f);
                 Counter.CounterMoney++;
             }
             if (_typeObject == TypeObject.Ball)
             {
+                PlaySFX(_allClips[0], destroy: true, pinch: 0.5f);
                 Counter.CounterScore++;
             }
             if (_typeObject == TypeObject.Heart)
             {
-                if(Counter.CounterHealth < 2)
+                PlaySFX(_allClips[0], destroy: true, pinch: 1.3f);
+                if (Counter.CounterHealth < 2)
                 {
                     Counter.CounterHealth++;
                 }
@@ -93,14 +98,17 @@ public class FallingObjectScript : MonoBehaviour
             Destroy(_destroyParticle.gameObject, 1f);
             if (_typeObject == TypeObject.Coin)
             {
+                PlaySFX(_allClips[0], destroy: true);
                 Counter.CounterMoney--;
             }
             if (_typeObject == TypeObject.Ball)
             {
+                PlaySFX(_allClips[0], destroy: true);
                 Counter.CounterHealth--;
             }
             if (_typeObject == TypeObject.Heart)
             {
+                PlaySFX(_allClips[0], destroy: true);
                 Counter.CounterScore--;
             }
         }
@@ -108,14 +116,13 @@ public class FallingObjectScript : MonoBehaviour
 
     private float ComplicationOfBallSpeed()
     {
-        if (_speedFalling < 5)
+        if (_speedFalling < 6)
         {
-            if (_spawner.Delay <= 2.5f) { _speedFalling = 4f;}
-            if (_spawner.Delay <= 1.5f) { _speedFalling = 5f; }
+            _speedFalling += 0.01f * Time.deltaTime;
         }
         else
         {
-            _speedFalling = 5;
+            _speedFalling = 6;
         }
 
         return _speedFalling;

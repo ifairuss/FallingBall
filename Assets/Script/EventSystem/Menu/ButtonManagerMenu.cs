@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonManagerMenu : MonoBehaviour
+public class ButtonManagerMenu : SFXManager
 {
     [Header("Panel")]
     [SerializeField] private GameObject _shopPanel;
@@ -37,6 +35,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void Play()
     {
+        SoundSFX();
         _animatorInterface.SetTrigger("InterfaceOff");
 
         Invoke("StartGame", 1);
@@ -48,16 +47,22 @@ public class ButtonManagerMenu : MonoBehaviour
         SceneManager.LoadScene("MainGame");
     }
 
-    public void YouTube() => Application.OpenURL("https://www.youtube.com/@ifairuss2");
+    public void YouTube()
+    {
+        SoundSFX();
+        Application.OpenURL("https://www.youtube.com/@ifairuss2");
+    }
 
     public void LeaderBord()
     {
+        SoundSFX();
         Debug.Log("To be continued..");
     }
 
     #region "Panel-Setting"
     public void SettingON()
     {
+        SoundSFX();
         _animatorInterface.SetTrigger("InterfaceOff");
 
         Invoke("SettingOpenPanel", 1f);
@@ -84,6 +89,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void SettingOFF()
     {
+        SoundSFX();
         _animatorInterface.SetTrigger("SettingOff");
         _animatorInterface.SetTrigger("Defaulth");
 
@@ -94,6 +100,7 @@ public class ButtonManagerMenu : MonoBehaviour
     #region "Panel-Shop"
     public void ShopON()
     {
+        SoundSFX();
         _animatorInterface.SetTrigger("InterfaceOff");
 
         Invoke("ShopOnOpenPanel", 1f);
@@ -101,6 +108,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void ShopOFF()
     {
+        SoundSFX();
         _animatorInterface.SetTrigger("ShopOff");
         _animatorInterface.SetTrigger("Defaulth");
 
@@ -118,7 +126,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     private void ShopOffClosePanel()
     {
-        ShopSwitchCoins();
+        ShopSwitchBonus();
 
         _buttonPanel.SetActive(true);
         _countersPanel.SetActive(true);
@@ -130,6 +138,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void ShopSwitchAdvertising()
     {
+        SoundSFX();
         _shopBonus.SetActive(false);
         _shopSkins.SetActive(false);
         _buttonBonus.color = new Color(0, 0, 0, 0.35f);
@@ -138,8 +147,19 @@ public class ButtonManagerMenu : MonoBehaviour
         _shopAdvertising.SetActive(true);
     }
 
+    private void ShopSwitchBonus()
+    {
+        _shopAdvertising.SetActive(false);
+        _shopSkins.SetActive(false);
+        _buttonBonus.color = new Color(0, 0, 0, 0.6f);
+        _buttonAdvertising.color = new Color(0, 0, 0, 0.35f);
+        _buttonSkins.color = new Color(0, 0, 0, 0.35f);
+        _shopBonus.SetActive(true);
+    }
+
     public void ShopSwitchCoins()
     {
+        SoundSFX();
         _shopAdvertising.SetActive(false);
         _shopSkins.SetActive(false);
         _buttonBonus.color = new Color(0, 0, 0, 0.6f);
@@ -150,6 +170,7 @@ public class ButtonManagerMenu : MonoBehaviour
 
     public void ShopSwitchSkins()
     {
+        SoundSFX();
         _shopAdvertising.SetActive(false);
         _shopBonus.SetActive(false);
         _buttonSkins.color = new Color(0, 0, 0, 0.6f);
@@ -158,4 +179,9 @@ public class ButtonManagerMenu : MonoBehaviour
         _shopSkins.SetActive(true);
     }
     #endregion
+
+    private void SoundSFX()
+    {
+        PlaySFX(_allClips[Random.Range(0, 3)], pinch: 0.8f, volume: 0.6f);
+    }
 }

@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class BonusShop : MonoBehaviour
+public class BonusShop : SFXManager
 {
     [Header("Setting goods")]
     [SerializeField] private string _product;
@@ -21,6 +21,7 @@ public class BonusShop : MonoBehaviour
 
     private void Update()
     {
+        _productCondition = PlayerPrefs.GetInt($"{_product}");
         DisplayText();
     }
 
@@ -28,6 +29,7 @@ public class BonusShop : MonoBehaviour
     {
         if (PlayerPrefsCounter.MoneyEarned >= _price && _productCondition != 1)
         {
+            PlaySFX(_allClips[0], pinch: 1.1f, volume: 0.8f);
             PlayerPrefsCounter.MoneyEarned -= _price;
             PlayerPrefs.SetInt("MoneyEarnedSave", PlayerPrefsCounter.MoneyEarned);
             PlayerPrefs.SetInt($"{_product}", 1);

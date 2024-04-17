@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonManagerMainGame : MonoBehaviour
+public class ButtonManagerMainGame : SFXManager
 {
     [Header("Panel")]
     [SerializeField] private GameObject _pausePanel;
@@ -25,6 +25,7 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void Menu()
     {
+        SoundSFX();
         PlayerPrefs.SetInt("MoneySave", Counter.CounterMoney);
         PlayerPrefs.SetInt("ScoreSave", Counter.CounterScore);
 
@@ -33,6 +34,7 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void ResetGame()
     {
+        SoundSFX();
         ResetdGameSave();
         SceneManager.LoadScene("MainGame");
     }
@@ -41,6 +43,7 @@ public class ButtonManagerMainGame : MonoBehaviour
     {
         if (_limitedResume == false)
         {
+            SoundSFX();
             Counter.CounterHealth = 1;
             _limitedResume = true;
             Time.timeScale = 1f;
@@ -49,7 +52,8 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void BonusHealth()
     {
-        if(_isAddHeart == false)
+        SoundSFX();
+        if (_isAddHeart == false)
         {
             Counter.CounterHealth++;
             _isAddHeart = true;
@@ -58,6 +62,7 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void DoublingCoins()
     {
+        SoundSFX();
         Counter.CounterMoney = Counter.CounterMoney * 2;
         _isDoublingCoinsButton = true;
     }
@@ -65,6 +70,7 @@ public class ButtonManagerMainGame : MonoBehaviour
     #region "Pause-Panel"
     public void PauseON()
     {
+        SoundSFX();
         _interfaceAnomator.SetTrigger("InterfaceOff");
 
         Invoke("PausePanelOpen", 1);
@@ -72,6 +78,7 @@ public class ButtonManagerMainGame : MonoBehaviour
 
     public void PauseOFF()
     {
+        SoundSFX();
         TimeScaleOne();
 
         _interfaceAnomator.SetTrigger("PauseOff");
@@ -128,6 +135,11 @@ public class ButtonManagerMainGame : MonoBehaviour
     private void TimeScaleZero()
     {
         Time.timeScale = 0f;
+    }
+
+    private void SoundSFX()
+    {
+        PlaySFX(_allClips[Random.Range(0, 3)], pinch: 0.8f, volume: 0.6f);
     }
 
 }

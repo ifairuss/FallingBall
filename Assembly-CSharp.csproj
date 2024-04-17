@@ -63,6 +63,7 @@
     <Compile Include="Assets\Script\EventSystem\Action\PointSpawner.cs" />
     <Compile Include="Assets\Script\ButtonManagerMainGame.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\DelayedDestroy.cs" />
+    <Compile Include="Assets\Script\Audio\MusicManager.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Skins\SkinManagerBuy.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Shot.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\GameOver.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Script\EventSystem\Counters\PlayerPrefsCounter.cs" />
     <Compile Include="Assets\Script\EventSystem\Menu\ButtonManagerMenu.cs" />
     <Compile Include="Assets\Script\DeleteSave.cs" />
+    <Compile Include="Assets\Script\Audio\SFXManager.cs" />
     <Compile Include="Assets\Script\EventSystem\Menu\BonusShop.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\Counter.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\SelectColor.cs" />

@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class SkinManagerBuy : MonoBehaviour
+public class SkinManagerBuy : SFXManager
 {
     [Header("Stats")]
     [SerializeField] private int _price;
@@ -33,6 +33,7 @@ public class SkinManagerBuy : MonoBehaviour
 
             if (PlayerPrefsCounter.MoneyEarned >= _price)
             {
+                PlaySFX(_allClips[0], pinch: 1.1f, volume: 0.8f);
                 PlayerPrefsCounter.MoneyEarned -= _price;
                 PlayerPrefs.SetInt("MoneyEarnedSave", PlayerPrefsCounter.MoneyEarned);
                 _buttonBuy.SetActive(false);
@@ -88,6 +89,7 @@ public class SkinManagerBuy : MonoBehaviour
 
     public void SkinSelect()
     {
+        PlaySFX(_allClips[1], pinch: 0.8f, volume: 0.6f);
         PlayerPrefs.SetInt("SkinSelected", _skinID);
     }
 }
