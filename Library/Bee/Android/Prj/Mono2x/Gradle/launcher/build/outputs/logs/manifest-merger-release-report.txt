@@ -27,13 +27,15 @@ INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Pr
 	android:installLocation
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:151-191
 application
-ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:5-66:19
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:5-66:19
 	android:extractNativeLibs
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:18-50
 	android:label
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
+	android:roundIcon
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:81-123
 	android:icon
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:49-80
 supports-screens

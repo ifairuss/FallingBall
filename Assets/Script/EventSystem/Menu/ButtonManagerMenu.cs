@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -21,6 +22,7 @@ public class ButtonManagerMenu : SFXManager
 
     [Header("GameComponent")]
     [SerializeField] private Animator _animatorInterface;
+    [SerializeField] private PostProcessVolume _settingPost;
 
     private void Start()
     {
@@ -31,6 +33,20 @@ public class ButtonManagerMenu : SFXManager
         _shopPanel.SetActive(false);
         _countersPanel.SetActive(true);
         _buttonPanel.SetActive(true);
+    }
+
+    private void Update()
+    {
+        int postProces = PlayerPrefs.GetInt("QualityIndex");
+
+        if (postProces == 3)
+        {
+            _settingPost.enabled = false;
+        }
+        else
+        {
+            _settingPost.enabled = true;
+        }
     }
 
     public void Play()

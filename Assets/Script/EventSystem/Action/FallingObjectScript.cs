@@ -20,7 +20,7 @@ public class FallingObjectScript : SFXManager
 
     [Header("Characteristics")]
     public float monitoringSpeed;
-    private static float _speedFalling = 2;
+    public static float _speedFalling = 2;
 
     [Header("VariableObject")]
     [SerializeField] private TypeObject _typeObject = 0;

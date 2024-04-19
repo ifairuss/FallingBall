@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 543799b6d4734124d8b9914e84c9f315
+guid: 35d464ca061ae3a4baaf45dc54e42199
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -153,7 +153,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 130
+        y: 370
         width: 179
         height: 101
       alignment: 0
@@ -163,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9286a5985dad17c43993631da102ee9d
-      internalID: 96667693
+      spriteID: 22ee529fe81aa6e42b4755840a085713
+      internalID: -933072450
       vertices: []
       indices: 
       edges: []
@@ -173,9 +173,9 @@ TextureImporter:
       name: SkinPack_1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 201
+        x: 241
+        y: 370
+        width: 191
         height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,8 +184,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e20fcfa60db7ad41854c560332889e6
-      internalID: -887826291
+      spriteID: 55dae0a5cc6216b49baee240cdfcc4af
+      internalID: 1132542108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinPack_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 240
+        width: 202
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd612a726056d4b952bb67c3ddad47
+      internalID: -173714043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinPack_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 270
+        width: 203
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb021be429626274e9a39dd25f61b674
+      internalID: -1777101086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinPack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 219
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355bfdb2e108e8c4692ec89ed3df8d8b
+      internalID: -1484995302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinPack_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 138
+        width: 196
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bebed69796dd641bc3aed177d97b2d
+      internalID: 650478581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkinPack_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 177
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f698415826886440b677d990203cbbd
+      internalID: -416063131
       vertices: []
       indices: 
       edges: []
@@ -193,7 +298,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3d2d8b41231b53d4b9b8f88d07e2d9aa
+    spriteID: b7fddfb726513c741abf7cc3e65a12e4
     internalID: 0
     vertices: []
     indices: 
@@ -201,8 +306,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SkinPack_0: 96667693
-      SkinPack_1: -887826291
+      SkinPack_0: -933072450
+      SkinPack_1: 1132542108
+      SkinPack_2: -173714043
+      SkinPack_3: -1777101086
+      SkinPack_4: -1484995302
+      SkinPack_5: 650478581
+      SkinPack_6: -416063131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

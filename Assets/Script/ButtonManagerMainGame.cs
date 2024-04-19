@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 public class ButtonManagerMainGame : SFXManager
@@ -12,6 +13,7 @@ public class ButtonManagerMainGame : SFXManager
 
     [Header("GameComponent")]
     [SerializeField] private Animator _interfaceAnomator;
+    [SerializeField] private PostProcessVolume _settingPost;
 
     private bool _limitedResume = false;
 
@@ -21,6 +23,21 @@ public class ButtonManagerMainGame : SFXManager
         _limitedResume = false;
         _isAddHeart = false;
         _pausePanel.SetActive(false);
+        FallingObjectScript._speedFalling = 2;
+    }
+
+    private void Update()
+    {
+        int postProces = PlayerPrefs.GetInt("QualityIndex");
+
+        if (postProces == 3)
+        {
+            _settingPost.enabled = false;
+        }
+        else
+        {
+            _settingPost.enabled = true;
+        }
     }
 
     public void Menu()
