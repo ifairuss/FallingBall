@@ -14,6 +14,7 @@ public class SkinManagerBuy : SFXManager
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI _buttontTextDisplay;
     [SerializeField] private TextMeshProUGUI _priceTextDisplay;
+
     private string _selectText = "Select";
     private string _selectedText = "Selected";
 

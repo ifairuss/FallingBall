@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
 public class RewardedAdCoin : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
-    [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
 
     void Awake()
