@@ -7,20 +7,29 @@ public class ButtonManagerMainGame : SFXManager
     [Header("Panel")]
     [SerializeField] private GameObject _pausePanel;
 
-    [Header("Button")]
+    [Header("Properti")]
     public static bool _isDoublingCoinsButton = false;
     public bool _isAddHeart = false;
+    public static int AdsInterstitital;
 
     [Header("GameComponent")]
     [SerializeField] private Animator _interfaceAnomator;
     [SerializeField] private PostProcessVolume _settingPost;
 
-    private bool _limitedResume = false;
+    [Header("ADS")]
+    [SerializeField] private InterstitialAd _interstitial;
+    [SerializeField] private RewardedAdReset _rewardedReset;
+    [SerializeField] private RewardedAdCoin _rewardedCoin;
+    [SerializeField] private RewardedAdHeart _rewardedHeart;
+
+    private  bool _limitedResume = false;
+    public static bool _resume = false;
 
     private void Start()
     {
         Time.timeScale = 1f;
         _limitedResume = false;
+        _resume = false;
         _isAddHeart = false;
         _pausePanel.SetActive(false);
         FallingObjectScript._speedFalling = 2;
@@ -53,7 +62,17 @@ public class ButtonManagerMainGame : SFXManager
     {
         SoundSFX();
         ResetdGameSave();
-        SceneManager.LoadScene("MainGame");
+
+        if(AdsInterstitital != 3)
+        {
+            AdsInterstitital++;
+            SceneManager.LoadScene("MainGame");
+        }
+        else
+        {
+            _interstitial.ShowAd();
+            AdsInterstitital = 0;
+        }
     }
 
     public void ResumeGame()
@@ -61,18 +80,20 @@ public class ButtonManagerMainGame : SFXManager
         if (_limitedResume == false)
         {
             SoundSFX();
-            Counter.CounterHealth = 1;
+
+            _rewardedReset.ShowAd();
+
             _limitedResume = true;
-            Time.timeScale = 1f;
         }
     }
 
     public void BonusHealth()
     {
         SoundSFX();
+
         if (_isAddHeart == false)
         {
-            Counter.CounterHealth++;
+            _rewardedHeart.ShowAd();
             _isAddHeart = true;
         }
     }
@@ -80,7 +101,7 @@ public class ButtonManagerMainGame : SFXManager
     public void DoublingCoins()
     {
         SoundSFX();
-        Counter.CounterMoney = Counter.CounterMoney * 2;
+        _rewardedCoin.ShowAd();
         _isDoublingCoinsButton = true;
     }
 

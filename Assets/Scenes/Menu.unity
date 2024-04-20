@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06678228, g: 0.15170899, b: 0.058641136, a: 1}
+  m_IndirectSpecularColor: {r: 0.062457934, g: 0.14569786, b: 0.05449029, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17644,7 +17644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1792302871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17720,9 +17720,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1792302872}
-        m_TargetAssemblyTypeName: DeleteSave, Assembly-CSharp
-        m_MethodName: DeleteAllSave
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InterstitialAd, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -945,7 +945,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -965,10 +971,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 4e8e6603-0cae-4324-ac0f-fdba8663c3a0
+  cloudProjectId: f54b0660-6473-4ed0-85fa-c62b55b90204
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Lesson
+  projectName: FallingBall
   organizationId: ifairuss2403artem
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

@@ -46,7 +46,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2529627494827098034}
-  m_Mesh: {fileID: 4136602394557246633, guid: 39c8a47624ecc54438d8a3dbcb39d169, type: 3}
+  m_Mesh: {fileID: 4711208715938537054, guid: 5acbe6b14b6978140b9a5e645840a7d1, type: 3}
 --- !u!23 &5124039091001619280
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
     m_Bits: 8
   _destroyParticle: {fileID: 3722878639169158883}
   _newParent: {fileID: 0}
-  _speedFalling: 3
+  monitoringSpeed: 0
   _typeObject: 1
 --- !u!82 &-8913050861646760094
 AudioSource:

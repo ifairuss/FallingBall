@@ -43,6 +43,7 @@ public class FallingObjectScript : SFXManager
             Destroy(gameObject);
         }
 
+        AdsResumeGame();
         MoveFallingObject();
     }
 
@@ -51,6 +52,40 @@ public class FallingObjectScript : SFXManager
         _speedFalling = ComplicationOfBallSpeed();
 
         _body.velocity = Vector3.down * _speedFalling;
+    }
+
+    private void AdsResumeGame()
+    {
+        if (ButtonManagerMainGame._resume == true)
+        {
+            _destroyParticle.transform.SetParent(_newParent);
+            Destroy(gameObject);
+            _destroyParticle.Play();
+            Destroy(_destroyParticle.gameObject, 1f);
+            if (_typeObject == TypeObject.Coin)
+            {
+                PlaySFX(_allClips[0], destroy: true, pinch: 1.3f);
+                Counter.CounterMoney++;
+            }
+            if (_typeObject == TypeObject.Ball)
+            {
+                PlaySFX(_allClips[0], destroy: true, pinch: 0.5f);
+                Counter.CounterScore++;
+            }
+            if (_typeObject == TypeObject.Heart)
+            {
+                PlaySFX(_allClips[0], destroy: true, pinch: 1.3f);
+                if (Counter.CounterHealth < 2)
+                {
+                    Counter.CounterHealth++;
+                }
+                else
+                {
+                    Counter.CounterScore++;
+                    Counter.CounterHealth = Mathf.Max(Counter.CounterHealth, 2);
+                }
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
