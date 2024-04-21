@@ -72,7 +72,10 @@ public class ButtonManagerMenu : SFXManager
     public void LeaderBord()
     {
         SoundSFX();
-        Debug.Log("To be continued..");
+
+        int playerScore = PlayerPrefsCounter.MoneyEarned;
+
+        
     }
 
     #region "Panel-Setting"

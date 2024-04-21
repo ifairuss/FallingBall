@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 398590800}
-  m_IndirectSpecularColor: {r: 0.062457934, g: 0.14569786, b: 0.05449029, a: 1}
+  m_IndirectSpecularColor: {r: 0.024088845, g: 0.08817706, b: 0.01964107, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -168,7 +168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &126801669
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _androidGameId: 5601300
   _iOSGameId: 5601301
-  _testMode: 1
+  _testMode: 0
 --- !u!4 &126801673
 Transform:
   m_ObjectHideFlags: 0
@@ -608,7 +607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &398590799
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +681,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 2.2e-44, w: -2.5217114e+24}
+  m_BoundingSphereOverride: {x: 0, y: 8.8708784e-38, z: 4.3e-43, w: 8e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2790,7 +2788,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &1084483469
 GameObject:
   m_ObjectHideFlags: 0

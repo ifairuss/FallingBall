@@ -42,7 +42,7 @@ public class MusicSetting : SFXManager
         else
         {
             _musicImage.sprite = _musicSprite[0];
-            MusicManager._volumeMusic = 0.01f;
+            MusicManager._volumeMusic = 0.03f;
         }
 
         musicStatus = PlayerPrefs.GetInt("MusicOn/Off");

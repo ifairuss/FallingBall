@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7703751670320544397}
   - component: {fileID: 1049546487427248666}
   - component: {fileID: 1575334232715519303}
-  - component: {fileID: -2289710961561279560}
+  - component: {fileID: -8236993892251963253}
   m_Layer: 6
   m_Name: Coin
   m_TagString: Untagged
@@ -181,15 +181,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _allClips:
-  - {fileID: 8300000, guid: 8780ba0ba18a409438a3332623276aa0, type: 3}
+  - {fileID: 8300000, guid: 1b82c3df09028814da6111b180e9d369, type: 3}
+  _cameraPos: {fileID: 0}
   CollisionMask:
     serializedVersion: 2
     m_Bits: 8
   _destroyParticle: {fileID: 1478329363791873412}
   _newParent: {fileID: 0}
-  _speedFalling: 3
+  monitoringSpeed: 0
   _typeObject: 2
---- !u!82 &-2289710961561279560
+--- !u!82 &-8236993892251963253
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,7 +276,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

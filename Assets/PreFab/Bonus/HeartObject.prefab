@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8427325794519115112}
   - component: {fileID: 8490889354149899173}
   - component: {fileID: 7987522670345960986}
-  - component: {fileID: -4650857113285283997}
+  - component: {fileID: -6708814563663431762}
   m_Layer: 6
   m_Name: HeartObject
   m_TagString: Untagged
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _allClips:
   - {fileID: 8300000, guid: 563b163c72d79764b8ea6318e6841d5e, type: 3}
+  _cameraPos: {fileID: 0}
   CollisionMask:
     serializedVersion: 2
     m_Bits: 8
@@ -106,7 +107,7 @@ MonoBehaviour:
   _newParent: {fileID: 0}
   monitoringSpeed: 0
   _typeObject: 3
---- !u!82 &-4650857113285283997
+--- !u!82 &-6708814563663431762
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,7 +193,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

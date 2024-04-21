@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _allClips:
-  - {fileID: 8300000, guid: 28d62848edea14b4d97d14b76478f00a, type: 3}
+  - {fileID: 8300000, guid: 96deae0612e17a84088cc0d8bf399183, type: 3}
   CollisionMask:
     serializedVersion: 2
     m_Bits: 8
@@ -265,7 +265,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

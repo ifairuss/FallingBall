@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06727797, g: 0.15262246, b: 0.059112094, a: 1}
+  m_IndirectSpecularColor: {r: 0.024088845, g: 0.08817706, b: 0.01964107, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1636,6 +1636,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 0
   _nameSkinBuy: Sphere
   _skinID: 0
@@ -6220,6 +6221,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 250
   _nameSkinBuy: Torus
   _skinID: 2
@@ -8167,6 +8169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _product: BonusHeart
   _price: 350
   _priceText: {fileID: 1280049353}
@@ -8666,6 +8669,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 400
   _nameSkinBuy: Bonny
   _skinID: 4
@@ -9518,6 +9522,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 500
   _nameSkinBuy: Cat
   _skinID: 3
@@ -13577,6 +13582,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 350
   _nameSkinBuy: Romb
   _skinID: 6
@@ -16161,6 +16167,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 300
   _nameSkinBuy: Star
   _skinID: 1
@@ -17949,7 +17956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _androidGameId: 5601300
   _iOSGameId: 5601301
-  _testMode: 1
+  _testMode: 0
 --- !u!114 &1795901063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18642,6 +18649,7 @@ MonoBehaviour:
   _allClips:
   - {fileID: 8300000, guid: 62d70e124275613458fecff52d475541, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
+  - {fileID: 8300000, guid: 8f26965508a3db642a5e88e13ee3fe31, type: 3}
   _price: 450
   _nameSkinBuy: Planet
   _skinID: 5

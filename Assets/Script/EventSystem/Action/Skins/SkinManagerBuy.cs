@@ -42,7 +42,7 @@ public class SkinManagerBuy : SFXManager
             }
             else
             {
-                Debug.Log("No money");
+                PlaySFX(_allClips[2], pinch: 0.8f, volume: 0.6f);
             }
         }
         else 

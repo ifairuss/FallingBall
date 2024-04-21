@@ -69,7 +69,7 @@ public class FallingObjectScript : SFXManager
             }
             if (_typeObject == TypeObject.Ball)
             {
-                PlaySFX(_allClips[0], destroy: true, pinch: 0.5f);
+                PlaySFX(_allClips[0], destroy: true);
                 Counter.CounterScore++;
             }
             if (_typeObject == TypeObject.Heart)
@@ -103,7 +103,7 @@ public class FallingObjectScript : SFXManager
             }
             if (_typeObject == TypeObject.Ball)
             {
-                PlaySFX(_allClips[0], destroy: true, pinch: 0.5f);
+                PlaySFX(_allClips[0], destroy: true);
                 Counter.CounterScore++;
             }
             if (_typeObject == TypeObject.Heart)

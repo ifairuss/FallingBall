@@ -35,6 +35,10 @@ public class BonusShop : SFXManager
             PlayerPrefs.SetInt($"{_product}", 1);
             _conditionGoods = "Purchased";
         }
+        else
+        {
+            PlaySFX(_allClips[1], pinch: 0.8f, volume: 0.6f);
+        }
     }
 
     private void DisplayText()

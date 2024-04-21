@@ -74,7 +74,6 @@
     <Compile Include="Assets\Script\EventSystem\Action\Shot.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\GameOver.cs" />
     <Compile Include="Assets\Script\AddMob\InterstitialAd.cs" />
-    <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsExampleUI.cs" />
     <Compile Include="Assets\Script\AddMob\RewardedAdCoin.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Skins\SkinManager.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\FallingObjectScript.cs" />
@@ -87,7 +86,6 @@
     <Compile Include="Assets\Script\EventSystem\Menu\ButtonManagerMenu.cs" />
     <Compile Include="Assets\Script\DeleteSave.cs" />
     <Compile Include="Assets\Script\AddMob\AdSkins.cs" />
-    <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsManager.cs" />
     <Compile Include="Assets\Script\AddMob\RewardedAdReset.cs" />
     <Compile Include="Assets\Script\Setting\QualitySetting.cs" />
     <Compile Include="Assets\Script\AddMob\RewardedAdHeart.cs" />

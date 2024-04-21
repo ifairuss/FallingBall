@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class MusicManager : MonoBehaviour
 {
-    public static float _volumeMusic = 0.01f;
+    public static float _volumeMusic = 0.03f;
     public bool IsMenu;
 
     private AudioSource _audioSource => GetComponent<AudioSource>();
