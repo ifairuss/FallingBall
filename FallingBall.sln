@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games", "Google.Play.Games.csproj", "{B2549818-A1D0-222E-1AA7-D1503B415713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Play.Games.Editor", "Google.Play.Games.Editor.csproj", "{744E4ACE-D374-2261-33B6-D5A0EBBEED77}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}"
 EndProject
 Global
@@ -9,6 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2549818-A1D0-222E-1AA7-D1503B415713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2549818-A1D0-222E-1AA7-D1503B415713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2549818-A1D0-222E-1AA7-D1503B415713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2549818-A1D0-222E-1AA7-D1503B415713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744E4ACE-D374-2261-33B6-D5A0EBBEED77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744E4ACE-D374-2261-33B6-D5A0EBBEED77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744E4ACE-D374-2261-33B6-D5A0EBBEED77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744E4ACE-D374-2261-33B6-D5A0EBBEED77}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE36ADF3-5C10-B9FB-5BED-B827B196CA04}.Release|Any CPU.ActiveCfg = Release|Any CPU

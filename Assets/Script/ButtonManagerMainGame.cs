@@ -9,7 +9,7 @@ public class ButtonManagerMainGame : SFXManager
 
     [Header("Properti")]
     public static bool _isDoublingCoinsButton = false;
-    public bool _isAddHeart = false;
+    public static bool _isAddHeart = false;
     public static int AdsInterstitital;
 
     [Header("GameComponent")]
@@ -39,7 +39,7 @@ public class ButtonManagerMainGame : SFXManager
     {
         int postProces = PlayerPrefs.GetInt("QualityIndex");
 
-        if (postProces == 3)
+        if (postProces >= 3)
         {
             _settingPost.enabled = false;
         }
@@ -63,7 +63,7 @@ public class ButtonManagerMainGame : SFXManager
         SoundSFX();
         ResetdGameSave();
 
-        if(AdsInterstitital != 3)
+        if(AdsInterstitital < 3)
         {
             AdsInterstitital++;
             SceneManager.LoadScene("MainGame");
@@ -71,20 +71,24 @@ public class ButtonManagerMainGame : SFXManager
         else
         {
             _interstitial.ShowAd();
-            AdsInterstitital = 0;
         }
     }
 
     public void ResumeGame()
     {
+        SoundSFX();
         if (_limitedResume == false)
         {
-            SoundSFX();
-
             _rewardedReset.ShowAd();
+            Invoke("Resume", 0.5f);
 
             _limitedResume = true;
         }
+    }
+
+    private void Resume()
+    {
+        ButtonManagerMainGame._resume = false;
     }
 
     public void BonusHealth()
@@ -94,7 +98,6 @@ public class ButtonManagerMainGame : SFXManager
         if (_isAddHeart == false)
         {
             _rewardedHeart.ShowAd();
-            _isAddHeart = true;
         }
     }
 
@@ -102,7 +105,6 @@ public class ButtonManagerMainGame : SFXManager
     {
         SoundSFX();
         _rewardedCoin.ShowAd();
-        _isDoublingCoinsButton = true;
     }
 
     #region "Pause-Panel"

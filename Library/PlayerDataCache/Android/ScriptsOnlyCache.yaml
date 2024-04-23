@@ -1,24 +1,38 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsHeartRewarded
+    - AdsInitialize
+    - AdsManager
+    - AdsManagerGame
+    - BonnyAds
     - BonusShop
     - ButtonManagerMainGame
     - ButtonManagerMenu
+    - CatAds
     - Counter
     - DelayedDestroy
-    - DeleteSave
     - FallingObjectScript
     - GameOver
+    - HeartAds
+    - InterstitialAd
     - MusicManager
     - MusicSetting
     - ObjectSpawner
+    - PlanetAds
     - PlayerPrefsCounter
     - PointSpawner
     - QualitySetting
+    - RewardedAdCoin
+    - RewardedAdHeart
+    - RewardedAdReset
     - SelectColor
     - Shot
+    - SkinBonny
+    - SkinCat
     - SkinManager
     - SkinManagerBuy
+    - SkinPlanet
     - SkyBoxMaterialRotation
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
@@ -52,10 +66,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -195,14 +207,23 @@ ScriptsOnlyBuild:
     fullTypeName: QualitySetting
     methodName: SetQuality
   - assembly: Assembly-CSharp
+    fullTypeName: HeartAds
+    methodName: ButtonShowAds
+  - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMenu
     methodName: SettingOFF
   - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinBuy
   - assembly: Assembly-CSharp
+    fullTypeName: SkinPlanet
+    methodName: ButtonShowAds
+  - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinSelect
+  - assembly: Assembly-CSharp
+    fullTypeName: SkinBonny
+    methodName: ButtonShowAds
   - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinBuy
@@ -210,14 +231,14 @@ ScriptsOnlyBuild:
     fullTypeName: ButtonManagerMenu
     methodName: SettingON
   - assembly: Assembly-CSharp
-    fullTypeName: DeleteSave
-    methodName: DeleteAllSave
-  - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinSelect
   - assembly: Assembly-CSharp
     fullTypeName: SkinManagerBuy
     methodName: SkinBuy
+  - assembly: Assembly-CSharp
+    fullTypeName: SkinCat
+    methodName: ButtonShowAds
   - assembly: Assembly-CSharp
     fullTypeName: ButtonManagerMainGame
     methodName: BonusHealth
@@ -289,61 +310,73 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16740}
     - Class: 114
-      Script: {instanceID: 17454}
+      Script: {instanceID: 17364}
     - Class: 114
-      Script: {instanceID: 17546}
+      Script: {instanceID: 17514}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 17612}
     - Class: 114
-      Script: {instanceID: 17984}
+      Script: {instanceID: 17854}
     - Class: 114
-      Script: {instanceID: 18218}
+      Script: {instanceID: 18072}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18320}
     - Class: 114
-      Script: {instanceID: 18730}
+      Script: {instanceID: 18396}
     - Class: 114
-      Script: {instanceID: 18738}
+      Script: {instanceID: 18856}
     - Class: 114
-      Script: {instanceID: 19074}
+      Script: {instanceID: 18864}
     - Class: 114
-      Script: {instanceID: 19854}
+      Script: {instanceID: 19200}
     - Class: 114
-      Script: {instanceID: 20002}
+      Script: {instanceID: 19218}
     - Class: 114
-      Script: {instanceID: 20258}
+      Script: {instanceID: 19646}
     - Class: 114
-      Script: {instanceID: 20294}
+      Script: {instanceID: 19808}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 20034}
     - Class: 114
-      Script: {instanceID: 20550}
+      Script: {instanceID: 20184}
     - Class: 114
-      Script: {instanceID: 20858}
+      Script: {instanceID: 20400}
     - Class: 114
-      Script: {instanceID: 20886}
+      Script: {instanceID: 20460}
     - Class: 114
-      Script: {instanceID: 21016}
+      Script: {instanceID: 20498}
     - Class: 114
-      Script: {instanceID: 21248}
+      Script: {instanceID: 20514}
     - Class: 114
-      Script: {instanceID: 21266}
+      Script: {instanceID: 20776}
     - Class: 114
-      Script: {instanceID: 21344}
+      Script: {instanceID: 21102}
     - Class: 114
-      Script: {instanceID: 22318}
+      Script: {instanceID: 21132}
     - Class: 114
-      Script: {instanceID: 22388}
+      Script: {instanceID: 21276}
     - Class: 114
-      Script: {instanceID: 22398}
+      Script: {instanceID: 21528}
     - Class: 114
-      Script: {instanceID: 22732}
+      Script: {instanceID: 21546}
     - Class: 114
-      Script: {instanceID: 22780}
+      Script: {instanceID: 21628}
     - Class: 114
-      Script: {instanceID: 22884}
+      Script: {instanceID: 22676}
+    - Class: 114
+      Script: {instanceID: 22752}
+    - Class: 114
+      Script: {instanceID: 22762}
+    - Class: 114
+      Script: {instanceID: 22874}
+    - Class: 114
+      Script: {instanceID: 23122}
+    - Class: 114
+      Script: {instanceID: 23172}
+    - Class: 114
+      Script: {instanceID: 23286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -412,75 +445,93 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16740}
     - Class: 114
-      Script: {instanceID: 17328}
+      Script: {instanceID: 17376}
     - Class: 114
-      Script: {instanceID: 17454}
+      Script: {instanceID: 17382}
     - Class: 114
-      Script: {instanceID: 17546}
+      Script: {instanceID: 17514}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 17526}
     - Class: 114
-      Script: {instanceID: 17984}
+      Script: {instanceID: 17612}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 17794}
     - Class: 114
-      Script: {instanceID: 18738}
+      Script: {instanceID: 17854}
     - Class: 114
-      Script: {instanceID: 19072}
+      Script: {instanceID: 18072}
     - Class: 114
-      Script: {instanceID: 19130}
+      Script: {instanceID: 18396}
     - Class: 114
-      Script: {instanceID: 19300}
+      Script: {instanceID: 18864}
     - Class: 114
-      Script: {instanceID: 19314}
+      Script: {instanceID: 19216}
     - Class: 114
-      Script: {instanceID: 19570}
+      Script: {instanceID: 19282}
     - Class: 114
-      Script: {instanceID: 19854}
+      Script: {instanceID: 19350}
     - Class: 114
-      Script: {instanceID: 19968}
+      Script: {instanceID: 19460}
     - Class: 114
-      Script: {instanceID: 20002}
+      Script: {instanceID: 19476}
     - Class: 114
-      Script: {instanceID: 20172}
+      Script: {instanceID: 19744}
     - Class: 114
-      Script: {instanceID: 20258}
+      Script: {instanceID: 20034}
     - Class: 114
-      Script: {instanceID: 20294}
+      Script: {instanceID: 20150}
     - Class: 114
-      Script: {instanceID: 20308}
+      Script: {instanceID: 20184}
     - Class: 114
-      Script: {instanceID: 20550}
+      Script: {instanceID: 20368}
     - Class: 114
-      Script: {instanceID: 20858}
+      Script: {instanceID: 20376}
     - Class: 114
-      Script: {instanceID: 21016}
+      Script: {instanceID: 20460}
     - Class: 114
-      Script: {instanceID: 21344}
+      Script: {instanceID: 20498}
     - Class: 114
-      Script: {instanceID: 21354}
+      Script: {instanceID: 20514}
     - Class: 114
-      Script: {instanceID: 21358}
+      Script: {instanceID: 20776}
     - Class: 114
-      Script: {instanceID: 22108}
+      Script: {instanceID: 21102}
     - Class: 114
-      Script: {instanceID: 22116}
+      Script: {instanceID: 21200}
     - Class: 114
-      Script: {instanceID: 22360}
+      Script: {instanceID: 21276}
     - Class: 114
-      Script: {instanceID: 22398}
+      Script: {instanceID: 21436}
     - Class: 114
-      Script: {instanceID: 22418}
+      Script: {instanceID: 21628}
     - Class: 114
-      Script: {instanceID: 22484}
+      Script: {instanceID: 21638}
     - Class: 114
-      Script: {instanceID: 22732}
+      Script: {instanceID: 21642}
     - Class: 114
-      Script: {instanceID: 88876}
+      Script: {instanceID: 22342}
     - Class: 114
-      Script: {instanceID: 101920}
+      Script: {instanceID: 22468}
+    - Class: 114
+      Script: {instanceID: 22580}
+    - Class: 114
+      Script: {instanceID: 22722}
+    - Class: 114
+      Script: {instanceID: 22762}
+    - Class: 114
+      Script: {instanceID: 22786}
+    - Class: 114
+      Script: {instanceID: 22852}
+    - Class: 114
+      Script: {instanceID: 22874}
+    - Class: 114
+      Script: {instanceID: 22920}
+    - Class: 114
+      Script: {instanceID: 23122}
+    - Class: 114
+      Script: {instanceID: 23212}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -566,6 +617,18 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 664ffe8417c4ffe7f6e69e03e3a4703f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: InterstitialAd
+  - hash:
+      serializedVersion: 2
+      Hash: 100bcb868cc36fc467c377d7d6adafca
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: QualitySetting
+  - hash:
+      serializedVersion: 2
       Hash: 0c6de72eaf8c1070da824268c4bfad9d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -602,6 +665,12 @@ ScriptsOnlyBuild:
     className: MusicManager
   - hash:
       serializedVersion: 2
+      Hash: 69767a0eb57201dde723e6698007d60a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AdsManager
+  - hash:
+      serializedVersion: 2
       Hash: 1ab136900c0edaeeb49424c852595030
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -618,6 +687,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: bfb702e554dd950930fc5d6c08f8e8f5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MusicSetting
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
@@ -654,6 +729,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f172e6128a3242d56f5514cdfd3956b5
+    assemblyName: UnityEngine.Advertisements
+    namespaceName: UnityEngine.Advertisements
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
@@ -812,6 +893,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 4ca283281ec992c1aadfc0b6d1d37016
+    assemblyName: UnityEngine.Advertisements
+    namespaceName: UnityEngine.Advertisements.Platform.Editor
+    className: BannerPlaceholder
+  - hash:
+      serializedVersion: 2
       Hash: e6f8333cc8a800e2866870a5ef7efc35
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -866,6 +953,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: c7eb2cec87363ec1b31d813299332943
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RewardedAdReset
+  - hash:
+      serializedVersion: 2
       Hash: b747f5d40674055dd70e18552f1b0447
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -884,10 +977,16 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: 820ebed0709ff8dc22c753bb1aaefa6b
+      Hash: 18fe5e742356188f03c59cb5e64375e4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMenu
+  - hash:
+      serializedVersion: 2
+      Hash: cfeabaac25d6f92383606d8ca4bed477
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AdsHeartRewarded
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
@@ -956,6 +1055,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 66309eb491bccb49e06fcb8a409872af
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AdsManagerGame
+  - hash:
+      serializedVersion: 2
       Hash: 9f92e751d2286296361a1d06b9e90c1e
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -972,6 +1077,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCancelMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: edccefdc91fe66a17202bc1036952783
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RewardedAdCoin
   - hash:
       serializedVersion: 2
       Hash: 80a72b656b55a7a1fc92e1a02151ea22
@@ -1070,6 +1181,18 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: ab8435c494cd830f9d8b8a4d1eb85114
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: HeartAds
+  - hash:
+      serializedVersion: 2
+      Hash: dab9d3477fc8010595aa33ff812a7f00
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RewardedAdHeart
+  - hash:
+      serializedVersion: 2
       Hash: 522f6865b4ec12522e602206785309f8
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1118,6 +1241,12 @@ ScriptsOnlyBuild:
     className: Vignette
   - hash:
       serializedVersion: 2
+      Hash: bf79486b4a418ef776af0ff654b40207
+    assemblyName: Google.Play.Games
+    namespaceName: GooglePlayGames.OurUtils
+    className: NearbyHelperObject
+  - hash:
+      serializedVersion: 2
       Hash: c65fb8f721cc4462e7a642974c37d3c0
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -1160,6 +1289,12 @@ ScriptsOnlyBuild:
     className: StateGraphAsset
   - hash:
       serializedVersion: 2
+      Hash: 0c90d8b254c3a87bcb65a13c2eb0f431
+    assemblyName: UnityEngine.Advertisements
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: CoroutineExecutor
+  - hash:
+      serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1178,6 +1313,12 @@ ScriptsOnlyBuild:
     className: AnimatorMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 2fedd4f12c54c3cbb28b1d590ebb08c7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlanetAds
+  - hash:
+      serializedVersion: 2
       Hash: 33656f83bb0079184b2206a69690ec46
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1188,6 +1329,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 20c0c281f09d35461bde1c30d6de28ee
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SkinCat
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -1286,6 +1433,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 12317e5d89a4cbaf53c1fd82f17b085c
+    assemblyName: UnityEngine.Advertisements
+    namespaceName: UnityEngine.Advertisements.Utilities
+    className: ApplicationQuit
+  - hash:
+      serializedVersion: 2
       Hash: c4b85a67513b4f0cf7b5fb2d5ded04b0
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1334,6 +1487,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 2095e7544d3ef453424f1f0e6c74d0b6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SkinBonny
+  - hash:
+      serializedVersion: 2
       Hash: ee34255e3e86289bde9bad5e07b84cbc
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1376,6 +1535,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 2b2e01cadb0171c6ebe834fe1b8d65ff
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: SkinPlanet
+  - hash:
+      serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1386,6 +1551,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PointSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 6f248028b3497460b25044538dde24ca
+    assemblyName: Google.Play.Games
+    namespaceName: GooglePlayGames.OurUtils
+    className: PlayGamesHelperObject
   - hash:
       serializedVersion: 2
       Hash: 550cba32c6c509bf04e7454b8dbe717a
@@ -1434,6 +1605,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerPrefsCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 3678b1ac75618cee99e504d2342e1706
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AdsInitialize
+  - hash:
+      serializedVersion: 2
+      Hash: f5282fcaed8743a289637ababe92dd27
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CatAds
   - hash:
       serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
@@ -1490,7 +1673,13 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 2a152c51ca0382fb2c0f360adca9ba40
+      Hash: 8b6266e763456cdde973866632054bbc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BonnyAds
+  - hash:
+      serializedVersion: 2
+      Hash: 655ab8a268b06200cf8807ba66335cbb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ButtonManagerMainGame
@@ -1530,20 +1719,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 100bcb868cc36fc467c377d7d6adafca
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: QualitySetting
-  - hash:
-      serializedVersion: 2
-      Hash: bfb702e554dd950930fc5d6c08f8e8f5
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MusicSetting
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: C:/Users/limaz/Desktop/FallingBall.apk
+  playerPath: C:/Users/limaz/Desktop/FallingBall.aab

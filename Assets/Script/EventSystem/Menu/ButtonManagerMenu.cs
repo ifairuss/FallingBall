@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -24,22 +26,38 @@ public class ButtonManagerMenu : SFXManager
     [SerializeField] private Animator _animatorInterface;
     [SerializeField] private PostProcessVolume _settingPost;
 
-    private void Start()
+    public bool ConnectedToGooglePlay;
+
+    private void Awake()
     {
         Time.timeScale = 1f;
-
 
         _settingPanel.SetActive(false);
         _shopPanel.SetActive(false);
         _countersPanel.SetActive(true);
         _buttonPanel.SetActive(true);
+
+        PlayGamesPlatform.DebugLogEnabled = true;
+        PlayGamesPlatform.Activate();
+    }
+
+    private void Start()
+    {
+        LogInGooglePlay();
+
+        if (ConnectedToGooglePlay)
+        {
+            int _bestScore = PlayerPrefs.GetInt("BestScoreSave");
+
+            Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, LeaderboardUpdate);
+        }
     }
 
     private void Update()
     {
         int postProces = PlayerPrefs.GetInt("QualityIndex");
 
-        if (postProces == 3)
+        if (postProces >= 3)
         {
             _settingPost.enabled = false;
         }
@@ -47,6 +65,29 @@ public class ButtonManagerMenu : SFXManager
         {
             _settingPost.enabled = true;
         }
+    }
+
+    private void LeaderboardUpdate(bool success)
+    {
+        if (success) Debug.Log("Update Leaderboard");
+        else Debug.Log("Unable to update Leaderboard");
+    }
+
+    private void LogInGooglePlay()
+    {
+        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+    }
+
+    private void ProcessAuthentication(SignInStatus status)
+    {
+        if (status == SignInStatus.Success)
+        {
+            ConnectedToGooglePlay = true;
+        }
+        else
+        {
+            ConnectedToGooglePlay = false;
+        }    
     }
 
     public void Play()
@@ -73,9 +114,11 @@ public class ButtonManagerMenu : SFXManager
     {
         SoundSFX();
 
-        int playerScore = PlayerPrefsCounter.MoneyEarned;
-
-        
+        if (!ConnectedToGooglePlay)
+        {
+            LogInGooglePlay();
+        }
+        Social.ShowLeaderboardUI();
     }
 
     #region "Panel-Setting"

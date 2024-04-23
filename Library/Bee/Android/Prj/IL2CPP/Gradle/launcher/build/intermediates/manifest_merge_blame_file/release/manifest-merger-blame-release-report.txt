@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.IFAgame.FallingBall"
+4    android:installLocation="preferExternal"
+5    android:versionCode="2"
+6    android:versionName="0.2" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-67
+19-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-64
+20
+21    <uses-feature android:glEsVersion="0x00030000" />
+21-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-54
+21-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:19-51
+22    <uses-feature
+22-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-15:36
+23        android:name="android.hardware.vulkan.version"
+23-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-55
+24        android:required="false" />
+24-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-33
+25    <uses-feature
+25-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:5-18:36
+26        android:name="android.hardware.touchscreen"
+26-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-52
+27        android:required="false" />
+27-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-33
+28    <uses-feature
+28-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:5-21:36
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-63
+30        android:required="false" />
+30-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-33
+31    <uses-feature
+31-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-24:36
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-72
+33        android:required="false" />
+33-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-33
+34
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:5-79
+35-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:22-76
+36    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+36-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:11:5-79
+36-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:11:22-76
+37
+38    <application
+38-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
+39        android:extractNativeLibs="true"
+39-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:18-50
+40        android:icon="@mipmap/app_icon"
+40-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-80
+41        android:label="@string/app_name"
+41-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
+42        android:roundIcon="@mipmap/app_icon_round" >
+42-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:81-123
+43        <meta-data
+43-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-29:33
+44            android:name="unity.splash-mode"
+44-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-45
+45            android:value="0" />
+45-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-30
+46        <meta-data
+46-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-32:36
+47            android:name="unity.splash-enable"
+47-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-47
+48            android:value="True" />
+48-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-33
+49        <meta-data
+49-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:9-35:36
+50            android:name="unity.launch-fullscreen"
+50-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:13-51
+51            android:value="True" />
+51-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:13-33
+52        <meta-data
+52-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:9-38:37
+53            android:name="unity.allow-resizable-window"
+53-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:13-56
+54            android:value="False" />
+54-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-34
+55        <meta-data
+55-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:9-41:50
+56            android:name="notch.config"
+56-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-40
+57            android:value="portrait|landscape" />
+57-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-47
+58        <meta-data
+58-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:9-44:36
+59            android:name="unity.auto-report-fully-drawn"
+59-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-57
+60            android:value="true" />
+60-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-33
+61
+62        <activity
+62-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:9-67:20
+63            android:name="com.unity3d.player.UnityPlayerActivity"
+63-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-66
+64            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+64-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:48:13-194
+65            android:exported="true"
+65-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:13-36
+66            android:hardwareAccelerated="false"
+66-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:50:13-48
+67            android:launchMode="singleTask"
+67-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:13-44
+68            android:resizeableActivity="false"
+68-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-47
+69            android:screenOrientation="portrait"
+69-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-49
+70            android:theme="@style/UnityThemeSelector" >
+70-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:13-54
+71            <intent-filter>
+71-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:13-59:29
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:17-77
+72-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:27-74
+73
+74                <action android:name="android.intent.action.MAIN" />
+74-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:17-69
+74-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:25-66
+75            </intent-filter>
+76
+77            <meta-data
+77-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:13-63:40
+78                android:name="unityplayer.UnityActivity"
+78-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:62:17-57
+79                android:value="true" />
+79-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:63:17-37
+80            <meta-data
+80-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:64:13-66:40
+81                android:name="notch_support"
+81-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:17-45
+82                android:value="true" />
+82-->[:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:17-37
+83        </activity>
+84        <activity
+84-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:14:9-18:74
+85            android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+85-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:15:13-74
+86            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+86-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:16:13-170
+87            android:hardwareAccelerated="true"
+87-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:17:13-47
+88            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+88-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:18:13-71
+89        <activity
+89-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:19:9-23:86
+90            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+90-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:20:13-85
+91            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+91-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:21:13-170
+92            android:hardwareAccelerated="true"
+92-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:22:13-47
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+93-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:23:13-83
+94        <activity
+94-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:24:9-28:86
+95            android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+95-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:25:13-93
+96            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+96-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:26:13-170
+97            android:hardwareAccelerated="false"
+97-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:27:13-48
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+98-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:28:13-83
+99        <activity
+99-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:29:9-33:74
+100            android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+100-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:30:13-82
+101            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+101-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:31:13-170
+102            android:hardwareAccelerated="false"
+102-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:32:13-48
+103            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- The space in these forces it to be interpreted as a string vs. int -->
+103-->[:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:33:13-71
+104        <meta-data
+104-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-20:49
+105            android:name="com.google.android.gms.games.APP_ID"
+105-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-63
+106            android:value="\u003511280868121" /> <!-- Keep track of which plugin is being used -->
+106-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-46
+107        <meta-data
+107-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-25:44
+108            android:name="com.google.android.gms.games.unityVersion"
+108-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-69
+109            android:value="\u0030.11.01" />
+109-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-41
+110
+111        <activity
+111-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-29:86
+112            android:name="com.google.games.bridge.NativeBridgeActivity"
+112-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-72
+113            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+113-->[:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-83
+114    </application>
+115
+116</manifest>

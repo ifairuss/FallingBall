@@ -4,79 +4,48 @@ using UnityEngine.Advertisements;
 public class RewardedAdReset : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
-    string _adUnitId = null; // This will remain null for unsupported platforms
+    [SerializeField] string _iOsAdUnitId = "Rewarded_IOS";
+    string _adUnitId;
 
     void Awake()
     {
-        // Get the Ad Unit ID for the current platform:
-#if UNITY_ANDROID
-        _adUnitId = _androidAdUnitId;
-#endif
-
-        // Disable the button until the ad is ready to show:
+        _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
+            ? _iOsAdUnitId
+            : _androidAdUnitId;
     }
 
-    // Call this public method when you want to get an ad ready to show.
-    public void LoadAd()
+    public void LoadRewardedResetAd()
     {
-        // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
-        Debug.Log("Loading Ad: " + _adUnitId);
         Advertisement.Load(_adUnitId, this);
     }
 
-    // If the ad successfully loads, add a listener to the button and enable it:
-    public void OnUnityAdsAdLoaded(string adUnitId)
-    {
-        Debug.Log("Ad Loaded: " + adUnitId);
-    }
-
-    // Implement a method to execute when the user clicks the button:
     public void ShowAd()
     {
-        // Then show the ad:
         Advertisement.Show(_adUnitId, this);
+        LoadRewardedResetAd();
     }
 
-    // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
+            ButtonManagerMainGame.AdsInterstitital = 0;
             Counter.CounterHealth = 1;
             Time.timeScale = 1f;
             ButtonManagerMainGame._resume = true;
-            Invoke("Resume", 0.5f);
+            LoadRewardedResetAd();
         }
     }
 
-    private void Resume()
+    public void OnUnityAdsAdLoaded(string adUnitId)
     {
-        ButtonManagerMainGame._resume = false;
+        Debug.Log("Interstitial Ad Loaded...");
     }
 
-    // Implement Load and Show Listener error callbacks:
-    public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
-    {
-        Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        // Use the error details to determine whether to try to load another ad.
-    }
-
-    public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
-    {
-        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        // Use the error details to determine whether to try to load another ad.
-    }
-
-    public void OnUnityAdsShowStart(string adUnitId) 
-    {
-
-    }
-    public void OnUnityAdsShowClick(string adUnitId) 
-    {
-       
-    }
-
-    void OnDestroy()
-    {
-    }
+    #region callBack
+    public void OnUnityAdsFailedToLoad(string _adUnitId, UnityAdsLoadError error, string message) { }
+    public void OnUnityAdsShowFailure(string _adUnitId, UnityAdsShowError error, string message) { }
+    public void OnUnityAdsShowStart(string _adUnitId) { }
+    public void OnUnityAdsShowClick(string _adUnitId) { }
+    #endregion
 }

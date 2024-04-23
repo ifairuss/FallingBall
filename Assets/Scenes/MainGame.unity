@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 398590800}
-  m_IndirectSpecularColor: {r: 0.024088845, g: 0.08817706, b: 0.01964107, a: 1}
+  m_IndirectSpecularColor: {r: 0.06709985, g: 0.15229875, b: 0.058942728, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,7 +138,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7820371
 Transform:
@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
+  _iOsAdUnitId: Rewarded_IOS
 --- !u!1 &126801669
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &126801672
 MonoBehaviour:
@@ -577,7 +578,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &386939024
 Transform:
@@ -607,6 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
+  _iOsAdUnitId: Rewarded_IOS
 --- !u!1 &398590799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,7 +1679,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1bd302590f7d3cc4fb46d10edf9295be, type: 3}
   - {fileID: 8300000, guid: 4cfab0429bceb79478c9cd0a283d50cb, type: 3}
   _pausePanel: {fileID: 449884599}
-  _isAddHeart: 0
   _interfaceAnomator: {fileID: 1084483474}
   _settingPost: {fileID: 700551040}
   _interstitial: {fileID: 943963091}
@@ -2526,7 +2527,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &943963090
 Transform:
@@ -2758,7 +2759,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1082760834
 Transform:
@@ -2788,6 +2789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidAdUnitId: Rewarded_Android
+  _iOsAdUnitId: Rewarded_IOS
 --- !u!1 &1084483469
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,12 +3639,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136363058}
+  - component: {fileID: 1136363059}
   m_Layer: 0
   m_Name: AdsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1136363058
 Transform:
@@ -3664,6 +3667,21 @@ Transform:
   - {fileID: 7820371}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1136363059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136363057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637d8603c759e684891d0a39e18a28b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RewardedAdCoin: {fileID: 386939025}
+  RewardedAdHeart: {fileID: 7820372}
+  RewardedAdReset: {fileID: 1082760835}
 --- !u!1 &1150646706
 GameObject:
   m_ObjectHideFlags: 0
