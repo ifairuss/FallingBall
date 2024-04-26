@@ -1,5 +1,6 @@
 ﻿using GooglePlayGames;
 using GooglePlayGames.BasicApi;
+using UnityEngine.SocialPlatforms;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
@@ -28,6 +29,7 @@ public class ButtonManagerMenu : SFXManager
 
     public bool ConnectedToGooglePlay;
 
+
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -36,13 +38,25 @@ public class ButtonManagerMenu : SFXManager
         _shopPanel.SetActive(false);
         _countersPanel.SetActive(true);
         _buttonPanel.SetActive(true);
-
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
     }
 
     private void Start()
     {
+        PlayGamesPlatform.DebugLogEnabled = true;
+        PlayGamesPlatform.Activate();
+
+        Social.localUser.Authenticate(success =>
+        {
+            if (success)
+            {
+                ConnectedToGooglePlay = true;
+            }
+            else
+            {
+                ConnectedToGooglePlay = false;
+            }
+        });
+
         LogInGooglePlay();
 
         if (ConnectedToGooglePlay)
@@ -113,12 +127,12 @@ public class ButtonManagerMenu : SFXManager
     public void LeaderBord()
     {
         SoundSFX();
+        Social.ShowLeaderboardUI();
 
         if (!ConnectedToGooglePlay)
         {
             LogInGooglePlay();
         }
-        Social.ShowLeaderboardUI();
     }
 
     #region "Panel-Setting"

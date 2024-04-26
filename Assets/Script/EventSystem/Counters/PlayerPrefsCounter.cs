@@ -44,6 +44,8 @@ public class PlayerPrefsCounter : MonoBehaviour
             PlayerPrefs.SetInt("MoneyEarnedSave", MoneyEarned);
             PlayerPrefs.SetInt("MoneySave", 0);
         }
+
+        //Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, (bool success) => { Social.ShowLeaderboardUI(); });
     }
 
     private void DisplayText()

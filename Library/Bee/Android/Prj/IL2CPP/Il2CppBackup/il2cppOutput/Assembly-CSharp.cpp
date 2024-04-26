@@ -21,6 +21,17 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
 
 struct Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C;
 struct Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B;
@@ -102,6 +113,7 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct GameOver_tC0D72A03377DA58EE60B10DE7838DBDC0A75798D;
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct HeartAds_t4685AFB3E433606562A0F960D1ADE2593849E72F;
+struct ILocalUser_t8D7F34634AF940D34302E4F415AD50C7132EB7F6;
 struct INearbyConnectionClient_tBFE8F3C727285D4A45458AAD496AFBB7816429AD;
 struct IPlayGamesClient_tD4A3FB7D57BFF95CCE85912B197D18627787D58D;
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
@@ -188,6 +200,7 @@ IL2CPP_EXTERN_C RuntimeClass* Counter_t42D6A6E220D075FE4BCDB1BC0AB7A278A8304146_
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FallingObjectScript_tFF93A62BD229281F48ACC49313CAA67FBB0F8D67_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HeartAds_t4685AFB3E433606562A0F960D1ADE2593849E72F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ILocalUser_t8D7F34634AF940D34302E4F415AD50C7132EB7F6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MusicManager_t50343E4230B62B127D8AA186232F1B8D0FF38FDC_il2cpp_TypeInfo_var;
@@ -262,6 +275,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF67F26DBF4E1F0FF27C9B239F09167FE67BFCB2F
 IL2CPP_EXTERN_C String_t* _stringLiteralF8980DB4985221505B03D3D6D771BB82C5ECD2D7;
 IL2CPP_EXTERN_C const RuntimeMethod* ButtonManagerMenu_LeaderboardUpdate_mC76F48F7C0F4931668AAD117ACCB758BC1E9441D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ButtonManagerMenu_ProcessAuthentication_m9DB0F070820073BC286DA6528715E8C9138C6804_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ButtonManagerMenu_U3CStartU3Eb__14_0_mBF49320234262882B0897AF5E8CA0811A338ACB6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m4B5CAD64B52D153BEA96432633CA9A45FA523DD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m7FF948365C38BC39333D82B235A7C4EAD219960D_RuntimeMethod_var;
@@ -2407,11 +2421,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefsCounter_DisplayText_mFDECA582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BonusShop_DisplayText_m7BEB1D526251C91D4D179D08CE524F11D8C66C4E (BonusShop_t12EB3EC0EDF72753332500C90788CD3F57A1BC76* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayGamesPlatform_set_DebugLogEnabled_mC666E2B1BC69E5E6B819A7FF7281EF8787D13C25 (bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayGamesPlatform_tD21BC276B673A2B5309AF3B508E069C8594FAED9* PlayGamesPlatform_Activate_mCEEFD9D718E345CAA8A2522C571FE44E78C5E18D (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_LogInGooglePlay_mA2AD25C47B89EE359B99BFCEE27505E485F9E599 (ButtonManagerMenu_t3A58C0989FE18422888D6EAC330028B4EB20B345* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Social_get_localUser_m7ED6D68F8CBFB7930562BE54601520AEED1D0CE4 (const RuntimeMethod* method) ;
 inline void Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501 (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
 	((  void (*) (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501_gshared)(__this, ___0_object, ___1_method, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_LogInGooglePlay_mA2AD25C47B89EE359B99BFCEE27505E485F9E599 (ButtonManagerMenu_t3A58C0989FE18422888D6EAC330028B4EB20B345* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Social_ReportScore_m00EA1D85C901167A6643A56FD090894649E4B4B6 (int64_t ___0_score, String_t* ___1_board, Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* ___2_callback, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayGamesPlatform_tD21BC276B673A2B5309AF3B508E069C8594FAED9* PlayGamesPlatform_get_Instance_m4BF29E171708F7E38273294DB10F88D5A4A534EA (const RuntimeMethod* method) ;
 inline void Action_1__ctor_m24EBA5E2D3AA733A71F462D8A93C172F7CCA8926 (Action_1_t38A40574AB80CC30FF578C805B326880626B49AF* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
@@ -7835,9 +7850,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_Awake_m4FA36BB5A31C0C5
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->____buttonPanel;
 		NullCheck(L_3);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
-		PlayGamesPlatform_set_DebugLogEnabled_mC666E2B1BC69E5E6B819A7FF7281EF8787D13C25((bool)1, NULL);
-		PlayGamesPlatform_tD21BC276B673A2B5309AF3B508E069C8594FAED9* L_4;
-		L_4 = PlayGamesPlatform_Activate_mCEEFD9D718E345CAA8A2522C571FE44E78C5E18D(NULL);
 		return;
 	}
 }
@@ -7848,27 +7860,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_Start_m200798F6FA63DE5
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonManagerMenu_LeaderboardUpdate_mC76F48F7C0F4931668AAD117ACCB758BC1E9441D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ButtonManagerMenu_U3CStartU3Eb__14_0_mBF49320234262882B0897AF5E8CA0811A338ACB6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ILocalUser_t8D7F34634AF940D34302E4F415AD50C7132EB7F6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral22C515C8FAFE560F53038FC8D62BC86615D702B8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6009ED13012A55754848E7BB957AAACB5FA0328);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		PlayGamesPlatform_set_DebugLogEnabled_mC666E2B1BC69E5E6B819A7FF7281EF8787D13C25((bool)1, NULL);
+		PlayGamesPlatform_tD21BC276B673A2B5309AF3B508E069C8594FAED9* L_0;
+		L_0 = PlayGamesPlatform_Activate_mCEEFD9D718E345CAA8A2522C571FE44E78C5E18D(NULL);
+		RuntimeObject* L_1;
+		L_1 = Social_get_localUser_m7ED6D68F8CBFB7930562BE54601520AEED1D0CE4(NULL);
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_2 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_2, __this, (intptr_t)((void*)ButtonManagerMenu_U3CStartU3Eb__14_0_mBF49320234262882B0897AF5E8CA0811A338ACB6_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
+		InterfaceActionInvoker1< Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* >::Invoke(0, ILocalUser_t8D7F34634AF940D34302E4F415AD50C7132EB7F6_il2cpp_TypeInfo_var, L_1, L_2);
 		ButtonManagerMenu_LogInGooglePlay_mA2AD25C47B89EE359B99BFCEE27505E485F9E599(__this, NULL);
-		bool L_0 = __this->___ConnectedToGooglePlay;
-		if (!L_0)
+		bool L_3 = __this->___ConnectedToGooglePlay;
+		if (!L_3)
 		{
-			goto IL_002f;
+			goto IL_0051;
 		}
 	}
 	{
-		int32_t L_1;
-		L_1 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral22C515C8FAFE560F53038FC8D62BC86615D702B8, NULL);
-		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_2 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
-		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_2, __this, (intptr_t)((void*)ButtonManagerMenu_LeaderboardUpdate_mC76F48F7C0F4931668AAD117ACCB758BC1E9441D_RuntimeMethod_var), NULL);
-		Social_ReportScore_m00EA1D85C901167A6643A56FD090894649E4B4B6(((int64_t)L_1), _stringLiteralE6009ED13012A55754848E7BB957AAACB5FA0328, L_2, NULL);
+		int32_t L_4;
+		L_4 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteral22C515C8FAFE560F53038FC8D62BC86615D702B8, NULL);
+		Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C* L_5 = (Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C*)il2cpp_codegen_object_new(Action_1_t10DCB0C07D0D3C565CEACADC80D1152B35A45F6C_il2cpp_TypeInfo_var);
+		Action_1__ctor_mA8C3AC97D1F076EA5D1D0C10CEE6BD3E94711501(L_5, __this, (intptr_t)((void*)ButtonManagerMenu_LeaderboardUpdate_mC76F48F7C0F4931668AAD117ACCB758BC1E9441D_RuntimeMethod_var), NULL);
+		Social_ReportScore_m00EA1D85C901167A6643A56FD090894649E4B4B6(((int64_t)L_4), _stringLiteralE6009ED13012A55754848E7BB957AAACB5FA0328, L_5, NULL);
 	}
 
-IL_002f:
+IL_0051:
 	{
 		return;
 	}
@@ -8028,19 +8051,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_LeaderBord_m89494661CC
 {
 	{
 		ButtonManagerMenu_SoundSFX_mF58F62008A8FB76CEF5C832AFC29257876899CB9(__this, NULL);
+		Social_ShowLeaderboardUI_m3C925568256ECA8A80A014F535453857DF8A1A8A(NULL);
 		bool L_0 = __this->___ConnectedToGooglePlay;
 		if (L_0)
 		{
-			goto IL_0014;
+			goto IL_0019;
 		}
 	}
 	{
 		ButtonManagerMenu_LogInGooglePlay_mA2AD25C47B89EE359B99BFCEE27505E485F9E599(__this, NULL);
 	}
 
-IL_0014:
+IL_0019:
 	{
-		Social_ShowLeaderboardUI_m3C925568256ECA8A80A014F535453857DF8A1A8A(NULL);
 		return;
 	}
 }
@@ -8381,6 +8404,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu__ctor_m23D52A28B25198D
 {
 	{
 		SFXManager__ctor_m033D29A7E11F09A60ED2C387E8A3380392FDCA27(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonManagerMenu_U3CStartU3Eb__14_0_mBF49320234262882B0897AF5E8CA0811A338ACB6 (ButtonManagerMenu_t3A58C0989FE18422888D6EAC330028B4EB20B345* __this, bool ___0_success, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___0_success;
+		if (!L_0)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		__this->___ConnectedToGooglePlay = (bool)1;
+		return;
+	}
+
+IL_000b:
+	{
+		__this->___ConnectedToGooglePlay = (bool)0;
 		return;
 	}
 }
