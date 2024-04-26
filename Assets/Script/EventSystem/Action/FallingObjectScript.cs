@@ -75,15 +75,7 @@ public class FallingObjectScript : SFXManager
             if (_typeObject == TypeObject.Heart)
             {
                 PlaySFX(_allClips[0], destroy: true, pinch: 1.3f);
-                if (Counter.CounterHealth < 2)
-                {
-                    Counter.CounterHealth++;
-                }
-                else
-                {
-                    Counter.CounterScore++;
-                    Counter.CounterHealth = Mathf.Max(Counter.CounterHealth, 2);
-                }
+                Counter.CounterScore += 5;
             }
         }
     }
@@ -144,7 +136,7 @@ public class FallingObjectScript : SFXManager
             if (_typeObject == TypeObject.Heart)
             {
                 PlaySFX(_allClips[0], destroy: true);
-                Counter.CounterScore--;
+                Counter.CounterScore -= 3;
             }
         }
     }
