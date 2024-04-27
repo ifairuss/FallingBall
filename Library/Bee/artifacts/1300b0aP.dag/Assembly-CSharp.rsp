@@ -345,6 +345,7 @@
 "Assets/Script/EventSystem/Counters/PlayerPrefsCounter.cs"
 "Assets/Script/EventSystem/Menu/BonusShop.cs"
 "Assets/Script/EventSystem/Menu/ButtonManagerMenu.cs"
+"Assets/Script/PlayGamesManager.cs"
 "Assets/Script/Setting/MusicSetting.cs"
 "Assets/Script/Setting/QualitySetting.cs"
 -langversion:9.0

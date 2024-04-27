@@ -6,7 +6,7 @@ INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Pr
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-70:12
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:2:1-36:12
-MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:1-32:12
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:1-44:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -34,8 +34,8 @@ MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:5-68:19
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:13:5-34:19
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:13:5-34:19
-MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-30:19
-MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-30:19
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-42:19
+MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-42:19
 	android:extractNativeLibs
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:18-50
 	android:label
@@ -234,21 +234,47 @@ ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54
 		ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:33:13-71
 	android:name
 		ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:30:13-82
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-74
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:22-71
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:5-76
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:22-78
+meta-data#com.google.android.gms.nearby.connection.SERVICE_ID
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-27:55
+	android:value
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-52
+	android:name
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-79
 meta-data#com.google.android.gms.games.APP_ID
-ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-20:49
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-32:49
 	android:value
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-46
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-46
 	android:name
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-63
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-63
 meta-data#com.google.android.gms.games.unityVersion
-ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-25:44
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:9-37:44
 	android:value
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-41
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:13-41
 	android:name
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-69
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:13-69
 activity#com.google.games.bridge.NativeBridgeActivity
-ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-29:86
+ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:9-41:86
 	android:theme
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-83
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-83
 	android:name
-		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-72
+		ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-72

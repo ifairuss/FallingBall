@@ -33,6 +33,10 @@ public class PlayerPrefsCounter : MonoBehaviour
         {
             _bestScore = scoreSave;
 
+            Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, (bool success) => {
+                Debug.Log($"Leaderboard score = {_bestScore}");
+            });
+
             PlayerPrefs.SetInt("BestScoreSave", _bestScore);
             PlayerPrefs.SetInt("ScoreSave", 0);
         }
@@ -44,8 +48,6 @@ public class PlayerPrefsCounter : MonoBehaviour
             PlayerPrefs.SetInt("MoneyEarnedSave", MoneyEarned);
             PlayerPrefs.SetInt("MoneySave", 0);
         }
-
-        //Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, (bool success) => { Social.ShowLeaderboardUI(); });
     }
 
     private void DisplayText()

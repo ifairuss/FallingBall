@@ -14,31 +14,56 @@
 13        android:targetSdkVersion="16" />
 13-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml
 14
-15    <application>
-15-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:11:5-25:19
-16
-17        <!-- The space in these forces it to be interpreted as a string vs. int -->
-18        <meta-data
-18-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:16:9-17:49
-19            android:name="com.google.android.gms.games.APP_ID"
-19-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:16:20-70
-20            android:value="\u003511280868121" />
-20-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:17:13-46
+15    <!-- Required for Nearby Connections -->
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:10:9-72
+16-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:10:26-69
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+17-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:11:9-78
+17-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:11:26-75
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:12:9-80
+18-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:12:26-77
+19    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+19-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:13:9-80
+19-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:13:26-77
+20    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+20-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:14:9-85
+20-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:14:26-82
 21
-22        <!-- Keep track of which plugin is being used -->
-23        <meta-data
-23-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:9-21:44
-24            android:name="com.google.android.gms.games.unityVersion"
-24-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:20-76
-25            android:value="\u0030.11.01" />
-25-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:13-41
-26
-27        <activity
-27-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:23:9-24:86
-28            android:name="com.google.games.bridge.NativeBridgeActivity"
-28-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:23:19-78
-29            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
-29-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:24:13-83
-30    </application>
-31
-32</manifest>
+22    <application>
+22-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:17:5-34:19
+23
+24        <!-- Required for Nearby Connections API -->
+25        <meta-data
+25-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:14-21:61
+26            android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
+26-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:20:25-91
+27            android:value="com.IFAgame.FallingBall" />
+27-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:21:19-58
+28
+29        <!-- The space in these forces it to be interpreted as a string vs. int -->
+30        <meta-data
+30-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:25:9-26:49
+31            android:name="com.google.android.gms.games.APP_ID"
+31-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:25:20-70
+32            android:value="\u003511280868121" />
+32-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:26:13-46
+33
+34        <!-- Keep track of which plugin is being used -->
+35        <meta-data
+35-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:29:9-30:44
+36            android:name="com.google.android.gms.games.unityVersion"
+36-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:29:20-76
+37            android:value="\u0030.11.01" />
+37-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:30:13-41
+38
+39        <activity
+39-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:32:9-33:86
+40            android:name="com.google.games.bridge.NativeBridgeActivity"
+40-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:32:19-78
+41            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+41-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\AndroidManifest.xml:33:13-83
+42    </application>
+43
+44</manifest>

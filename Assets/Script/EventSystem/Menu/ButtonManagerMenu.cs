@@ -1,10 +1,9 @@
-﻿using GooglePlayGames;
-using GooglePlayGames.BasicApi;
-using UnityEngine.SocialPlatforms;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using GooglePlayGames;
+using UnityEngine.SocialPlatforms;
 
 public class ButtonManagerMenu : SFXManager
 {
@@ -27,9 +26,6 @@ public class ButtonManagerMenu : SFXManager
     [SerializeField] private Animator _animatorInterface;
     [SerializeField] private PostProcessVolume _settingPost;
 
-    public bool ConnectedToGooglePlay;
-
-
     private void Awake()
     {
         Time.timeScale = 1f;
@@ -38,33 +34,6 @@ public class ButtonManagerMenu : SFXManager
         _shopPanel.SetActive(false);
         _countersPanel.SetActive(true);
         _buttonPanel.SetActive(true);
-    }
-
-    private void Start()
-    {
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-
-        Social.localUser.Authenticate(success =>
-        {
-            if (success)
-            {
-                ConnectedToGooglePlay = true;
-            }
-            else
-            {
-                ConnectedToGooglePlay = false;
-            }
-        });
-
-        LogInGooglePlay();
-
-        if (ConnectedToGooglePlay)
-        {
-            int _bestScore = PlayerPrefs.GetInt("BestScoreSave");
-
-            Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, LeaderboardUpdate);
-        }
     }
 
     private void Update()
@@ -79,29 +48,6 @@ public class ButtonManagerMenu : SFXManager
         {
             _settingPost.enabled = true;
         }
-    }
-
-    private void LeaderboardUpdate(bool success)
-    {
-        if (success) Debug.Log("Update Leaderboard");
-        else Debug.Log("Unable to update Leaderboard");
-    }
-
-    private void LogInGooglePlay()
-    {
-        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-    }
-
-    private void ProcessAuthentication(SignInStatus status)
-    {
-        if (status == SignInStatus.Success)
-        {
-            ConnectedToGooglePlay = true;
-        }
-        else
-        {
-            ConnectedToGooglePlay = false;
-        }    
     }
 
     public void Play()
@@ -126,13 +72,7 @@ public class ButtonManagerMenu : SFXManager
 
     public void LeaderBord()
     {
-        SoundSFX();
         Social.ShowLeaderboardUI();
-
-        if (!ConnectedToGooglePlay)
-        {
-            LogInGooglePlay();
-        }
     }
 
     #region "Panel-Setting"
