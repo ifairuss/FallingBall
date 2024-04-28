@@ -38,7 +38,7 @@ namespace GooglePlayGames {
 
         public const string ApplicationId = "511280868121"; // Filled in automatically
         public const string IosClientId = "__IOS_CLIENTID__"; // Filled in automatically
-        public const string WebClientId = "511280868121-a2bmgl0eu30gu7bp13ijuan3v68mda07.apps.googleusercontent.com"; // Filled in automatically
+        public const string WebClientId = "511280868121-e1dlurmos3g9qt2nfgpdq9v8rjulh7ub.apps.googleusercontent.com"; // Filled in automatically
         public const string NearbyConnectionServiceId = "com.IFAgame.FallingBall";
 
         public static bool ApplicationIdInitialized() {

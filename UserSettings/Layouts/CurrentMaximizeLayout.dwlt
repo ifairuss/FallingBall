@@ -63,7 +63,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - C:\Users\limaz\Documents\GitHub\FallingBall\Library\PlayModeViewStates\4add06d9f81180e42bfff4b624d1d52c
+  - C:\Users\limaz\Documents\GitHub\FallingBall\Library\PlayModeViewStates\769469e7733babc439992e0ea8d85907
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -599,9 +599,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 980, y: 1568.3169, z: 22.811115}
+    m_Target: {x: -626.0488, y: 825.84546, z: 317.0578}
     speed: 2
-    m_Value: {x: 980, y: 1568.3169, z: 22.811115}
+    m_Value: {x: -562.54114, y: 850.9928, z: 301.1485}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -651,9 +651,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.016497979, y: 0.011997797, z: -0.0001978366, w: 0.9997919}
   m_Size:
-    m_Target: 296.45273
+    m_Target: 1778.0985
     speed: 2
-    m_Value: 296.45273
+    m_Value: 1701.5297
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1794,8 +1794,8 @@ MonoBehaviour:
     y: 593
     width: 936
     height: 346
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -1859,7 +1859,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 91
+  controlID: 114
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1923,20 +1923,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5079ffff
-      m_LastClickedID: -34480
-      m_ExpandedIDs: 26c9ffff28c9ffff00fbffff225e0000a0600000ae610000
+      m_SelectedIDs: bad20000
+      m_LastClickedID: 53946
+      m_ExpandedIDs: 3645ffff8645ffff9c47ffff0c48ffff00fbffff1e5e00007a5f00009c60000040d300009ad4000004d50000bcd50000e8d70000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GooglePlayStatusText
-        m_OriginalName: GooglePlayStatusText
+        m_Name: GooglePlayText
+        m_OriginalName: GooglePlayText
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -34480
+        m_UserData: -64262
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -2035,9 +2035,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a650000
-    m_LastClickedID: 25946
-    m_ExpandedIDs: 00000000186500001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e650000306500003265000034650000366500004265000068660000ca66000000ca9a3b
+    m_SelectedIDs: 62650000
+    m_LastClickedID: 25954
+    m_ExpandedIDs: 00000000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2065,7 +2065,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000186500001a6500001c6500001e65000020650000226500002465000026650000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c650000
+    m_ExpandedIDs: 00000000286500002a6500002c6500002e65000030650000326500003465000036650000386500003a6500003c6500003e65000040650000426500004465000046650000486500004a6500004c650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2090,8 +2090,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 5079ffff
-    m_LastClickedInstanceID: -34480
+    m_SelectedInstanceIDs: bad20000
+    m_LastClickedInstanceID: 53946
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 1ea50000ccb80100ce5a0000f45a0000d461000044610000d26e0000f26200002c6300007e87030080650000c2780000e863000092670000a8af00007cd30100b6cc01003264000020d5010010d501005ae3010090f901004c8c00005c870000768700006e5e0000aa6d0000be6d0000e65d0000625d000000000000821c0300ee7b000000640000f05f0000e6d500002c62000036620000
     m_RenameOverlay:
@@ -2140,8 +2140,8 @@ MonoBehaviour:
     y: 0
     width: 554
     height: 939
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
