@@ -69,7 +69,6 @@
     <Compile Include="Assets\Script\AddMob\AdsManagerGame.cs" />
     <Compile Include="Assets\Script\EventSystem\Counters\DelayedDestroy.cs" />
     <Compile Include="Assets\Script\Audio\MusicManager.cs" />
-    <Compile Include="Assets\Script\PlayGamesManager.cs" />
     <Compile Include="Assets\Script\EventSystem\Action\Skins\SkinManagerBuy.cs" />
     <Compile Include="Assets\Script\AddMob\SkinSetting\CatAds.cs" />
     <Compile Include="Assets\Script\AddMob\SkinSetting\SkinBonny.cs" />
