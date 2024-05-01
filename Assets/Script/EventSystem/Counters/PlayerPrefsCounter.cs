@@ -13,10 +13,8 @@ public class PlayerPrefsCounter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _moneyBonusDisplayText;
     [SerializeField] private TextMeshProUGUI _moneySkinsDisplayText;
 
-    private void Awake()
+    private void Start()
     {
-        PlayGamesLeaderboard.ReferenceEquals(_bestScore, GPGSIds.leaderboard_fallingball);
-
         PlayerPrefsSave();
     }
 

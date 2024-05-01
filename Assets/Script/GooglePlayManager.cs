@@ -17,13 +17,14 @@ public class GooglePlayManager : MonoBehaviour
 
     private async void Awake()
     {
+        PlayGamesPlatform.Activate();
+        await UnityServices.InitializeAsync();
+
         await Authenticate();
     }
 
     public async Task Authenticate()
     {
-        PlayGamesPlatform.Activate();
-        await UnityServices.InitializeAsync();
 
         PlayGamesPlatform.Instance.Authenticate((success) =>
         { 
