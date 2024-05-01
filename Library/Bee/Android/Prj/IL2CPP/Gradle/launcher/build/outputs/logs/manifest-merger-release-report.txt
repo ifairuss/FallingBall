@@ -4,8 +4,38 @@ ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\I
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
-MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-70:12
+MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-81:12
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\71adcae7125dbc7ba6d4fcf063061896\transformed\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:17:1-26:12
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\82ce123ccc2811252c2032bb09aed8a7\transformed\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\f1edf6e89a4764e0cd47f509ec60abba\transformed\androidx.print.print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:2:1-17:12
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ecb34956e8a0e7004d3b49d2f0ee7269\transformed\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\28ab0f39206edd12bb57e787174ed7c3\transformed\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:2:1-36:12
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\08cffaad110661a95c6f1f8e9d2905d8\transformed\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:2:1-21:12
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\2abb8773c6d00f77f1bef9482f53d2c5\transformed\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b50b0539995c0493db3e244c2b46883e\transformed\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\1a1b31046a5b849bc9d97952fb73c469\transformed\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\52e6ecf2a6cc4dcc6215f49277b1a175\transformed\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\02a4756198d7e3dd02df66539b73aa7f\transformed\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7a4ff29921d2d9ab49365581ce606187\transformed\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\5ad5b000b0a1195f11fc08b6f9479d5b\transformed\androidx.loader.loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\d75a953e508497214b2b1e128207bfd5\transformed\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\e9344c4b9ac30a31b49a43865097aea4\transformed\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c074f2eb9bd2104b428bbe4baf2e7126\transformed\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\4a9a823681c1b055e0a89bfe9ef4702b\transformed\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\0a963990e31e82d2cdb211a1f05459eb\transformed\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7d0f02d9b471414e121c686f2467c3d0\transformed\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\cc88c5bb393326f9640e49cde21086e1\transformed\androidx.customview.customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\limaz\.gradle\caches\transforms-3\85d646ce09c4f2c5c534da8703214ab9\transformed\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c156797fd539de38c34d80dc52651962\transformed\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\a505e16fb99ec69e30000a4393e47f22\transformed\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ca2fbaeaa010157532796ae2e5b0863a\transformed\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:1-44:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
@@ -30,14 +60,34 @@ INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Pr
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:151-191
 application
 ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
-MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:5-68:19
-MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:5-68:19
+MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:5-79:19
+MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:5-79:19
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:24:5-89
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:9:5-15:19
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:9:5-15:19
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:13:5-34:19
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:13:5-34:19
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:4:3-8:17
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:4:3-8:17
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:9:5-19:19
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:9:5-19:19
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\02a4756198d7e3dd02df66539b73aa7f\transformed\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\02a4756198d7e3dd02df66539b73aa7f\transformed\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\0a963990e31e82d2cdb211a1f05459eb\transformed\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\0a963990e31e82d2cdb211a1f05459eb\transformed\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\limaz\.gradle\caches\transforms-3\85d646ce09c4f2c5c534da8703214ab9\transformed\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\limaz\.gradle\caches\transforms-3\85d646ce09c4f2c5c534da8703214ab9\transformed\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-42:19
 MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:5-42:19
 	android:extractNativeLibs
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:18-50
+	android:appComponentFactory
+		ADDED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
 	android:roundIcon
@@ -62,8 +112,68 @@ INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Pr
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:5-8:41
 MERGED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:6:5-8:41
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\71adcae7125dbc7ba6d4fcf063061896\transformed\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.asynclayoutinflater.asynclayoutinflater-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\71adcae7125dbc7ba6d4fcf063061896\transformed\androidx.asynclayoutinflater.asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.core.core-1.2.0:] C:\Users\limaz\.gradle\caches\transforms-3\201eb74e81184db3885d54050df243b6\transformed\androidx.core.core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\82ce123ccc2811252c2032bb09aed8a7\transformed\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.coordinatorlayout.coordinatorlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\82ce123ccc2811252c2032bb09aed8a7\transformed\androidx.coordinatorlayout.coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\f1edf6e89a4764e0cd47f509ec60abba\transformed\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.print.print-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\f1edf6e89a4764e0cd47f509ec60abba\transformed\androidx.print.print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ecb34956e8a0e7004d3b49d2f0ee7269\transformed\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.fragment.fragment-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ecb34956e8a0e7004d3b49d2f0ee7269\transformed\androidx.fragment.fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\28ab0f39206edd12bb57e787174ed7c3\transformed\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-core-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\28ab0f39206edd12bb57e787174ed7c3\transformed\androidx.lifecycle.lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:5:5-7:41
 MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:5:5-7:41
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:3:3-42
+MERGED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:3:3-42
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\08cffaad110661a95c6f1f8e9d2905d8\transformed\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.localbroadcastmanager.localbroadcastmanager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\08cffaad110661a95c6f1f8e9d2905d8\transformed\androidx.localbroadcastmanager.localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:7:5-44
+MERGED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:7:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\2abb8773c6d00f77f1bef9482f53d2c5\transformed\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-viewmodel-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\2abb8773c6d00f77f1bef9482f53d2c5\transformed\androidx.lifecycle.lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b50b0539995c0493db3e244c2b46883e\transformed\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.slidingpanelayout.slidingpanelayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b50b0539995c0493db3e244c2b46883e\transformed\androidx.slidingpanelayout.slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\1a1b31046a5b849bc9d97952fb73c469\transformed\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-utils-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\1a1b31046a5b849bc9d97952fb73c469\transformed\androidx.legacy.legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\52e6ecf2a6cc4dcc6215f49277b1a175\transformed\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.viewpager.viewpager-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\52e6ecf2a6cc4dcc6215f49277b1a175\transformed\androidx.viewpager.viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\02a4756198d7e3dd02df66539b73aa7f\transformed\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [:com.google.android.gms.play-services-tasks-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\02a4756198d7e3dd02df66539b73aa7f\transformed\com.google.android.gms.play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7a4ff29921d2d9ab49365581ce606187\transformed\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.arch.core.core-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7a4ff29921d2d9ab49365581ce606187\transformed\androidx.arch.core.core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\5ad5b000b0a1195f11fc08b6f9479d5b\transformed\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.loader.loader-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\5ad5b000b0a1195f11fc08b6f9479d5b\transformed\androidx.loader.loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\d75a953e508497214b2b1e128207bfd5\transformed\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-runtime-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\d75a953e508497214b2b1e128207bfd5\transformed\androidx.lifecycle.lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\e9344c4b9ac30a31b49a43865097aea4\transformed\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.cursoradapter.cursoradapter-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\e9344c4b9ac30a31b49a43865097aea4\transformed\androidx.cursoradapter.cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c074f2eb9bd2104b428bbe4baf2e7126\transformed\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.lifecycle.lifecycle-livedata-2.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c074f2eb9bd2104b428bbe4baf2e7126\transformed\androidx.lifecycle.lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\4a9a823681c1b055e0a89bfe9ef4702b\transformed\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.documentfile.documentfile-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\4a9a823681c1b055e0a89bfe9ef4702b\transformed\androidx.documentfile.documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\0a963990e31e82d2cdb211a1f05459eb\transformed\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:com.google.android.gms.play-services-drive-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\0a963990e31e82d2cdb211a1f05459eb\transformed\com.google.android.gms.play-services-drive-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7d0f02d9b471414e121c686f2467c3d0\transformed\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.legacy.legacy-support-core-ui-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\7d0f02d9b471414e121c686f2467c3d0\transformed\androidx.legacy.legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\cc88c5bb393326f9640e49cde21086e1\transformed\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.customview.customview-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\cc88c5bb393326f9640e49cde21086e1\transformed\androidx.customview.customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\limaz\.gradle\caches\transforms-3\85d646ce09c4f2c5c534da8703214ab9\transformed\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.versionedparcelable.versionedparcelable-1.1.0:] C:\Users\limaz\.gradle\caches\transforms-3\85d646ce09c4f2c5c534da8703214ab9\transformed\androidx.versionedparcelable.versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c156797fd539de38c34d80dc52651962\transformed\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.interpolator.interpolator-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\c156797fd539de38c34d80dc52651962\transformed\androidx.interpolator.interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\a505e16fb99ec69e30000a4393e47f22\transformed\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.swiperefreshlayout.swiperefreshlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\a505e16fb99ec69e30000a4393e47f22\transformed\androidx.swiperefreshlayout.swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ca2fbaeaa010157532796ae2e5b0863a\transformed\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:androidx.drawerlayout.drawerlayout-1.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\ca2fbaeaa010157532796ae2e5b0863a\transformed\androidx.drawerlayout.drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:41
 MERGED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:41
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
@@ -147,7 +257,7 @@ ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\B
 	android:name
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-57
 activity#com.unity3d.player.UnityPlayerActivity
-ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:9-67:20
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:9-78:20
 	android:screenOrientation
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-49
 	android:launchMode
@@ -186,10 +296,48 @@ ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\B
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:17-37
 	android:name
 		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:17-45
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:5-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:com.unityplayeraccounts.f54b0660-6473-4ed0-85fa-c62b55b90204+data:scheme:unitydl
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:13-77:29
+	xmlns:android
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:28-86
+action#android.intent.action.VIEW
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:22-76
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:25-66
+category#android.intent.category.DEFAULT
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:71:17-76
+	android:name
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:71:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:17-78
+	android:name
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:27-75
+data
+ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:74:17-76:48
+	android:host
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:75:21-96
+	android:scheme
+		ADDED from [:unityLibrary] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:76:21-45
+meta-data#com.google.android.gms.version
+ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [:com.google.android.gms.play-services-basement-18.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\b38d206231690b9fd5bdd2ab38fe7cd3\transformed\com.google.android.gms.play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:5-79
+MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:5-79
+MERGED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [:com.google.android.gms.play-services-nearby-18.0.2:] C:\Users\limaz\.gradle\caches\transforms-3\6d7899df2f1f2f703ff5f129afe3ce4f\transformed\com.google.android.gms.play-services-nearby-18.0.2\AndroidManifest.xml:7:22-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [:com.google.android.gms.play-services-base-18.0.1:] C:\Users\limaz\.gradle\caches\transforms-3\5d7196daa259904749e6dfdd86916df0\transformed\com.google.android.gms.play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 uses-permission#com.google.android.gms.permission.AD_ID
 ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:11:5-79
 	android:name
@@ -234,6 +382,46 @@ ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54
 		ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:33:13-71
 	android:name
 		ADDED from [:UnityAds:] C:\Users\limaz\.gradle\caches\transforms-3\adbf08521aa54dfca53a73706143af76\transformed\UnityAds\AndroidManifest.xml:30:13-82
+provider#com.google.android.gms.games.provider.PlayGamesInitProvider
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:5-208
+	android:authorities
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:90-157
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:158-182
+	android:initOrder
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:183-205
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:5:15-89
+activity#com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:5-180
+	android:exported
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:106-130
+	android:theme
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:131-177
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:6:15-105
+meta-data#com.google.android.gms.games.version
+ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:5-117
+	android:value
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:68-114
+	android:name
+		ADDED from [:com.google.android.gms.play-services-games-v2-17.0.0:] C:\Users\limaz\.gradle\caches\transforms-3\56ed422a8f07bbec1f00a2b601da6fa3\transformed\com.google.android.gms.play-services-games-v2-17.0.0\AndroidManifest.xml:7:16-67
+activity#com.google.games.bridge.GenericResolutionActivity
+ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:10:9-18:20
+	android:label
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:13:13-54
+	android:exported
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:11:13-77
+meta-data#instantapps.clients.allowed
+ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:15:13-17:40
+	android:value
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:17:17-37
+	android:name
+		ADDED from [:com.google.games.gpgs-plugin-support-0.11.01:] C:\Users\limaz\.gradle\caches\transforms-3\fbef04192f6e4f306ce5cc43635cfbaf\transformed\com.google.games.gpgs-plugin-support-0.11.01\AndroidManifest.xml:16:17-59
 uses-permission#android.permission.BLUETOOTH
 ADDED from [:unityLibrary:GooglePlayGamesManifest.androidlib] C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GooglePlayGamesManifest.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:5-68
 	android:name

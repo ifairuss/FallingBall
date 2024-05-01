@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.IFAgame.FallingBall"
     android:installLocation="preferExternal"
-    android:versionCode="6"
-    android:versionName="0.6" >
+    android:versionCode="7"
+    android:versionName="0.7" >
 
     <uses-sdk
         android:minSdkVersion="22"
@@ -41,6 +41,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:extractNativeLibs="true"
         android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
@@ -85,7 +86,27 @@
             <meta-data
                 android:name="notch_support"
                 android:value="true" />
+
+            <intent-filter xmlns:android="http://schemas.android.com/apk/res/android" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.unityplayeraccounts.f54b0660-6473-4ed0-85fa-c62b55b90204"
+                    android:scheme="unitydl" />
+            </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
@@ -105,7 +126,32 @@
             android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
             android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
             android:hardwareAccelerated="false"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Required for Nearby Connections API -->
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <provider
+            android:name="com.google.android.gms.games.provider.PlayGamesInitProvider"
+            android:authorities="com.IFAgame.FallingBall.playgamesinitprovider"
+            android:exported="false"
+            android:initOrder="99" />
+
+        <activity
+            android:name="com.google.android.gms.games.internal.v2.resolution.GamesResolutionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Games.Transparent" />
+
+        <meta-data
+            android:name="com.google.android.gms.games.version"
+            android:value="@string/play_games_sdk_version" />
+
+        <activity
+            android:name="com.google.games.bridge.GenericResolutionActivity"
+            android:exported="false"
+            android:label="GenericResolutionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <meta-data
+                android:name="instantapps.clients.allowed"
+                android:value="true" />
+        </activity> <!-- Required for Nearby Connections API -->
         <meta-data
             android:name="com.google.android.gms.nearby.connection.SERVICE_ID"
             android:value="com.IFAgame.FallingBall" /> <!-- The space in these forces it to be interpreted as a string vs. int -->

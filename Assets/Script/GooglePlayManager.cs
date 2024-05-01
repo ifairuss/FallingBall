@@ -8,11 +8,17 @@ using UnityEngine;
 
 public class GooglePlayManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _statusAuthenticateText;
+    [SerializeField] private TextMeshProUGUI _statusNameText;
+    [SerializeField] private TextMeshProUGUI _statusIDText;
 
     [Space]
     public string GooglePlayToken;
     public string GooglePlayError;
+
+    private async void Awake()
+    {
+        await Authenticate();
+    }
 
     public async Task Authenticate()
     {
@@ -32,15 +38,22 @@ public class GooglePlayManager : MonoBehaviour
                 });
 
                 string playerName = PlayGamesPlatform.Instance.GetUserDisplayName();
-                _statusAuthenticateText.text = $"Hello {playerName}";
-                _statusAuthenticateText.color = Color.green;
+                string playerID = PlayGamesPlatform.Instance.GetUserId();
+
+
+                _statusNameText.text = $"Hello {playerName}";
+                _statusIDText.text = $"id_{playerID}";
+                _statusNameText.color = Color.green;
+                _statusIDText.color = Color.blue;
             }
             else
             {
                 GooglePlayError = "Failed to retriver Google Play Games code";
                 Debug.LogError(message:"Login Unseccessful");
-                _statusAuthenticateText.text = $"Connect failed";
-                _statusAuthenticateText.color = Color.red;
+                _statusNameText.text = $"Connect failed";
+                _statusIDText.text = $"Connect failed";
+                _statusNameText.color = Color.red;
+                _statusIDText.color = Color.red;
             }
         });
 

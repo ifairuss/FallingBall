@@ -95,7 +95,7 @@ public class FallingObjectScript : SFXManager
             }
             if (_typeObject == TypeObject.Ball)
             {
-                PlaySFX(_allClips[0], destroy: true, pinch: 0.3f, pinchTwo: 0.6f, volume: 0.7f);
+                PlaySFX(_allClips[0], destroy: true, pinch: 0.1f, pinchTwo: 0.3f, volume: 0.7f);
                 Counter.CounterScore++;
             }
             if (_typeObject == TypeObject.Heart)

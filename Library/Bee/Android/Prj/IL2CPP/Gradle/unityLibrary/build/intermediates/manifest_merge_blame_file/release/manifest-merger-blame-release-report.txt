@@ -42,7 +42,7 @@
 24-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:81-105
 25
 26    <application android:extractNativeLibs="true" >
-26-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-24:17
+26-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-30:17
 26-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:16-48
 27        <meta-data
 27-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:5-69
@@ -82,7 +82,7 @@
 44-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:61-81
 45
 46        <activity
-46-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-23:16
+46-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-29:16
 47            android:name="com.unity3d.player.UnityPlayerActivity"
 47-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:15-68
 48            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
@@ -122,7 +122,29 @@
 65-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:18-46
 66                android:value="true" />
 66-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:47-67
-67        </activity>
-68    </application>
-69
-70</manifest>
+67
+68            <intent-filter xmlns:android="http://schemas.android.com/apk/res/android" >
+68-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:7-28:23
+68-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:22-80
+69                <action android:name="android.intent.action.VIEW" />
+69-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:9-61
+69-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-58
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:9-68
+71-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:19-65
+72                <category android:name="android.intent.category.BROWSABLE" />
+72-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:9-70
+72-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:19-67
+73
+74                <data
+74-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:9-118
+75                    android:host="com.unityplayeraccounts.f54b0660-6473-4ed0-85fa-c62b55b90204"
+75-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:40-115
+76                    android:scheme="unitydl" />
+76-->C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:15-39
+77            </intent-filter>
+78        </activity>
+79    </application>
+80
+81</manifest>

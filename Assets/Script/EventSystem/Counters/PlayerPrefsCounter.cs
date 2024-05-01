@@ -1,3 +1,4 @@
+using GooglePlayGames;
 using TMPro;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class PlayerPrefsCounter : MonoBehaviour
 
     private void Awake()
     {
+        PlayGamesLeaderboard.ReferenceEquals(_bestScore, GPGSIds.leaderboard_fallingball);
+
         PlayerPrefsSave();
     }
 
@@ -36,6 +39,8 @@ public class PlayerPrefsCounter : MonoBehaviour
             Social.ReportScore(_bestScore, GPGSIds.leaderboard_fallingball, (bool success) => {
                 Debug.Log($"Leaderboard score = {_bestScore}");
             });
+
+            PlayGamesLeaderboard.ReferenceEquals(_bestScore, GPGSIds.leaderboard_fallingball);
 
             PlayerPrefs.SetInt("BestScoreSave", _bestScore);
             PlayerPrefs.SetInt("ScoreSave", 0);

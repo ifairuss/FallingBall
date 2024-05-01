@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-98
 		INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
@@ -44,7 +44,7 @@ ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\I
 	android:name
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-80
 application
-ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-24:17
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-30:17
 	android:extractNativeLibs
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:16-48
 meta-data#unity.splash-mode
@@ -84,7 +84,7 @@ ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\I
 	android:name
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-60
 activity#com.unity3d.player.UnityPlayerActivity
-ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-23:16
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-29:16
 	android:screenOrientation
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:111-147
 	android:launchMode
@@ -123,6 +123,28 @@ ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\I
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:47-67
 	android:name
 		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:18-46
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:com.unityplayeraccounts.f54b0660-6473-4ed0-85fa-c62b55b90204+data:scheme:unitydl
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:7-28:23
+	xmlns:android
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:22-80
+action#android.intent.action.VIEW
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:9-61
+	android:name
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-58
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:9-68
+	android:name
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:19-65
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:9-70
+	android:name
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:19-67
+data
+ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:9-118
+	android:host
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:40-115
+	android:scheme
+		ADDED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:15-39
 uses-sdk
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\limaz\Documents\GitHub\FallingBall\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml

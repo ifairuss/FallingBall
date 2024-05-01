@@ -32,12 +32,12 @@
         "source": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-xhdpi\\app_icon_round.png"
     },
     {
-        "merged": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_app_icon_round.png.flat",
-        "source": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-hdpi\\app_icon_round.png"
-    },
-    {
         "merged": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-mdpi_app_icon.png.flat",
         "source": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-hdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\src\\main\\res\\mipmap-hdpi\\app_icon_round.png"
     },
     {
         "merged": "C:\\Users\\limaz\\Documents\\GitHub\\FallingBall\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\merged_res\\release\\mipmap-ldpi_app_icon_round.png.flat",

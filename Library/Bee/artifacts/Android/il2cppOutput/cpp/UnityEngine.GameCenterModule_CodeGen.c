@@ -15,11 +15,9 @@
 extern void Social_get_Active_m54586B347AE1248C646891B24054E71C8DE5DC88 (void);
 extern void Social_set_Active_m3E079BA4CFB75E910F913A8477135C0282BC72FB (void);
 extern void Social_ReportScore_m00EA1D85C901167A6643A56FD090894649E4B4B6 (void);
-extern void Social_ShowLeaderboardUI_m3C925568256ECA8A80A014F535453857DF8A1A8A (void);
 extern void Local_get_localUser_m21888B1B23DBA198D651B239D51DBCA525474F9E (void);
 extern void Local_ReportScore_mE26C1168FDFC67C21D3C6A509DCD7630BA22FBAE (void);
 extern void Local_UnityEngine_SocialPlatforms_ISocialPlatform_GetLoading_m64E02B7FBE615554026DFFEAD1431696F48E241C (void);
-extern void Local_ShowLeaderboardUI_m5A0220A033FFFFF9281D58D7067ACB1616A200B6 (void);
 extern void Local_VerifyUser_m8AAA9F80FAFDA28FF4026A1532ABD34A4CDD88A1 (void);
 extern void Local__ctor_m223523E0079C7C184D1B804092E5C0A61B0E110E (void);
 extern void ActivePlatform_get_Instance_mC9DF8265897D79151D3F86D48A73691B6E3AFA06 (void);
@@ -46,22 +44,19 @@ extern void Leaderboard_get_userScope_m84E19D835910E26104D25567BA0B1C6A518FC5C1 
 extern void Leaderboard_get_range_m98008ADA839E76C8D69D152F7FC6EDBF2F6985DB (void);
 extern void Leaderboard_get_timeScope_mB7893524B11F9CF2C739B269C6CA34F19B1FC95E (void);
 extern void Leaderboard_get_scores_m7AFF98E30BEA3C889BB84504FDAAA11B33770FE2 (void);
-static Il2CppMethodPointer s_methodPointers[44] = 
+static Il2CppMethodPointer s_methodPointers[41] = 
 {
 	Social_get_Active_m54586B347AE1248C646891B24054E71C8DE5DC88,
 	Social_set_Active_m3E079BA4CFB75E910F913A8477135C0282BC72FB,
 	Social_ReportScore_m00EA1D85C901167A6643A56FD090894649E4B4B6,
-	Social_ShowLeaderboardUI_m3C925568256ECA8A80A014F535453857DF8A1A8A,
 	Local_get_localUser_m21888B1B23DBA198D651B239D51DBCA525474F9E,
 	Local_ReportScore_mE26C1168FDFC67C21D3C6A509DCD7630BA22FBAE,
 	Local_UnityEngine_SocialPlatforms_ISocialPlatform_GetLoading_m64E02B7FBE615554026DFFEAD1431696F48E241C,
-	Local_ShowLeaderboardUI_m5A0220A033FFFFF9281D58D7067ACB1616A200B6,
 	Local_VerifyUser_m8AAA9F80FAFDA28FF4026A1532ABD34A4CDD88A1,
 	Local__ctor_m223523E0079C7C184D1B804092E5C0A61B0E110E,
 	ActivePlatform_get_Instance_mC9DF8265897D79151D3F86D48A73691B6E3AFA06,
 	ActivePlatform_set_Instance_m11EC15E4BB9909B697B814DAA5C5C8314DE702E9,
 	ActivePlatform_SelectSocialPlatform_mEA0704F85B0FD046DE2E4069B1EC413BD835BCA7,
-	NULL,
 	NULL,
 	NULL,
 	NULL,
@@ -93,22 +88,19 @@ static Il2CppMethodPointer s_methodPointers[44] =
 	Leaderboard_get_timeScope_mB7893524B11F9CF2C739B269C6CA34F19B1FC95E,
 	Leaderboard_get_scores_m7AFF98E30BEA3C889BB84504FDAAA11B33770FE2,
 };
-static const int32_t s_InvokerIndices[44] = 
+static const int32_t s_InvokerIndices[41] = 
 {
 	8815,
 	8690,
 	7393,
-	8850,
 	5891,
 	1488,
 	3521,
-	6014,
 	5798,
 	6014,
 	8815,
 	8690,
 	8815,
-	0,
 	0,
 	0,
 	0,
@@ -144,7 +136,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_GameCenterModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_GameCenterModule_CodeGenModule = 
 {
 	"UnityEngine.GameCenterModule.dll",
-	44,
+	41,
 	s_methodPointers,
 	0,
 	NULL,

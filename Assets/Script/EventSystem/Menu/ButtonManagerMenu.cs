@@ -72,7 +72,8 @@ public class ButtonManagerMenu : SFXManager
 
     public void LeaderBord()
     {
-        Social.ShowLeaderboardUI();
+        SoundSFX();
+        PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkImdbb1fAOEAIQAw");
     }
 
     #region "Panel-Setting"
