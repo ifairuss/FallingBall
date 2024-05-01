@@ -71,3 +71,5 @@ FallingBall/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 FallingBall/[Aa]ssets/[Ss]treamingAssets/aa.meta
 FallingBall/[Aa]ssets/[Ss]treamingAssets/aa/*
 /Library
+Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build/intermediates/intermediary_bundle/release/intermediary-bundle.aab
+Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build/intermediates/module_bundle/release/base.zip
